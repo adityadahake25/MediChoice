@@ -1,0 +1,102 @@
+const doctors = [
+  // H001
+  { doctor_id: "D101", doctor_name: "Dr. Rahul Sharma", specialization: "Cardiologist", experience_years: 12, hospital_id: "H001", consultation_fee: 700, contact_number: "9123456789", availability: "Mon–Fri 10–4", consultation_mode: "both", avg_rating: 4.7 },
+  { doctor_id: "D102", doctor_name: "Dr. Neha Kulkarni", specialization: "Dermatologist", experience_years: 7, hospital_id: "H001", consultation_fee: 500, contact_number: "9012345678", availability: "Mon–Fri 10–3", consultation_mode: "online", avg_rating: 4.4 },
+  { doctor_id: "D103", doctor_name: "Dr. Sameer Joshi", specialization: "General Physician", experience_years: 10, hospital_id: "H001", consultation_fee: 400, contact_number: "9898989898", availability: "Mon–Sat 9–1", consultation_mode: "inperson", avg_rating: 4.5 },
+
+  // H002
+  { doctor_id: "D104", doctor_name: "Dr. Anjali Deshmukh", specialization: "Gynecologist", experience_years: 9, hospital_id: "H002", consultation_fee: 600, contact_number: "9876543210", availability: "Mon–Sat 9–2", consultation_mode: "inperson", avg_rating: 4.5 },
+  { doctor_id: "D105", doctor_name: "Dr. Rakesh Malhotra", specialization: "General Physician", experience_years: 20, hospital_id: "H002", consultation_fee: 300, contact_number: "9890123456", availability: "Mon–Sun 8–12", consultation_mode: "inperson", avg_rating: 4.6 },
+  { doctor_id: "D106", doctor_name: "Dr. Pankaj Verma", specialization: "Diabetologist", experience_years: 14, hospital_id: "H002", consultation_fee: 650, contact_number: "9822334455", availability: "Tue–Sun 10–3", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H003
+  { doctor_id: "D107", doctor_name: "Dr. Amit Verma", specialization: "Orthopedic Surgeon", experience_years: 15, hospital_id: "H003", consultation_fee: 800, contact_number: "9988776655", availability: "Tue–Sun 11–5", consultation_mode: "both", avg_rating: 4.6 },
+  { doctor_id: "D108", doctor_name: "Dr. Sneha Roy", specialization: "Ophthalmologist", experience_years: 8, hospital_id: "H003", consultation_fee: 650, contact_number: "9456789012", availability: "Mon–Sat 9–3", consultation_mode: "inperson", avg_rating: 4.4 },
+  { doctor_id: "D109", doctor_name: "Dr. Kunal Mehra", specialization: "ENT Specialist", experience_years: 11, hospital_id: "H003", consultation_fee: 550, contact_number: "9001122334", availability: "Mon–Fri 10–2", consultation_mode: "both", avg_rating: 4.5 },
+
+  // H004
+  { doctor_id: "D110", doctor_name: "Dr. Suresh Iyer", specialization: "Neurologist", experience_years: 18, hospital_id: "H004", consultation_fee: 1000, contact_number: "9345678901", availability: "Mon–Sat 10–4", consultation_mode: "inperson", avg_rating: 4.8 },
+  { doctor_id: "D111", doctor_name: "Dr. Karan Singh", specialization: "Pulmonologist", experience_years: 16, hospital_id: "H004", consultation_fee: 950, contact_number: "9701234567", availability: "Mon–Sat 9–1", consultation_mode: "both", avg_rating: 4.7 },
+  { doctor_id: "D112", doctor_name: "Dr. Ritu Malhotra", specialization: "Allergist", experience_years: 9, hospital_id: "H004", consultation_fee: 600, contact_number: "9811223344", availability: "Wed–Sun 2–6", consultation_mode: "online", avg_rating: 4.3 },
+
+  // H005
+  { doctor_id: "D113", doctor_name: "Dr. Pooja Mehta", specialization: "Pediatrician", experience_years: 6, hospital_id: "H005", consultation_fee: 400, contact_number: "9567890123", availability: "Mon–Fri 9–1", consultation_mode: "both", avg_rating: 4.3 },
+  { doctor_id: "D114", doctor_name: "Dr. Arjun Patel", specialization: "ENT Specialist", experience_years: 10, hospital_id: "H005", consultation_fee: 550, contact_number: "9678901234", availability: "Mon–Fri 10–2", consultation_mode: "both", avg_rating: 4.5 },
+  { doctor_id: "D115", doctor_name: "Dr. Naina Shah", specialization: "Speech Therapist", experience_years: 7, hospital_id: "H005", consultation_fee: 450, contact_number: "9090909090", availability: "Tue–Sat 11–4", consultation_mode: "online", avg_rating: 4.4 },
+
+  // H006
+  { doctor_id: "D116", doctor_name: "Dr. Kavita Nair", specialization: "Psychiatrist", experience_years: 11, hospital_id: "H006", consultation_fee: 900, contact_number: "9789012345", availability: "Wed–Sun 2–7", consultation_mode: "online", avg_rating: 4.7 },
+  { doctor_id: "D117", doctor_name: "Dr. Nikhil Bansal", specialization: "Gastroenterologist", experience_years: 17, hospital_id: "H006", consultation_fee: 1000, contact_number: "9543210987", availability: "Mon–Fri 10–4", consultation_mode: "inperson", avg_rating: 4.8 },
+  { doctor_id: "D118", doctor_name: "Dr. Alok Jain", specialization: "Hepatologist", experience_years: 13, hospital_id: "H006", consultation_fee: 950, contact_number: "9666777888", availability: "Tue–Sat 9–2", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H007
+  { doctor_id: "D119", doctor_name: "Dr. Vikram Joshi", specialization: "Urologist", experience_years: 14, hospital_id: "H007", consultation_fee: 900, contact_number: "9321456789", availability: "Mon–Fri 11–5", consultation_mode: "both", avg_rating: 4.6 },
+  { doctor_id: "D120", doctor_name: "Dr. Manoj Kulkarni", specialization: "Nephrologist", experience_years: 19, hospital_id: "H007", consultation_fee: 1100, contact_number: "9912345609", availability: "Tue–Sun 10–3", consultation_mode: "inperson", avg_rating: 4.7 },
+  { doctor_id: "D121", doctor_name: "Dr. Ramesh Pawar", specialization: "Internal Medicine", experience_years: 22, hospital_id: "H007", consultation_fee: 700, contact_number: "9888777666", availability: "Mon–Sat 8–12", consultation_mode: "inperson", avg_rating: 4.6 },
+
+  // H008
+  { doctor_id: "D122", doctor_name: "Dr. Meenal Patil", specialization: "Endocrinologist", experience_years: 10, hospital_id: "H008", consultation_fee: 850, contact_number: "9812345670", availability: "Tue–Sat 10–3", consultation_mode: "inperson", avg_rating: 4.5 },
+  { doctor_id: "D123", doctor_name: "Dr. Priti Shah", specialization: "Oncologist", experience_years: 13, hospital_id: "H008", consultation_fee: 1200, contact_number: "9823456701", availability: "Mon–Fri 9–2", consultation_mode: "both", avg_rating: 4.6 },
+  { doctor_id: "D124", doctor_name: "Dr. Ajay Kulkarni", specialization: "Hematologist", experience_years: 16, hospital_id: "H008", consultation_fee: 1000, contact_number: "9777666555", availability: "Wed–Sun 11–4", consultation_mode: "both", avg_rating: 4.7 },
+
+  // H009
+  { doctor_id: "D125", doctor_name: "Dr. Rina Chatterjee", specialization: "Rheumatologist", experience_years: 11, hospital_id: "H009", consultation_fee: 800, contact_number: "9887654321", availability: "Wed–Sun 2–6", consultation_mode: "online", avg_rating: 4.4 },
+  { doctor_id: "D126", doctor_name: "Dr. Sandeep Rao", specialization: "Anesthesiologist", experience_years: 21, hospital_id: "H009", consultation_fee: 900, contact_number: "9765432109", availability: "Mon–Sun 8–12", consultation_mode: "inperson", avg_rating: 4.5 },
+  { doctor_id: "D127", doctor_name: "Dr. Bhavana Iyer", specialization: "Pain Specialist", experience_years: 12, hospital_id: "H009", consultation_fee: 700, contact_number: "9555444333", availability: "Mon–Fri 1–5", consultation_mode: "both", avg_rating: 4.4 },
+
+  // H010
+  { doctor_id: "D128", doctor_name: "Dr. Ayesha Khan", specialization: "Radiologist", experience_years: 9, hospital_id: "H010", consultation_fee: 700, contact_number: "9632109876", availability: "Mon–Sat 1–6", consultation_mode: "both", avg_rating: 4.3 },
+  { doctor_id: "D129", doctor_name: "Dr. Isha Malhotra", specialization: "Nutritionist", experience_years: 5, hospital_id: "H010", consultation_fee: 400, contact_number: "9901234568", availability: "Wed–Sat 10–1", consultation_mode: "online", avg_rating: 4.2 },
+  { doctor_id: "D130", doctor_name: "Dr. Rohit Agarwal", specialization: "Sports Medicine", experience_years: 8, hospital_id: "H010", consultation_fee: 600, contact_number: "9444333222", availability: "Tue–Sun 9–1", consultation_mode: "both", avg_rating: 4.5 }
+
+  // H011
+  { doctor_id: "D131", doctor_name: "Dr. Sanjay Kulkarni", specialization: "Cardiac Surgeon", experience_years: 22, hospital_id: "H011", consultation_fee: 1200, contact_number: "9112233445", availability: "Mon–Fri 11–4", consultation_mode: "inperson", avg_rating: 4.8 },
+  { doctor_id: "D132", doctor_name: "Dr. Radhika Menon", specialization: "Clinical Psychologist", experience_years: 9, hospital_id: "H011", consultation_fee: 650, contact_number: "9223344556", availability: "Wed–Sun 3–7", consultation_mode: "online", avg_rating: 4.5 },
+  { doctor_id: "D133", doctor_name: "Dr. Harish Bhat", specialization: "Geriatrician", experience_years: 18, hospital_id: "H011", consultation_fee: 700, contact_number: "9334455667", availability: "Mon–Sat 9–1", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H012
+  { doctor_id: "D134", doctor_name: "Dr. Komal Jain", specialization: "Infertility Specialist", experience_years: 11, hospital_id: "H012", consultation_fee: 900, contact_number: "9445566778", availability: "Tue–Sat 10–3", consultation_mode: "inperson", avg_rating: 4.4 },
+  { doctor_id: "D135", doctor_name: "Dr. Deepak Soni", specialization: "Family Medicine", experience_years: 14, hospital_id: "H012", consultation_fee: 450, contact_number: "9556677889", availability: "Mon–Sun 8–12", consultation_mode: "both", avg_rating: 4.5 },
+  { doctor_id: "D136", doctor_name: "Dr. Swati Nair", specialization: "Lactation Consultant", experience_years: 7, hospital_id: "H012", consultation_fee: 500, contact_number: "9667788990", availability: "Wed–Sat 11–2", consultation_mode: "online", avg_rating: 4.3 },
+
+  // H013
+  { doctor_id: "D137", doctor_name: "Dr. Ajit Desai", specialization: "Spine Surgeon", experience_years: 19, hospital_id: "H013", consultation_fee: 1100, contact_number: "9778899001", availability: "Mon–Fri 10–4", consultation_mode: "inperson", avg_rating: 4.7 },
+  { doctor_id: "D138", doctor_name: "Dr. Nivedita Rao", specialization: "Audiologist", experience_years: 8, hospital_id: "H013", consultation_fee: 400, contact_number: "9889900112", availability: "Tue–Sat 9–1", consultation_mode: "both", avg_rating: 4.4 },
+  { doctor_id: "D139", doctor_name: "Dr. Varun Khanna", specialization: "Sports Orthopedist", experience_years: 12, hospital_id: "H013", consultation_fee: 850, contact_number: "9990011223", availability: "Mon–Sat 3–7", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H014
+  { doctor_id: "D140", doctor_name: "Dr. Alisha Fernandes", specialization: "Sleep Specialist", experience_years: 10, hospital_id: "H014", consultation_fee: 750, contact_number: "9001122445", availability: "Wed–Sun 8–12", consultation_mode: "online", avg_rating: 4.5 },
+  { doctor_id: "D141", doctor_name: "Dr. Mahesh Reddy", specialization: "Critical Care", experience_years: 17, hospital_id: "H014", consultation_fee: 1000, contact_number: "9112233556", availability: "Mon–Sat 10–3", consultation_mode: "inperson", avg_rating: 4.7 },
+  { doctor_id: "D142", doctor_name: "Dr. Preeti Saxena", specialization: "Immunologist", experience_years: 13, hospital_id: "H014", consultation_fee: 900, contact_number: "9223344667", availability: "Tue–Fri 11–4", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H015
+  { doctor_id: "D143", doctor_name: "Dr. Gaurav Mittal", specialization: "Neonatologist", experience_years: 15, hospital_id: "H015", consultation_fee: 950, contact_number: "9334455778", availability: "Mon–Sat 9–2", consultation_mode: "inperson", avg_rating: 4.8 },
+  { doctor_id: "D144", doctor_name: "Dr. Tanya Kapoor", specialization: "Child Psychologist", experience_years: 6, hospital_id: "H015", consultation_fee: 550, contact_number: "9445566889", availability: "Wed–Sun 4–7", consultation_mode: "online", avg_rating: 4.4 },
+  { doctor_id: "D145", doctor_name: "Dr. Vinod Patil", specialization: "Preventive Medicine", experience_years: 20, hospital_id: "H015", consultation_fee: 600, contact_number: "9556677990", availability: "Mon–Fri 8–12", consultation_mode: "both", avg_rating: 4.6 },
+
+  // H016
+  { doctor_id: "D146", doctor_name: "Dr. Meera Iqbal", specialization: "Addiction Specialist", experience_years: 12, hospital_id: "H016", consultation_fee: 850, contact_number: "9667788001", availability: "Tue–Sun 2–6", consultation_mode: "online", avg_rating: 4.5 },
+  { doctor_id: "D147", doctor_name: "Dr. Prashant Gokhale", specialization: "Colorectal Surgeon", experience_years: 18, hospital_id: "H016", consultation_fee: 1100, contact_number: "9778899112", availability: "Mon–Fri 10–4", consultation_mode: "inperson", avg_rating: 4.7 },
+  { doctor_id: "D148", doctor_name: "Dr. Lavanya Krishnan", specialization: "Dietician", experience_years: 7, hospital_id: "H016", consultation_fee: 450, contact_number: "9889900223", availability: "Wed–Sat 9–12", consultation_mode: "online", avg_rating: 4.3 },
+
+  // H017
+  { doctor_id: "D149", doctor_name: "Dr. Sunil Chauhan", specialization: "Vascular Surgeon", experience_years: 21, hospital_id: "H017", consultation_fee: 1200, contact_number: "9990011334", availability: "Mon–Fri 11–4", consultation_mode: "inperson", avg_rating: 4.8 },
+  { doctor_id: "D150", doctor_name: "Dr. Aarti Bhosale", specialization: "Cosmetologist", experience_years: 9, hospital_id: "H017", consultation_fee: 700, contact_number: "9001122556", availability: "Tue–Sat 3–7", consultation_mode: "both", avg_rating: 4.4 },
+  { doctor_id: "D151", doctor_name: "Dr. Nitin Shewale", specialization: "Trauma Surgeon", experience_years: 16, hospital_id: "H017", consultation_fee: 1000, contact_number: "9112233667", availability: "Mon–Sun 8–12", consultation_mode: "inperson", avg_rating: 4.6 },
+
+  // H018
+  { doctor_id: "D152", doctor_name: "Dr. Farah Siddiqui", specialization: "Medical Geneticist", experience_years: 11, hospital_id: "H018", consultation_fee: 950, contact_number: "9223344778", availability: "Wed–Sun 10–2", consultation_mode: "online", avg_rating: 4.5 },
+  { doctor_id: "D153", doctor_name: "Dr. Rohan Malve", specialization: "Emergency Medicine", experience_years: 13, hospital_id: "H018", consultation_fee: 800, contact_number: "9334455889", availability: "Mon–Sat 6–10", consultation_mode: "inperson", avg_rating: 4.6 },
+  { doctor_id: "D154", doctor_name: "Dr. Shalini Gupta", specialization: "Pathologist", experience_years: 17, hospital_id: "H018", consultation_fee: 600, contact_number: "9445566990", availability: "Mon–Fri 9–1", consultation_mode: "both", avg_rating: 4.5 },
+
+  // H019
+  { doctor_id: "D155", doctor_name: "Dr. Keshav Narayan", specialization: "Forensic Medicine", experience_years: 24, hospital_id: "H019", consultation_fee: 900, contact_number: "9556677001", availability: "Tue–Sat 10–3", consultation_mode: "inperson", avg_rating: 4.7 },
+  { doctor_id: "D156", doctor_name: "Dr. Anupama Sen", specialization: "Rehabilitation Medicine", experience_years: 14, hospital_id: "H019", consultation_fee: 650, contact_number: "9667788112", availability: "Mon–Fri 2–6", consultation_mode: "both", avg_rating: 4.5 },
+  { doctor_id: "D157", doctor_name: "Dr. Yash Thakur", specialization: "Occupational Medicine", experience_years: 10, hospital_id: "H019", consultation_fee: 550, contact_number: "9778899223", availability: "Wed–Sun 9–12", consultation_mode: "online", avg_rating: 4.4 },
+
+  // H020
+  { doctor_id: "D158", doctor_name: "Dr. Monica D’Souza", specialization: "Travel Medicine", experience_years: 12, hospital_id: "H020", consultation_fee: 700, contact_number: "9889900334", availability: "Tue–Sat 11–3", consultation_mode: "both", avg_rating: 4.6 },
+  { doctor_id: "D159", doctor_name: "Dr. Kunal Oberoi", specialization: "Sexologist", experience_years: 15, hospital_id: "H020", consultation_fee: 900, contact_number: "9990011445", availability: "Mon–Fri 4–8", consultation_mode: "online", avg_rating: 4.5 },
+  { doctor_id: "D160", doctor_name: "Dr. Shruti Kuldeep", specialization: "Public Health Specialist", experience_years: 8, hospital_id: "H020", consultation_fee: 500, contact_number: "9001122667", availability: "Mon–Sat 9–1", consultation_mode: "both", avg_rating: 4.4 }
+];
+
