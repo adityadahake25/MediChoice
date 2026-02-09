@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-blue: #0a66c2;
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+}
+
+button {
+    cursor: pointer;
+}

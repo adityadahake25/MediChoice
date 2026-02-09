@@ -1,0 +1,61 @@
+.signup-box {
+    width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.signup-box h2 {
+    text-align: center;
+    color: #0a66c2;
+}
+
+.role-select {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.sub-heading {
+    margin-top: 20px;
+    color: #0a66c2;
+}
+
+.file-label {
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.file-label input {
+    display: block;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    color: #666;
+}

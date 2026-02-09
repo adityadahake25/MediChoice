@@ -1,0 +1,131 @@
+/* ---------- Home Page Wrapper ---------- */
+.home {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* ---------- Section Common Styles ---------- */
+.section {
+    padding: 80px 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 60px;
+}
+
+/* ---------- How It Works ---------- */
+.how-it-works {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.how-card {
+    flex: 1;
+    background: #f5f9ff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.how-card:hover {
+    transform: translateY(-8px);
+}
+
+.how-card h3 {
+    color: #0a66c2;
+    margin-bottom: 15px;
+}
+
+.how-card p {
+    color: #444;
+    font-size: 15px;
+}
+
+/* ---------- Features ---------- */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-card h4 {
+    color: #0a66c2;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- About Section ---------- */
+.about {
+    background: #0a66c2;
+    color: white;
+    text-align: center;
+    padding: 80px 100px;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background: #f1f5f9;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .how-it-works {
+        flex-direction: column;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .about {
+        padding: 50px 30px;
+    }
+}
