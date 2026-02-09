@@ -8,4 +8,4 @@ MediChoice is a healthcare platform connecting patients and doctors.
 - Appointment management
 
 Frontend built with React + Vite.
-s
+...
