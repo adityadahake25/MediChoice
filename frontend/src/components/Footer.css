@@ -1,0 +1,106 @@
+/* ===== Footer Wrapper ===== */
+.footer {
+    background-color: #08225b;
+    /* solid blue */
+    color: #ffffff;
+}
+
+/* ===== Footer Container ===== */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+/* ===== Brand ===== */
+.footer-brand .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* ===== Footer Headings ===== */
+.footer h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+/* ===== Footer Text ===== */
+.footer p {
+    font-size: 14px;
+    color: #e0e7ff;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* ===== Links ===== */
+.footer a {
+    font-size: 14px;
+    color: #e0e7ff;
+    line-height: 1.7;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+/* ===== Lists ===== */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #e0e7ff;
+}
+
+/* ===== Contact Info ===== */
+.footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== Bottom Bar ===== */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #c7d2fe;
+}
+
+/* ===== Bottom Links ===== */
+.bottom-links a {
+    margin-left: 16px;
+    color: #c7d2fe;
+}
+
+.bottom-links a:hover {
+    color: #ffffff;
+}
+footer,
+.footer {
+    background-color: #08225b !important;
+    color: #ffffff !important;
+}

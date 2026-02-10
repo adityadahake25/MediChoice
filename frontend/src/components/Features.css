@@ -1,0 +1,95 @@
+.features-section {
+    padding: 80px 10%;
+    background: #f9fafb;
+    text-align: center;
+}
+
+/* Heading section */
+.features-header {
+    max-width: 700px;
+    margin: auto;
+}
+
+.features-tag {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.features-header h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #111827;
+}
+
+.features-header p {
+    color: #6b7280;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+/* Grid layout */
+.features-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Feature card */
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+}
+
+/* Icon */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #e0e7ff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    font-size: 28px;
+}
+
+/* Title */
+.feature-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Description */
+.feature-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}

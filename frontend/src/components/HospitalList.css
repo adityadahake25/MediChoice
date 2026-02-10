@@ -1,0 +1,27 @@
+/* Whole section */
+.hospital-section {
+    background: #ffffff;
+    /* ✅ WHITE */
+    padding: 60px 80px;
+}
+
+/* Header */
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+    /* dark text */
+}
+
+.section-header p {
+    color: #64748b;
+    margin-top: 6px;
+}
+
+/* Grid */
+.hospital-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}

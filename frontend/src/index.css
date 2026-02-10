@@ -1,0 +1,170 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  margin: 0;
+}
+
+/* SECTION */
+.hospital-section {
+  padding: 40px 80px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.section-header p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.hospital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.hospital-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hospital-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* RATING */
+.rating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #020617;
+}
+
+/* LOCATION */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #64748b;
+  margin: 6px 0;
+}
+
+/* FACILITIES */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.tags span {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.tags .more {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.doctors {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #475569;
+}
+
+.type {
+  font-weight: 600;
+}
+
+.type.private {
+  color: #0f766e;
+}
+
+.type.govt {
+  color: #92400e;
+}
+
+/* BUTTON */
+.view-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hospital-section {
+    padding: 24px;
+  }
+}
