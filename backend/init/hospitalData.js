@@ -47,7 +47,7 @@ const hospitals = [
   {
     hospital_id: "H004",
     hospital_name: "AIIMS Delhi",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Delhi",
     state: "Delhi",
     country: "India",
@@ -62,7 +62,7 @@ const hospitals = [
   {
     hospital_id: "H005",
     hospital_name: "KEM Hospital",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Mumbai",
     state: "Maharashtra",
     country: "India",
@@ -122,7 +122,7 @@ const hospitals = [
   {
     hospital_id: "H009",
     hospital_name: "Government Medical College",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Nagpur",
     state: "Maharashtra",
     country: "India",
@@ -227,7 +227,7 @@ const hospitals = [
   {
     hospital_id: "H016",
     hospital_name: "District Civil Hospital",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Surat",
     state: "Gujarat",
     country: "India",
@@ -272,7 +272,7 @@ const hospitals = [
   {
     hospital_id: "H019",
     hospital_name: "Government General Hospital",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Tirupati",
     state: "Andhra Pradesh",
     country: "India",
@@ -362,7 +362,7 @@ const hospitals = [
   {
     hospital_id: "H025",
     hospital_name: "Unity Hospital",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Vadodara",
     state: "Gujarat",
     country: "India",
@@ -407,7 +407,7 @@ const hospitals = [
   {
     hospital_id: "H028",
     hospital_name: "Pragati Government Hospital",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Raipur",
     state: "Chhattisgarh",
     country: "India",
@@ -437,7 +437,7 @@ const hospitals = [
   {
     hospital_id: "H030",
     hospital_name: "North East Medical Institute",
-    hospital_type: "Govt",
+    hospital_type: "Government",
     city: "Guwahati",
     state: "Assam",
     country: "India",
@@ -450,3 +450,5 @@ const hospitals = [
     doctors_id: {},
   },
 ];
+
+export default hospitals;

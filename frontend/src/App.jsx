@@ -5,28 +5,41 @@ import Features from "./components/Features";
 import HospitalList from "./components/HospitalList";
 import Treatments from "./components/Treatments";
 import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer"; // ✅ ADD THIS
+import Footer from "./components/Footer";
+import ScrollToHash from "./utils/ScrollToHash";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HospitalsAll from "./pages/HospitalsAll";
 
 function App() {
   return (
-    <div className="app">
+    <BrowserRouter>
+      <ScrollToHash />
+
       <Navbar />
-      <HeroSection />
-      <HowItWorks />
-      <Features />
 
-      {/* 🏥 Top Hospitals Section */}
-      <HospitalList />
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <HowItWorks />
+              <Features />
+              <HospitalList />
+              <Treatments />
+              <Testimonials />
+            </>
+          }
+        />
 
-      {/* 💊 Treatments Section */}
-      <Treatments />
+        {/* Hospitals Page */}
+        <Route path="/hospitals" element={<HospitalsAll />} />
+      </Routes>
 
-      {/* 💬 Testimonials Section */}
-      <Testimonials />
-
-      {/* 🦶 Footer Section */}
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
