@@ -11,6 +11,7 @@ const doctors = [
     availability: "Mon–Fri 10–4",
     consultation_mode: "both",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d1.jpeg",
   },
   {
     doctor_id: "D102",
@@ -23,6 +24,7 @@ const doctors = [
     availability: "Mon–Fri 10–3",
     consultation_mode: "online",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d2.jpeg",
   },
   {
     doctor_id: "D103",
@@ -35,6 +37,7 @@ const doctors = [
     availability: "Mon–Sat 9–1",
     consultation_mode: "inperson",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d3.jpeg",
   },
 
   // H002
@@ -49,6 +52,7 @@ const doctors = [
     availability: "Mon–Sat 9–2",
     consultation_mode: "inperson",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d4.jpeg",
   },
   {
     doctor_id: "D105",
@@ -61,6 +65,7 @@ const doctors = [
     availability: "Mon–Sun 8–12",
     consultation_mode: "inperson",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d5.jpeg",
   },
   {
     doctor_id: "D106",
@@ -73,6 +78,7 @@ const doctors = [
     availability: "Tue–Sun 10–3",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d6.jpeg",
   },
 
   // H003
@@ -87,6 +93,7 @@ const doctors = [
     availability: "Tue–Sun 11–5",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d7.jpeg",
   },
   {
     doctor_id: "D108",
@@ -99,6 +106,7 @@ const doctors = [
     availability: "Mon–Sat 9–3",
     consultation_mode: "inperson",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d8.jpeg",
   },
   {
     doctor_id: "D109",
@@ -111,6 +119,7 @@ const doctors = [
     availability: "Mon–Fri 10–2",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d9.jpeg",
   },
 
   // H004
@@ -125,6 +134,7 @@ const doctors = [
     availability: "Mon–Sat 10–4",
     consultation_mode: "inperson",
     avg_rating: 4.8,
+    Image: "/uploads/doctors/d10.jpeg",
   },
   {
     doctor_id: "D111",
@@ -137,6 +147,7 @@ const doctors = [
     availability: "Mon–Sat 9–1",
     consultation_mode: "both",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d11.jpeg",
   },
   {
     doctor_id: "D112",
@@ -149,6 +160,7 @@ const doctors = [
     availability: "Wed–Sun 2–6",
     consultation_mode: "online",
     avg_rating: 4.3,
+    Image: "/uploads/doctors/d12.jpeg",
   },
 
   // H005
@@ -163,6 +175,7 @@ const doctors = [
     availability: "Mon–Fri 9–1",
     consultation_mode: "both",
     avg_rating: 4.3,
+    Image: "/uploads/doctors/d13.jpeg",
   },
   {
     doctor_id: "D114",
@@ -175,6 +188,7 @@ const doctors = [
     availability: "Mon–Fri 10–2",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d14.jpeg",
   },
   {
     doctor_id: "D115",
@@ -187,6 +201,7 @@ const doctors = [
     availability: "Tue–Sat 11–4",
     consultation_mode: "online",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d15.jpeg",
   },
 
   // H006
@@ -201,6 +216,7 @@ const doctors = [
     availability: "Wed–Sun 2–7",
     consultation_mode: "online",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d16.jpeg",
   },
   {
     doctor_id: "D117",
@@ -213,6 +229,7 @@ const doctors = [
     availability: "Mon–Fri 10–4",
     consultation_mode: "inperson",
     avg_rating: 4.8,
+    Image: "/uploads/doctors/d17.jpeg",
   },
   {
     doctor_id: "D118",
@@ -225,6 +242,7 @@ const doctors = [
     availability: "Tue–Sat 9–2",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d18.jpeg",
   },
 
   // H007
@@ -239,6 +257,7 @@ const doctors = [
     availability: "Mon–Fri 11–5",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d19.jpeg",
   },
   {
     doctor_id: "D120",
@@ -251,6 +270,7 @@ const doctors = [
     availability: "Tue–Sun 10–3",
     consultation_mode: "inperson",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d20.jpeg",
   },
   {
     doctor_id: "D121",
@@ -263,6 +283,7 @@ const doctors = [
     availability: "Mon–Sat 8–12",
     consultation_mode: "inperson",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d21.jpeg",
   },
 
   // H008
@@ -277,6 +298,7 @@ const doctors = [
     availability: "Tue–Sat 10–3",
     consultation_mode: "inperson",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d22.jpeg",
   },
   {
     doctor_id: "D123",
@@ -289,6 +311,7 @@ const doctors = [
     availability: "Mon–Fri 9–2",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d23.jpeg",
   },
   {
     doctor_id: "D124",
@@ -301,6 +324,7 @@ const doctors = [
     availability: "Wed–Sun 11–4",
     consultation_mode: "both",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d24.jpeg",
   },
 
   // H009
@@ -315,6 +339,7 @@ const doctors = [
     availability: "Wed–Sun 2–6",
     consultation_mode: "online",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d25.jpeg",
   },
   {
     doctor_id: "D126",
@@ -327,6 +352,7 @@ const doctors = [
     availability: "Mon–Sun 8–12",
     consultation_mode: "inperson",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d26.jpeg",
   },
   {
     doctor_id: "D127",
@@ -339,6 +365,7 @@ const doctors = [
     availability: "Mon–Fri 1–5",
     consultation_mode: "both",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d27.jpeg",
   },
 
   // H010
@@ -353,6 +380,7 @@ const doctors = [
     availability: "Mon–Sat 1–6",
     consultation_mode: "both",
     avg_rating: 4.3,
+    Image: "/uploads/doctors/d28.jpeg",
   },
   {
     doctor_id: "D129",
@@ -365,6 +393,7 @@ const doctors = [
     availability: "Wed–Sat 10–1",
     consultation_mode: "online",
     avg_rating: 4.2,
+    Image: "/uploads/doctors/d29.jpeg",
   },
   {
     doctor_id: "D130",
@@ -377,6 +406,7 @@ const doctors = [
     availability: "Tue–Sun 9–1",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d30.jpeg",
   },
 
   // H011
@@ -391,6 +421,7 @@ const doctors = [
     availability: "Mon–Fri 11–4",
     consultation_mode: "inperson",
     avg_rating: 4.8,
+    Image: "/uploads/doctors/d31.jpeg",
   },
   {
     doctor_id: "D132",
@@ -403,6 +434,7 @@ const doctors = [
     availability: "Wed–Sun 3–7",
     consultation_mode: "online",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d32.jpeg",
   },
   {
     doctor_id: "D133",
@@ -415,6 +447,7 @@ const doctors = [
     availability: "Mon–Sat 9–1",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d33.jpeg",
   },
 
   // H012
@@ -429,6 +462,7 @@ const doctors = [
     availability: "Tue–Sat 10–3",
     consultation_mode: "inperson",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d34.jpeg",
   },
   {
     doctor_id: "D135",
@@ -441,6 +475,7 @@ const doctors = [
     availability: "Mon–Sun 8–12",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d35.jpeg",
   },
   {
     doctor_id: "D136",
@@ -453,6 +488,7 @@ const doctors = [
     availability: "Wed–Sat 11–2",
     consultation_mode: "online",
     avg_rating: 4.3,
+    Image: "/uploads/doctors/d36.jpeg",
   },
 
   // H013
@@ -467,6 +503,7 @@ const doctors = [
     availability: "Mon–Fri 10–4",
     consultation_mode: "inperson",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d37.jpeg",
   },
   {
     doctor_id: "D138",
@@ -479,6 +516,7 @@ const doctors = [
     availability: "Tue–Sat 9–1",
     consultation_mode: "both",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d38.jpeg",
   },
   {
     doctor_id: "D139",
@@ -491,6 +529,7 @@ const doctors = [
     availability: "Mon–Sat 3–7",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d39.jpeg",
   },
 
   // H014
@@ -505,6 +544,7 @@ const doctors = [
     availability: "Wed–Sun 8–12",
     consultation_mode: "online",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d40.jpeg",
   },
   {
     doctor_id: "D141",
@@ -517,6 +557,7 @@ const doctors = [
     availability: "Mon–Sat 10–3",
     consultation_mode: "inperson",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d41.jpeg",
   },
   {
     doctor_id: "D142",
@@ -529,6 +570,7 @@ const doctors = [
     availability: "Tue–Fri 11–4",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d42.jpeg",
   },
 
   // H015
@@ -543,6 +585,7 @@ const doctors = [
     availability: "Mon–Sat 9–2",
     consultation_mode: "inperson",
     avg_rating: 4.8,
+    Image: "/uploads/doctors/d43.jpeg",
   },
   {
     doctor_id: "D144",
@@ -555,6 +598,7 @@ const doctors = [
     availability: "Wed–Sun 4–7",
     consultation_mode: "online",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d44.jpeg",
   },
   {
     doctor_id: "D145",
@@ -567,6 +611,7 @@ const doctors = [
     availability: "Mon–Fri 8–12",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d45.jpeg",
   },
 
   // H016
@@ -581,6 +626,7 @@ const doctors = [
     availability: "Tue–Sun 2–6",
     consultation_mode: "online",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d46.jpeg",
   },
   {
     doctor_id: "D147",
@@ -593,6 +639,7 @@ const doctors = [
     availability: "Mon–Fri 10–4",
     consultation_mode: "inperson",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d47.jpeg",
   },
   {
     doctor_id: "D148",
@@ -605,6 +652,7 @@ const doctors = [
     availability: "Wed–Sat 9–12",
     consultation_mode: "online",
     avg_rating: 4.3,
+    Image: "/uploads/doctors/d48.jpeg",
   },
 
   // H017
@@ -619,6 +667,7 @@ const doctors = [
     availability: "Mon–Fri 11–4",
     consultation_mode: "inperson",
     avg_rating: 4.8,
+    Image: "/uploads/doctors/d49.jpeg",
   },
   {
     doctor_id: "D150",
@@ -631,6 +680,7 @@ const doctors = [
     availability: "Tue–Sat 3–7",
     consultation_mode: "both",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d50.jpeg",
   },
   {
     doctor_id: "D151",
@@ -643,6 +693,7 @@ const doctors = [
     availability: "Mon–Sun 8–12",
     consultation_mode: "inperson",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d51.jpeg",
   },
 
   // H018
@@ -657,6 +708,7 @@ const doctors = [
     availability: "Wed–Sun 10–2",
     consultation_mode: "online",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d52.jpeg",
   },
   {
     doctor_id: "D153",
@@ -669,6 +721,7 @@ const doctors = [
     availability: "Mon–Sat 6–10",
     consultation_mode: "inperson",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d53.jpeg",
   },
   {
     doctor_id: "D154",
@@ -681,6 +734,7 @@ const doctors = [
     availability: "Mon–Fri 9–1",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d54.jpeg",
   },
 
   // H019
@@ -695,6 +749,7 @@ const doctors = [
     availability: "Tue–Sat 10–3",
     consultation_mode: "inperson",
     avg_rating: 4.7,
+    Image: "/uploads/doctors/d55.jpeg",
   },
   {
     doctor_id: "D156",
@@ -707,6 +762,7 @@ const doctors = [
     availability: "Mon–Fri 2–6",
     consultation_mode: "both",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d56.jpeg",
   },
   {
     doctor_id: "D157",
@@ -719,6 +775,7 @@ const doctors = [
     availability: "Wed–Sun 9–12",
     consultation_mode: "online",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d57.jpeg",
   },
 
   // H020
@@ -733,6 +790,7 @@ const doctors = [
     availability: "Tue–Sat 11–3",
     consultation_mode: "both",
     avg_rating: 4.6,
+    Image: "/uploads/doctors/d58.jpeg",
   },
   {
     doctor_id: "D159",
@@ -745,6 +803,7 @@ const doctors = [
     availability: "Mon–Fri 4–8",
     consultation_mode: "online",
     avg_rating: 4.5,
+    Image: "/uploads/doctors/d59.jpeg",
   },
   {
     doctor_id: "D160",
@@ -757,5 +816,6 @@ const doctors = [
     availability: "Mon–Sat 9–1",
     consultation_mode: "both",
     avg_rating: 4.4,
+    Image: "/uploads/doctors/d60.jpeg",
   },
 ];
