@@ -13,7 +13,7 @@ const hospitals = [
     total_doctors: 180,
     avg_rating: 4.5,
     doctors_id: {},
-    Image: "/uploads/hospitals/h1.jpeg",
+    image: "/uploads/hospitals/h1.jpeg",
   },
   {
     hospital_id: "H002",
@@ -29,7 +29,7 @@ const hospitals = [
     total_doctors: 150,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h2.jpeg",
+    image: "/uploads/hospitals/h2.jpeg",
   },
   {
     hospital_id: "H003",
@@ -45,7 +45,7 @@ const hospitals = [
     total_doctors: 120,
     avg_rating: 4.3,
     doctors_id: {},
-    Image: "/uploads/hospitals/h3.jpeg",
+    image: "/uploads/hospitals/h3.jpeg",
   },
   {
     hospital_id: "H004",
@@ -61,7 +61,7 @@ const hospitals = [
     total_doctors: 300,
     avg_rating: 4.6,
     doctors_id: {},
-    Image: "/uploads/hospitals/h4.jpeg",
+    image: "/uploads/hospitals/h4.jpeg",
   },
   {
     hospital_id: "H005",
@@ -77,7 +77,7 @@ const hospitals = [
     total_doctors: 250,
     avg_rating: 4.2,
     doctors_id: {},
-    Image: "/uploads/hospitals/h5.jpeg",
+    image: "/uploads/hospitals/h5.jpeg",
   },
   {
     hospital_id: "H006",
@@ -93,7 +93,7 @@ const hospitals = [
     total_doctors: 160,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h6.jpeg",
+    image: "/uploads/hospitals/h6.jpeg",
   },
   {
     hospital_id: "H007",
@@ -109,7 +109,7 @@ const hospitals = [
     total_doctors: 140,
     avg_rating: 4.3,
     doctors_id: {},
-    Image: "/uploads/hospitals/h7.jpeg",
+    image: "/uploads/hospitals/h7.jpeg",
   },
   {
     hospital_id: "H008",
@@ -125,7 +125,7 @@ const hospitals = [
     total_doctors: 130,
     avg_rating: 4.5,
     doctors_id: {},
-    Image: "/uploads/hospitals/h8.jpeg",
+    image: "/uploads/hospitals/h8.jpeg",
   },
   {
     hospital_id: "H009",
@@ -141,7 +141,7 @@ const hospitals = [
     total_doctors: 110,
     avg_rating: 4.0,
     doctors_id: {},
-    Image: "/uploads/hospitals/h9.jpeg",
+    image: "/uploads/hospitals/h9.jpeg",
   },
   {
     hospital_id: "H010",
@@ -157,7 +157,7 @@ const hospitals = [
     total_doctors: 170,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h10.jpeg",
+    image: "/uploads/hospitals/h10.jpeg",
   },
   {
     hospital_id: "H011",
@@ -173,7 +173,7 @@ const hospitals = [
     total_doctors: 95,
     avg_rating: 4.2,
     doctors_id: {},
-    Image: "/uploads/hospitals/h11.jpeg",
+    image: "/uploads/hospitals/h11.jpeg",
   },
   {
     hospital_id: "H012",
@@ -189,7 +189,7 @@ const hospitals = [
     total_doctors: 80,
     avg_rating: 4.1,
     doctors_id: {},
-    Image: "/uploads/hospitals/h12.jpeg",
+    image: "/uploads/hospitals/h12.jpeg",
   },
   {
     hospital_id: "H013",
@@ -205,7 +205,7 @@ const hospitals = [
     total_doctors: 105,
     avg_rating: 4.3,
     doctors_id: {},
-    Image: "/uploads/hospitals/h13.jpeg",
+    image: "/uploads/hospitals/h13.jpeg",
   },
   {
     hospital_id: "H014",
@@ -221,7 +221,7 @@ const hospitals = [
     total_doctors: 60,
     avg_rating: 4.0,
     doctors_id: {},
-    Image: "/uploads/hospitals/h14.jpeg",
+    image: "/uploads/hospitals/h14.jpeg",
   },
   {
     hospital_id: "H015",
@@ -237,7 +237,7 @@ const hospitals = [
     total_doctors: 140,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h15.jpeg",
+    image: "/uploads/hospitals/h15.jpeg",
   },
   {
     hospital_id: "H016",
@@ -253,7 +253,7 @@ const hospitals = [
     total_doctors: 110,
     avg_rating: 3.9,
     doctors_id: {},
-    Image: "/uploads/hospitals/h16.jpeg",
+    image: "/uploads/hospitals/h16.jpeg",
   },
   {
     hospital_id: "H017",
@@ -269,7 +269,7 @@ const hospitals = [
     total_doctors: 85,
     avg_rating: 4.2,
     doctors_id: {},
-    Image: "/uploads/hospitals/h17.jpeg",
+    image: "/uploads/hospitals/h17.jpeg",
   },
   {
     hospital_id: "H018",
@@ -285,7 +285,7 @@ const hospitals = [
     total_doctors: 125,
     avg_rating: 4.3,
     doctors_id: {},
-    Image: "/uploads/hospitals/h18.jpeg",
+    image: "/uploads/hospitals/h18.jpeg",
   },
   {
     hospital_id: "H019",
@@ -301,7 +301,7 @@ const hospitals = [
     total_doctors: 135,
     avg_rating: 4.0,
     doctors_id: {},
-    Image: "/uploads/hospitals/h19.jpeg",
+    image: "/uploads/hospitals/h19.jpeg",
   },
   {
     hospital_id: "H020",
@@ -317,7 +317,7 @@ const hospitals = [
     total_doctors: 115,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h20.jpeg",
+    image: "/uploads/hospitals/h20.jpeg",
   },
   {
     hospital_id: "H021",
@@ -333,7 +333,7 @@ const hospitals = [
     total_doctors: 90,
     avg_rating: 4.1,
     doctors_id: {},
-    Image: "/uploads/hospitals/h21.jpeg",
+    image: "/uploads/hospitals/h21.jpeg",
   },
   {
     hospital_id: "H022",
@@ -349,7 +349,7 @@ const hospitals = [
     total_doctors: 100,
     avg_rating: 4.3,
     doctors_id: {},
-    Image: "/uploads/hospitals/h22.jpeg",
+    image: "/uploads/hospitals/h22.jpeg",
 
   },
   {
@@ -366,7 +366,7 @@ const hospitals = [
     total_doctors: 88,
     avg_rating: 4.2,
     doctors_id: {},
-    Image: "/uploads/hospitals/h23.jpeg",
+    image: "/uploads/hospitals/h23.jpeg",
   },
   {
     hospital_id: "H024",
@@ -382,7 +382,7 @@ const hospitals = [
     total_doctors: 70,
     avg_rating: 4.0,
     doctors_id: {},
-    Image: "/uploads/hospitals/h24.jpeg",
+    image: "/uploads/hospitals/h24.jpeg",
   },
   {
     hospital_id: "H025",
@@ -398,7 +398,7 @@ const hospitals = [
     total_doctors: 145,
     avg_rating: 4.1,
     doctors_id: {},
-    Image: "/uploads/hospitals/h25.jpeg",
+    image: "/uploads/hospitals/h25.jpeg",
   },
   {
     hospital_id: "H026",
@@ -414,7 +414,7 @@ const hospitals = [
     total_doctors: 130,
     avg_rating: 4.4,
     doctors_id: {},
-    Image: "/uploads/hospitals/h26.jpeg",
+    image: "/uploads/hospitals/h26.jpeg",
   },
   {
     hospital_id: "H027",
@@ -430,7 +430,7 @@ const hospitals = [
     total_doctors: 75,
     avg_rating: 4.1,
     doctors_id: {},
-    Image: "/uploads/hospitals/h27.jpeg",
+    image: "/uploads/hospitals/h27.jpeg",
   },
   {
     hospital_id: "H028",
@@ -446,7 +446,7 @@ const hospitals = [
     total_doctors: 120,
     avg_rating: 3.8,
     doctors_id: {},
-    Image: "/uploads/hospitals/h28.jpeg",
+    image: "/uploads/hospitals/h28.jpeg",
   },
   {
     hospital_id: "H029",
@@ -462,7 +462,7 @@ const hospitals = [
     total_doctors: 85,
     avg_rating: 4.2,
     doctors_id: {},
-    Image: "/uploads/hospitals/h29.jpeg",
+    image: "/uploads/hospitals/h29.jpeg",
   },
   {
     hospital_id: "H030",
@@ -478,7 +478,7 @@ const hospitals = [
     total_doctors: 160,
     avg_rating: 4.1,
     doctors_id: {},
-    Image: "/uploads/hospitals/h30.jpeg",
+    image: "/uploads/hospitals/h30.jpeg",
   },
 ];
 
