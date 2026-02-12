@@ -13,6 +13,7 @@ const hospitals = [
     total_doctors: 180,
     avg_rating: 4.5,
     doctors_id: {},
+    image: "uplodes\hospitals\clinic_1.jpeg",
   },
   {
     hospital_id: "H002",
