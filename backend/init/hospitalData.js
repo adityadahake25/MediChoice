@@ -350,7 +350,6 @@ const hospitals = [
     avg_rating: 4.3,
     doctors_id: {},
     image: "/uploads/hospitals/h22.jpeg",
-
   },
   {
     hospital_id: "H023",

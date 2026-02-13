@@ -9,7 +9,8 @@ import Footer from "./components/Footer";
 import ScrollToHash from "./utils/ScrollToHash";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HospitalsAll from "./pages/HospitalsAll";
+import HospitalsAll from "./pages/HospitalsAll/HospitalsAll.jsx";
+import ShowHospital from "./pages/ShowHospital/ShowHospital.jsx";
 
 function App() {
   return (
@@ -34,8 +35,11 @@ function App() {
           }
         />
 
-        {/* Hospitals Page */}
+        {/* All Hospitals Page */}
         <Route path="/hospitals" element={<HospitalsAll />} />
+
+        {/* Single Hospital Details Page */}
+        <Route path="/hospitals/:id" element={<ShowHospital />} />
       </Routes>
 
       <Footer />

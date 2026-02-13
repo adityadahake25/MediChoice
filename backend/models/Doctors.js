@@ -15,7 +15,9 @@ const doctorSchema = new mongoose.Schema(
 
     image: {
       type: String, // image path / URL
-      required: true,
+      // required: true,
+      default: "/uploads/doctors/d1.jpeg",
+      set: (v) => (v === "" ? "/uploads/doctors/d1.jpeg" : v),
     },
 
     specialization: {
@@ -28,8 +30,9 @@ const doctorSchema = new mongoose.Schema(
       required: true,
     },
 
-    hospital_id: {
-      type: String, // keeping string since we are using H001 format
+    hospital: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Hospital",
       required: true,
     },
 
@@ -44,7 +47,7 @@ const doctorSchema = new mongoose.Schema(
     },
 
     availability: {
-      type: String, // e.g. Mon–Fri 10–4
+      type: String,
     },
 
     consultation_mode: {

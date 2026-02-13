@@ -22,6 +22,8 @@ const hospitalSchema = new mongoose.Schema(
     image: {
       type: String, // image path / URL
       // required: true,
+      default: "/uploads/hospitals/h1.jpeg",
+      set: (v) => (v === "" ? "/uploads/hospitals/h1.jpeg" : v),
     },
 
     city: {
