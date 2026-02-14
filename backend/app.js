@@ -3,6 +3,7 @@ import cors from "cors";
 import Hospitals from "./models/Hospitals.js";
 import router from "./routes/hospitalRoutes.js";
 import ShowHospital from "./routes/showHospitalRoutes.js";
+import doctorRoutes from "./routes/doctorRoutes.js";
 
 const app = express();
 
@@ -14,5 +15,7 @@ app.use("/uploads", express.static("uploads"));
 
 app.use("/api/hospitals", router);
 app.use("/api/hospitals", ShowHospital);
+
+app.use("/api/doctors", doctorRoutes);
 
 export default app;

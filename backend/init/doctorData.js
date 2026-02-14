@@ -2,7 +2,7 @@ const doctors = [
   {
     doctor_id: "D001",
     doctor_name: "Dr. Sandeep Jha",
-    image: "/uploads/doctors/d001.jpeg",
+    image: "/uploads/doctors/d1.jpeg",
     specialization: "Cardiologist",
     experience_years: 15,
     hospital: {
@@ -34,7 +34,7 @@ const doctors = [
   {
     doctor_id: "D002",
     doctor_name: "Dr. Anjali Deshmukh",
-    image: "/uploads/doctors/d002.jpeg",
+    image: "/uploads/doctors/d2.jpeg",
     specialization: "Cardiologist",
     experience_years: 12,
     hospital: {
@@ -66,7 +66,7 @@ const doctors = [
   {
     doctor_id: "D003",
     doctor_name: "Dr. Vikram Kulkarni",
-    image: "/uploads/doctors/d003.jpeg",
+    image: "/uploads/doctors/d3.jpeg",
     specialization: "Cardiologist",
     experience_years: 20,
     hospital: {
@@ -102,7 +102,7 @@ const doctors = [
   {
     doctor_id: "D004",
     doctor_name: "Dr. Sunita Rao",
-    image: "/uploads/doctors/d004.jpeg",
+    image: "/uploads/doctors/d4.jpeg",
     specialization: "Cardiologist",
     experience_years: 9,
     hospital: {
@@ -134,7 +134,7 @@ const doctors = [
   {
     doctor_id: "D005",
     doctor_name: "Dr. Rajesh Mehra",
-    image: "/uploads/doctors/d005.jpeg",
+    image: "/uploads/doctors/d5.jpeg",
     specialization: "Dermatologist",
     experience_years: 14,
     hospital: {
@@ -166,7 +166,7 @@ const doctors = [
   {
     doctor_id: "D006",
     doctor_name: "Dr. Neha Gupte",
-    image: "/uploads/doctors/d006.jpeg",
+    image: "/uploads/doctors/d6.jpeg",
     specialization: "Dermatologist",
     experience_years: 8,
     hospital: {
@@ -198,7 +198,7 @@ const doctors = [
   {
     doctor_id: "D007",
     doctor_name: "Dr. Amit Bansal",
-    image: "/uploads/doctors/d007.jpeg",
+    image: "/uploads/doctors/d7.jpeg",
     specialization: "Dermatologist",
     experience_years: 18,
     hospital: {
@@ -230,7 +230,7 @@ const doctors = [
   {
     doctor_id: "D008",
     doctor_name: "Dr. Shalini Varma",
-    image: "/uploads/doctors/d008.jpeg",
+    image: "/uploads/doctors/d8.jpeg",
     specialization: "Dermatologist",
     experience_years: 10,
     hospital: {
@@ -262,7 +262,7 @@ const doctors = [
   {
     doctor_id: "D009",
     doctor_name: "Dr. Manoj Tiwari",
-    image: "/uploads/doctors/d009.jpeg",
+    image: "/uploads/doctors/d9.jpeg",
     specialization: "Orthopedic",
     experience_years: 22,
     hospital: {
@@ -298,7 +298,7 @@ const doctors = [
   {
     doctor_id: "D010",
     doctor_name: "Dr. Pooja Singhal",
-    image: "/uploads/doctors/d010.jpeg",
+    image: "/uploads/doctors/d10.jpeg",
     specialization: "Orthopedic",
     experience_years: 11,
     hospital: {
@@ -330,7 +330,7 @@ const doctors = [
   {
     doctor_id: "D011",
     doctor_name: "Dr. Rohan Malhotra",
-    image: "/uploads/doctors/d011.jpeg",
+    image: "/uploads/doctors/d11.jpeg",
     specialization: "Orthopedic",
     experience_years: 15,
     hospital: {
@@ -362,7 +362,7 @@ const doctors = [
   {
     doctor_id: "D012",
     doctor_name: "Dr. Kavita Bhalla",
-    image: "/uploads/doctors/d012.jpeg",
+    image: "/uploads/doctors/d12.jpeg",
     specialization: "Orthopedic",
     experience_years: 7,
     hospital: {
@@ -394,7 +394,7 @@ const doctors = [
   {
     doctor_id: "D013",
     doctor_name: "Dr. Harish Chandra",
-    image: "/uploads/doctors/d013.jpeg",
+    image: "/uploads/doctors/d13.jpeg",
     specialization: "Neurologist",
     experience_years: 19,
     hospital: {
@@ -426,7 +426,7 @@ const doctors = [
   {
     doctor_id: "D014",
     doctor_name: "Dr. Swati Khetarpal",
-    image: "/uploads/doctors/d014.jpeg",
+    image: "/uploads/doctors/d14.jpeg",
     specialization: "Neurologist",
     experience_years: 13,
     hospital: {
@@ -458,7 +458,7 @@ const doctors = [
   {
     doctor_id: "D015",
     doctor_name: "Dr. Rahul Shrivastav",
-    image: "/uploads/doctors/d015.jpeg",
+    image: "/uploads/doctors/d15.jpeg",
     specialization: "Neurologist",
     experience_years: 16,
     hospital: {
@@ -490,7 +490,7 @@ const doctors = [
   {
     doctor_id: "D016",
     doctor_name: "Dr. Priya Nair",
-    image: "/uploads/doctors/d016.jpeg",
+    image: "/uploads/doctors/d16.jpeg",
     specialization: "Neurologist",
     experience_years: 10,
     hospital: {
@@ -522,7 +522,7 @@ const doctors = [
   {
     doctor_id: "D017",
     doctor_name: "Dr. S. K. Subramanian",
-    image: "/uploads/doctors/d017.jpeg",
+    image: "/uploads/doctors/d17.jpeg",
     specialization: "Pediatrician",
     experience_years: 25,
     hospital: {
@@ -554,7 +554,7 @@ const doctors = [
   {
     doctor_id: "D018",
     doctor_name: "Dr. Bharti Sahay",
-    image: "/uploads/doctors/d018.jpeg",
+    image: "/uploads/doctors/d18.jpeg",
     specialization: "Pediatrician",
     experience_years: 14,
     hospital: {
@@ -586,7 +586,7 @@ const doctors = [
   {
     doctor_id: "D019",
     doctor_name: "Dr. Ashish Gupta",
-    image: "/uploads/doctors/d019.jpeg",
+    image: "/uploads/doctors/d19.jpeg",
     specialization: "Pediatrician",
     experience_years: 11,
     hospital: {
@@ -618,7 +618,7 @@ const doctors = [
   {
     doctor_id: "D020",
     doctor_name: "Dr. Meera Pandey",
-    image: "/uploads/doctors/d020.jpeg",
+    image: "/uploads/doctors/d20.jpeg",
     specialization: "Pediatrician",
     experience_years: 8,
     hospital: {
@@ -650,7 +650,7 @@ const doctors = [
   {
     doctor_id: "D021",
     doctor_name: "Dr. R. K. Bharadwaj",
-    image: "/uploads/doctors/d021.jpeg",
+    image: "/uploads/doctors/d21.jpeg",
     specialization: "Psychiatrist",
     experience_years: 18,
     hospital: {
@@ -682,7 +682,7 @@ const doctors = [
   {
     doctor_id: "D022",
     doctor_name: "Dr. Aradhana Sharma",
-    image: "/uploads/doctors/d022.jpeg",
+    image: "/uploads/doctors/d22.jpeg",
     specialization: "Psychiatrist",
     experience_years: 12,
     hospital: {
@@ -718,7 +718,7 @@ const doctors = [
   {
     doctor_id: "D023",
     doctor_name: "Dr. Vinay Hegde",
-    image: "/uploads/doctors/d023.jpeg",
+    image: "/uploads/doctors/d23.jpeg",
     specialization: "Psychiatrist",
     experience_years: 15,
     hospital: {
@@ -758,7 +758,7 @@ const doctors = [
   {
     doctor_id: "D024",
     doctor_name: "Dr. Sunayana Hegde",
-    image: "/uploads/doctors/d024.jpeg",
+    image: "/uploads/doctors/d24.jpeg",
     specialization: "Psychiatrist",
     experience_years: 9,
     hospital: {
@@ -794,7 +794,7 @@ const doctors = [
   {
     doctor_id: "D025",
     doctor_name: "Dr. T. P. Gopinath",
-    image: "/uploads/doctors/d025.jpeg",
+    image: "/uploads/doctors/d25.jpeg",
     specialization: "Oncologist",
     experience_years: 23,
     hospital: {
@@ -826,7 +826,7 @@ const doctors = [
   {
     doctor_id: "D026",
     doctor_name: "Dr. Smita Deshpande",
-    image: "/uploads/doctors/d026.jpeg",
+    image: "/uploads/doctors/d26.jpeg",
     specialization: "Oncologist",
     experience_years: 16,
     hospital: {
@@ -866,7 +866,7 @@ const doctors = [
   {
     doctor_id: "D027",
     doctor_name: "Dr. Aniket Sawant",
-    image: "/uploads/doctors/d027.jpeg",
+    image: "/uploads/doctors/d27.jpeg",
     specialization: "Oncologist",
     experience_years: 14,
     hospital: {
@@ -898,7 +898,7 @@ const doctors = [
   {
     doctor_id: "D028",
     doctor_name: "Dr. Varsha Gaitonde",
-    image: "/uploads/doctors/d028.jpeg",
+    image: "/uploads/doctors/d28.jpeg",
     specialization: "Oncologist",
     experience_years: 11,
     hospital: {
@@ -930,7 +930,7 @@ const doctors = [
   {
     doctor_id: "D029",
     doctor_name: "Dr. Pradeep Chawla",
-    image: "/uploads/doctors/d029.jpeg",
+    image: "/uploads/doctors/d29.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 21,
     hospital: {
@@ -962,7 +962,7 @@ const doctors = [
   {
     doctor_id: "D030",
     doctor_name: "Dr. Richa Sharma",
-    image: "/uploads/doctors/d030.jpeg",
+    image: "/uploads/doctors/d30.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 12,
     hospital: {
@@ -994,7 +994,7 @@ const doctors = [
   {
     doctor_id: "D031",
     doctor_name: "Dr. Sanjeev Bakshi",
-    image: "/uploads/doctors/d031.jpeg",
+    image: "/uploads/doctors/d31.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 15,
     hospital: {
@@ -1030,11 +1030,11 @@ const doctors = [
   {
     doctor_id: "D032",
     doctor_name: "Dr. Monika Rastogi",
-    image: "/uploads/doctors/d032.jpeg",
+    image: "/uploads/doctors/d32.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 9,
     hospital: {
-      hospital_id: "H008",
+      hospital_id: "H021",
       hospital_name: "Medanta Medicity",
       city: "Gurugram",
       state: "Haryana",
@@ -1066,7 +1066,7 @@ const doctors = [
   {
     doctor_id: "D033",
     doctor_name: "Dr. K. S. Reddy",
-    image: "/uploads/doctors/d033.jpeg",
+    image: "/uploads/doctors/d33.jpeg",
     specialization: "Cardiologist",
     experience_years: 28,
     hospital: {
@@ -1098,7 +1098,7 @@ const doctors = [
   {
     doctor_id: "D034",
     doctor_name: "Dr. Swapna Goud",
-    image: "/uploads/doctors/d034.jpeg",
+    image: "/uploads/doctors/d34.jpeg",
     specialization: "Cardiologist",
     experience_years: 14,
     hospital: {
@@ -1134,7 +1134,7 @@ const doctors = [
   {
     doctor_id: "D035",
     doctor_name: "Dr. V. Ravindran",
-    image: "/uploads/doctors/d035.jpeg",
+    image: "/uploads/doctors/d35.jpeg",
     specialization: "Cardiologist",
     experience_years: 18,
     hospital: {
@@ -1166,7 +1166,7 @@ const doctors = [
   {
     doctor_id: "D036",
     doctor_name: "Dr. Lakshmi Prasad",
-    image: "/uploads/doctors/d036.jpeg",
+    image: "/uploads/doctors/d36.jpeg",
     specialization: "Cardiologist",
     experience_years: 11,
     hospital: {
@@ -1202,7 +1202,7 @@ const doctors = [
   {
     doctor_id: "D037",
     doctor_name: "Dr. Pranav Chatterjee",
-    image: "/uploads/doctors/d037.jpeg",
+    image: "/uploads/doctors/d37.jpeg",
     specialization: "Neurologist",
     experience_years: 22,
     hospital: {
@@ -1234,7 +1234,7 @@ const doctors = [
   {
     doctor_id: "D038",
     doctor_name: "Dr. Mousumi Dutta",
-    image: "/uploads/doctors/d038.jpeg",
+    image: "/uploads/doctors/d38.jpeg",
     specialization: "Neurologist",
     experience_years: 15,
     hospital: {
@@ -1266,7 +1266,7 @@ const doctors = [
   {
     doctor_id: "D039",
     doctor_name: "Dr. Subhashish Roy",
-    image: "/uploads/doctors/d039.jpeg",
+    image: "/uploads/doctors/d39.jpeg",
     specialization: "Neurologist",
     experience_years: 12,
     hospital: {
@@ -1298,7 +1298,7 @@ const doctors = [
   {
     doctor_id: "D040",
     doctor_name: "Dr. Debasree Banerjee",
-    image: "/uploads/doctors/d040.jpeg",
+    image: "/uploads/doctors/d40.jpeg",
     specialization: "Neurologist",
     experience_years: 9,
     hospital: {
@@ -1330,7 +1330,7 @@ const doctors = [
   {
     doctor_id: "D041",
     doctor_name: "Dr. S. Muralidharan",
-    image: "/uploads/doctors/d041.jpeg",
+    image: "/uploads/doctors/d41.jpeg",
     specialization: "Pediatrician",
     experience_years: 30,
     hospital: {
@@ -1366,7 +1366,7 @@ const doctors = [
   {
     doctor_id: "D042",
     doctor_name: "Dr. K. Shalini Reddy",
-    image: "/uploads/doctors/d042.jpeg",
+    image: "/uploads/doctors/d42.jpeg",
     specialization: "Pediatrician",
     experience_years: 15,
     hospital: {
@@ -1398,7 +1398,7 @@ const doctors = [
   {
     doctor_id: "D043",
     doctor_name: "Dr. P. V. Ramana",
-    image: "/uploads/doctors/d043.jpeg",
+    image: "/uploads/doctors/d43.jpeg",
     specialization: "Pediatrician",
     experience_years: 12,
     hospital: {
@@ -1430,7 +1430,7 @@ const doctors = [
   {
     doctor_id: "D044",
     doctor_name: "Dr. G. Sridevi",
-    image: "/uploads/doctors/d044.jpeg",
+    image: "/uploads/doctors/d44.jpeg",
     specialization: "Pediatrician",
     experience_years: 9,
     hospital: {
@@ -1462,7 +1462,7 @@ const doctors = [
   {
     doctor_id: "D045",
     doctor_name: "Dr. Ashwani Vaishnaw",
-    image: "/uploads/doctors/d045.jpeg",
+    image: "/uploads/doctors/d45.jpeg",
     specialization: "Orthopedic",
     experience_years: 24,
     hospital: {
@@ -1498,7 +1498,7 @@ const doctors = [
   {
     doctor_id: "D046",
     doctor_name: "Dr. Preeti Deshmukh",
-    image: "/uploads/doctors/d046.jpeg",
+    image: "/uploads/doctors/d46.jpeg",
     specialization: "Orthopedic",
     experience_years: 16,
     hospital: {
@@ -1534,7 +1534,7 @@ const doctors = [
   {
     doctor_id: "D047",
     doctor_name: "Dr. Sameer Kulkarni",
-    image: "/uploads/doctors/d047.jpeg",
+    image: "/uploads/doctors/d47.jpeg",
     specialization: "Orthopedic",
     experience_years: 13,
     hospital: {
@@ -1566,7 +1566,7 @@ const doctors = [
   {
     doctor_id: "D048",
     doctor_name: "Dr. Neerja Sathe",
-    image: "/uploads/doctors/d048.jpeg",
+    image: "/uploads/doctors/d48.jpeg",
     specialization: "Orthopedic",
     experience_years: 10,
     hospital: {
@@ -1598,7 +1598,7 @@ const doctors = [
   {
     doctor_id: "D049",
     doctor_name: "Dr. Harshvardhan Puri",
-    image: "/uploads/doctors/d049.jpeg",
+    image: "/uploads/doctors/d49.jpeg",
     specialization: "Oncologist",
     experience_years: 20,
     hospital: {
@@ -1630,7 +1630,7 @@ const doctors = [
   {
     doctor_id: "D050",
     doctor_name: "Dr. Jayanthi Raman",
-    image: "/uploads/doctors/d050.jpeg",
+    image: "/uploads/doctors/d50.jpeg",
     specialization: "Oncologist",
     experience_years: 17,
     hospital: {
@@ -1666,7 +1666,7 @@ const doctors = [
   {
     doctor_id: "D051",
     doctor_name: "Dr. S. Senthil Kumar",
-    image: "/uploads/doctors/d051.jpeg",
+    image: "/uploads/doctors/d51.jpeg",
     specialization: "Oncologist",
     experience_years: 15,
     hospital: {
@@ -1698,7 +1698,7 @@ const doctors = [
   {
     doctor_id: "D052",
     doctor_name: "Dr. Uma Maheshwari",
-    image: "/uploads/doctors/d052.jpeg",
+    image: "/uploads/doctors/d52.jpeg",
     specialization: "Oncologist",
     experience_years: 12,
     hospital: {
@@ -1730,7 +1730,7 @@ const doctors = [
   {
     doctor_id: "D053",
     doctor_name: "Dr. Pankaj Khurana",
-    image: "/uploads/doctors/d053.jpeg",
+    image: "/uploads/doctors/d53.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 19,
     hospital: {
@@ -1766,7 +1766,7 @@ const doctors = [
   {
     doctor_id: "D054",
     doctor_name: "Dr. Shruti Bhalla",
-    image: "/uploads/doctors/d054.jpeg",
+    image: "/uploads/doctors/d54.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 14,
     hospital: {
@@ -1798,7 +1798,7 @@ const doctors = [
   {
     doctor_id: "D055",
     doctor_name: "Dr. Rajeshwar Singh",
-    image: "/uploads/doctors/d055.jpeg",
+    image: "/uploads/doctors/d55.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 16,
     hospital: {
@@ -1834,7 +1834,7 @@ const doctors = [
   {
     doctor_id: "D056",
     doctor_name: "Dr. Vandana Sethi",
-    image: "/uploads/doctors/d056.jpeg",
+    image: "/uploads/doctors/d56.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 11,
     hospital: {
@@ -1866,7 +1866,7 @@ const doctors = [
   {
     doctor_id: "D057",
     doctor_name: "Dr. B. K. Chattopadhyay",
-    image: "/uploads/doctors/d057.jpeg",
+    image: "/uploads/doctors/d57.jpeg",
     specialization: "Cardiologist",
     experience_years: 25,
     hospital: {
@@ -1898,7 +1898,7 @@ const doctors = [
   {
     doctor_id: "D058",
     doctor_name: "Dr. Sohini Sengupta",
-    image: "/uploads/doctors/d058.jpeg",
+    image: "/uploads/doctors/d58.jpeg",
     specialization: "Cardiologist",
     experience_years: 15,
     hospital: {
@@ -1930,7 +1930,7 @@ const doctors = [
   {
     doctor_id: "D059",
     doctor_name: "Dr. Aniruddha Bose",
-    image: "/uploads/doctors/d059.jpeg",
+    image: "/uploads/doctors/d59.jpeg",
     specialization: "Cardiologist",
     experience_years: 13,
     hospital: {
@@ -1966,7 +1966,7 @@ const doctors = [
   {
     doctor_id: "D060",
     doctor_name: "Dr. Tanima Mukherjee",
-    image: "/uploads/doctors/d060.jpeg",
+    image: "/uploads/doctors/d60.jpeg",
     specialization: "Cardiologist",
     experience_years: 10,
     hospital: {
@@ -1998,7 +1998,7 @@ const doctors = [
   {
     doctor_id: "D061",
     doctor_name: "Dr. Balwant Singh",
-    image: "/uploads/doctors/d061.jpeg",
+    image: "/uploads/doctors/d61.jpeg",
     specialization: "Neurologist",
     experience_years: 22,
     hospital: {
@@ -2030,7 +2030,7 @@ const doctors = [
   {
     doctor_id: "D062",
     doctor_name: "Dr. Neerja Rathore",
-    image: "/uploads/doctors/d062.jpeg",
+    image: "/uploads/doctors/d62.jpeg",
     specialization: "Neurologist",
     experience_years: 13,
     hospital: {
@@ -2062,7 +2062,7 @@ const doctors = [
   {
     doctor_id: "D063",
     doctor_name: "Dr. Gajendra Shekhawat",
-    image: "/uploads/doctors/d063.jpeg",
+    image: "/uploads/doctors/d63.jpeg",
     specialization: "Neurologist",
     experience_years: 16,
     hospital: {
@@ -2094,7 +2094,7 @@ const doctors = [
   {
     doctor_id: "D064",
     doctor_name: "Dr. Priyanka Gehlot",
-    image: "/uploads/doctors/d064.jpeg",
+    image: "/uploads/doctors/d64.jpeg",
     specialization: "Neurologist",
     experience_years: 10,
     hospital: {
@@ -2126,7 +2126,7 @@ const doctors = [
   {
     doctor_id: "D065",
     doctor_name: "Dr. Ashwani K. Sinha",
-    image: "/uploads/doctors/d065.jpeg",
+    image: "/uploads/doctors/d65.jpeg",
     specialization: "Psychiatrist",
     experience_years: 26,
     hospital: {
@@ -2162,7 +2162,7 @@ const doctors = [
   {
     doctor_id: "D066",
     doctor_name: "Dr. Sweta Mahto",
-    image: "/uploads/doctors/d066.jpeg",
+    image: "/uploads/doctors/d66.jpeg",
     specialization: "Psychiatrist",
     experience_years: 14,
     hospital: {
@@ -2194,7 +2194,7 @@ const doctors = [
   {
     doctor_id: "D067",
     doctor_name: "Dr. Vinay Oraon",
-    image: "/uploads/doctors/d067.jpeg",
+    image: "/uploads/doctors/d67.jpeg",
     specialization: "Psychiatrist",
     experience_years: 12,
     hospital: {
@@ -2230,7 +2230,7 @@ const doctors = [
   {
     doctor_id: "D068",
     doctor_name: "Dr. Archana Kumari",
-    image: "/uploads/doctors/d068.jpeg",
+    image: "/uploads/doctors/d68.jpeg",
     specialization: "Psychiatrist",
     experience_years: 10,
     hospital: {
@@ -2266,7 +2266,7 @@ const doctors = [
   {
     doctor_id: "D069",
     doctor_name: "Dr. M. S. Gopalakrishnan",
-    image: "/uploads/doctors/d069.jpeg",
+    image: "/uploads/doctors/d69.jpeg",
     specialization: "Cardiologist",
     experience_years: 24,
     hospital: {
@@ -2298,7 +2298,7 @@ const doctors = [
   {
     doctor_id: "D070",
     doctor_name: "Dr. Lakshmi Nambiar",
-    image: "/uploads/doctors/d070.jpeg",
+    image: "/uploads/doctors/d70.jpeg",
     specialization: "Cardiologist",
     experience_years: 15,
     hospital: {
@@ -2334,7 +2334,7 @@ const doctors = [
   {
     doctor_id: "D071",
     doctor_name: "Dr. Thomas Jacob",
-    image: "/uploads/doctors/d071.jpeg",
+    image: "/uploads/doctors/d71.jpeg",
     specialization: "Cardiologist",
     experience_years: 12,
     hospital: {
@@ -2366,7 +2366,7 @@ const doctors = [
   {
     doctor_id: "D072",
     doctor_name: "Dr. Sreeja Warrier",
-    image: "/uploads/doctors/d072.jpeg",
+    image: "/uploads/doctors/d72.jpeg",
     specialization: "Cardiologist",
     experience_years: 9,
     hospital: {
@@ -2398,7 +2398,7 @@ const doctors = [
   {
     doctor_id: "D073",
     doctor_name: "Dr. Sanjay Gokhale",
-    image: "/uploads/doctors/d073.jpeg",
+    image: "/uploads/doctors/d73.jpeg",
     specialization: "Orthopedic",
     experience_years: 22,
     hospital: {
@@ -2434,7 +2434,7 @@ const doctors = [
   {
     doctor_id: "D074",
     doctor_name: "Dr. Arundhati Kulkarni",
-    image: "/uploads/doctors/d074.jpeg",
+    image: "/uploads/doctors/d74.jpeg",
     specialization: "Orthopedic",
     experience_years: 13,
     hospital: {
@@ -2466,7 +2466,7 @@ const doctors = [
   {
     doctor_id: "D075",
     doctor_name: "Dr. Milind Soman",
-    image: "/uploads/doctors/d075.jpeg",
+    image: "/uploads/doctors/d75.jpeg",
     specialization: "Orthopedic",
     experience_years: 15,
     hospital: {
@@ -2498,7 +2498,7 @@ const doctors = [
   {
     doctor_id: "D076",
     doctor_name: "Dr. Shalini Deshpande",
-    image: "/uploads/doctors/d076.jpeg",
+    image: "/uploads/doctors/d76.jpeg",
     specialization: "Orthopedic",
     experience_years: 9,
     hospital: {
@@ -2530,7 +2530,7 @@ const doctors = [
   {
     doctor_id: "D077",
     doctor_name: "Dr. Bhaskar Rao",
-    image: "/uploads/doctors/d077.jpeg",
+    image: "/uploads/doctors/d77.jpeg",
     specialization: "Dermatologist",
     experience_years: 18,
     hospital: {
@@ -2562,7 +2562,7 @@ const doctors = [
   {
     doctor_id: "D078",
     doctor_name: "Dr. Sravanthi Reddy",
-    image: "/uploads/doctors/d078.jpeg",
+    image: "/uploads/doctors/d78.jpeg",
     specialization: "Dermatologist",
     experience_years: 12,
     hospital: {
@@ -2594,7 +2594,7 @@ const doctors = [
   {
     doctor_id: "D079",
     doctor_name: "Dr. Naveen Kumar",
-    image: "/uploads/doctors/d079.jpeg",
+    image: "/uploads/doctors/d79.jpeg",
     specialization: "Dermatologist",
     experience_years: 15,
     hospital: {
@@ -2626,7 +2626,7 @@ const doctors = [
   {
     doctor_id: "D080",
     doctor_name: "Dr. Deepa Krishnan",
-    image: "/uploads/doctors/d080.jpeg",
+    image: "/uploads/doctors/d80.jpeg",
     specialization: "Dermatologist",
     experience_years: 10,
     hospital: {
@@ -2658,7 +2658,7 @@ const doctors = [
   {
     doctor_id: "D081",
     doctor_name: "Dr. Sandeep Gokhale",
-    image: "/uploads/doctors/d081.jpeg",
+    image: "/uploads/doctors/d81.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 19,
     hospital: {
@@ -2694,7 +2694,7 @@ const doctors = [
   {
     doctor_id: "D082",
     doctor_name: "Dr. Arundhati Kulkarni",
-    image: "/uploads/doctors/d082.jpeg",
+    image: "/uploads/doctors/d82.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 11,
     hospital: {
@@ -2726,7 +2726,7 @@ const doctors = [
   {
     doctor_id: "D083",
     doctor_name: "Dr. Milind Soman",
-    image: "/uploads/doctors/d083.jpeg",
+    image: "/uploads/doctors/d83.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 14,
     hospital: {
@@ -2758,7 +2758,7 @@ const doctors = [
   {
     doctor_id: "D084",
     doctor_name: "Dr. Shalini Deshpande",
-    image: "/uploads/doctors/d084.jpeg",
+    image: "/uploads/doctors/d84.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 9,
     hospital: {
@@ -2794,7 +2794,7 @@ const doctors = [
   {
     doctor_id: "D085",
     doctor_name: "Dr. Raghavan Pillai",
-    image: "/uploads/doctors/d085.jpeg",
+    image: "/uploads/doctors/d85.jpeg",
     specialization: "Neurologist",
     experience_years: 23,
     hospital: {
@@ -2826,7 +2826,7 @@ const doctors = [
   {
     doctor_id: "D086",
     doctor_name: "Dr. Meera Nambiar",
-    image: "/uploads/doctors/d086.jpeg",
+    image: "/uploads/doctors/d86.jpeg",
     specialization: "Neurologist",
     experience_years: 12,
     hospital: {
@@ -2858,7 +2858,7 @@ const doctors = [
   {
     doctor_id: "D087",
     doctor_name: "Dr. Thomas Jacob",
-    image: "/uploads/doctors/d087.jpeg",
+    image: "/uploads/doctors/d87.jpeg",
     specialization: "Neurologist",
     experience_years: 15,
     hospital: {
@@ -2890,7 +2890,7 @@ const doctors = [
   {
     doctor_id: "D088",
     doctor_name: "Dr. Lakshmi Warrier",
-    image: "/uploads/doctors/d088.jpeg",
+    image: "/uploads/doctors/d88.jpeg",
     specialization: "Neurologist",
     experience_years: 8,
     hospital: {
@@ -2922,7 +2922,7 @@ const doctors = [
   {
     doctor_id: "D089",
     doctor_name: "Dr. Vikramaditya Singh",
-    image: "/uploads/doctors/d089.jpeg",
+    image: "/uploads/doctors/d89.jpeg",
     specialization: "Orthopedic",
     experience_years: 17,
     hospital: {
@@ -2958,7 +2958,7 @@ const doctors = [
   {
     doctor_id: "D090",
     doctor_name: "Dr. Neerja Rathore",
-    image: "/uploads/doctors/d090.jpeg",
+    image: "/uploads/doctors/d90.jpeg",
     specialization: "Orthopedic",
     experience_years: 12,
     hospital: {
@@ -2990,7 +2990,7 @@ const doctors = [
   {
     doctor_id: "D091",
     doctor_name: "Dr. Gajendra Chauhan",
-    image: "/uploads/doctors/d091.jpeg",
+    image: "/uploads/doctors/d91.jpeg",
     specialization: "Orthopedic",
     experience_years: 14,
     hospital: {
@@ -3022,7 +3022,7 @@ const doctors = [
   {
     doctor_id: "D092",
     doctor_name: "Dr. Bhavna Sharma",
-    image: "/uploads/doctors/d092.jpeg",
+    image: "/uploads/doctors/d92.jpeg",
     specialization: "Orthopedic",
     experience_years: 7,
     hospital: {
@@ -3054,7 +3054,7 @@ const doctors = [
   {
     doctor_id: "D093",
     doctor_name: "Dr. Rameshwar Singh",
-    image: "/uploads/doctors/d093.jpeg",
+    image: "/uploads/doctors/d93.jpeg",
     specialization: "Psychiatrist",
     experience_years: 21,
     hospital: {
@@ -3090,7 +3090,7 @@ const doctors = [
   {
     doctor_id: "D094",
     doctor_name: "Dr. Ananya Chatterjee",
-    image: "/uploads/doctors/d094.jpeg",
+    image: "/uploads/doctors/d94.jpeg",
     specialization: "Psychiatrist",
     experience_years: 10,
     hospital: {
@@ -3122,7 +3122,7 @@ const doctors = [
   {
     doctor_id: "D095",
     doctor_name: "Dr. Binod Kumar",
-    image: "/uploads/doctors/d095.jpeg",
+    image: "/uploads/doctors/d95.jpeg",
     specialization: "Psychiatrist",
     experience_years: 15,
     hospital: {
@@ -3154,7 +3154,7 @@ const doctors = [
   {
     doctor_id: "D096",
     doctor_name: "Dr. Sunita Murmu",
-    image: "/uploads/doctors/d096.jpeg",
+    image: "/uploads/doctors/d96.jpeg",
     specialization: "Psychiatrist",
     experience_years: 13,
     hospital: {
@@ -3190,7 +3190,7 @@ const doctors = [
   {
     doctor_id: "D097",
     doctor_name: "Dr. Ashwani Vaishnaw",
-    image: "/uploads/doctors/d097.jpeg",
+    image: "/uploads/doctors/d97.jpeg",
     specialization: "Oncologist",
     experience_years: 18,
     hospital: {
@@ -3222,7 +3222,7 @@ const doctors = [
   {
     doctor_id: "D098",
     doctor_name: "Dr. Priyanka Gehlot",
-    image: "/uploads/doctors/d098.jpeg",
+    image: "/uploads/doctors/d98.jpeg",
     specialization: "Oncologist",
     experience_years: 12,
     hospital: {
@@ -3258,7 +3258,7 @@ const doctors = [
   {
     doctor_id: "D099",
     doctor_name: "Dr. Manish Lodha",
-    image: "/uploads/doctors/d099.jpeg",
+    image: "/uploads/doctors/d99.jpeg",
     specialization: "Oncologist",
     experience_years: 15,
     hospital: {

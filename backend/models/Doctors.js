@@ -1,5 +1,37 @@
 import mongoose from "mongoose";
 
+/* ================= EDUCATION SUB-SCHEMA ================= */
+
+const educationSchema = new mongoose.Schema({
+  degree: {
+    type: String,
+    required: true,
+  },
+  institute: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+});
+
+/* ================= AVAILABILITY SUB-SCHEMA ================= */
+
+const availabilitySchema = new mongoose.Schema({
+  days: [
+    {
+      type: String,
+    },
+  ],
+  timings: {
+    type: String,
+  },
+});
+
+/* ================= DOCTOR SCHEMA ================= */
+
 const doctorSchema = new mongoose.Schema(
   {
     doctor_id: {
@@ -14,8 +46,7 @@ const doctorSchema = new mongoose.Schema(
     },
 
     image: {
-      type: String, // image path / URL
-      // required: true,
+      type: String,
       default: "/uploads/doctors/d1.jpeg",
       set: (v) => (v === "" ? "/uploads/doctors/d1.jpeg" : v),
     },
@@ -30,6 +61,7 @@ const doctorSchema = new mongoose.Schema(
       required: true,
     },
 
+    /* 🔥 Proper Relationship (BEST PRACTICE) */
     hospital: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Hospital",
@@ -46,9 +78,7 @@ const doctorSchema = new mongoose.Schema(
       required: true,
     },
 
-    availability: {
-      type: String,
-    },
+    availability: availabilitySchema,
 
     consultation_mode: {
       type: String,
@@ -61,6 +91,39 @@ const doctorSchema = new mongoose.Schema(
       min: 0,
       max: 5,
       default: 0,
+    },
+
+    total_reviews: {
+      type: Number,
+      default: 0,
+    },
+
+    education: [educationSchema],
+
+    certifications: [
+      {
+        type: String,
+      },
+    ],
+
+    services: [
+      {
+        type: String,
+      },
+    ],
+
+    about: {
+      type: String,
+    },
+
+    patients_treated: {
+      type: Number,
+      default: 0,
+    },
+
+    verified: {
+      type: Boolean,
+      default: false,
     },
   },
   { timestamps: true },
