@@ -1,0 +1,1938 @@
+const hospitals = [
+  {
+    hospital_id: "H001",
+    hospital_name: "Apollo Hospitals",
+    hospital_type: "Private",
+    description:
+      "A premier multi-specialty healthcare provider known for clinical excellence and advanced robotic surgeries.",
+    location: {
+      address: "Sarita Vihar, Delhi Mathura Road",
+      city: "Delhi",
+      state: "Delhi",
+      country: "India",
+      pincode: "110076",
+      latitude: 28.5416,
+      longitude: 77.2832,
+    },
+    contact: { phone: "01126925858", email: "infodelhi@apollohospitals.com" },
+    facilities: [
+      "ICU",
+      "MRI",
+      "CT Scan",
+      "Pathology Lab",
+      "Pharmacy",
+      "Robotic Surgery",
+      "Emergency Room",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 250,
+      bed_capacity: 710,
+      icu_beds: 120,
+      operation_theatres: 15,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: [
+        "Star Health",
+        "HDFC ERGO",
+        "ICICI Lombard",
+        "Care Health",
+      ],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "09:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 4500 },
+    graph: {
+      success_rate: 94,
+      hospital_rating: 88,
+      doctors_rating: 96,
+      average_rating: 91,
+    },
+    reviews: [
+      {
+        patient_name: "Ankit Verma",
+        rating: 5,
+        comment: "World-class facilities and very supportive staff.",
+      },
+      {
+        patient_name: "Meera Nair",
+        rating: 4,
+        comment: "Wait times can be long, but the doctors are experts.",
+      },
+    ],
+    image: "/uploads/hospitals/h1.jpeg",
+  },
+
+  {
+    hospital_id: "H002",
+    hospital_name: "Fortis Memorial Research Institute",
+    hospital_type: "Private",
+    description:
+      "A quaternary care hospital with a focus on high-end technology and international patient care.",
+    location: {
+      address: "Sector 44, Opposite HUDA City Centre",
+      city: "Gurgaon",
+      state: "Haryana",
+      country: "India",
+      pincode: "122002",
+      latitude: 28.4595,
+      longitude: 77.0588,
+    },
+    contact: { phone: "01244921021", email: "enquiry@fortishealthcare.com" },
+    facilities: [
+      "ICU",
+      "3 Tesla MRI",
+      "256 Slice CT",
+      "Bone Marrow Transplant Unit",
+      "NICU",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 180,
+      bed_capacity: 450,
+      icu_beds: 95,
+      operation_theatres: 12,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Niva Bupa", "Bajaj Allianz", "Star Health"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:30 PM" },
+    ratings: { avg_rating: 4.4, total_reviews: 3200 },
+    graph: {
+      success_rate: 90,
+      hospital_rating: 85,
+      doctors_rating: 92,
+      average_rating: 89,
+    },
+    reviews: [
+      {
+        patient_name: "Suresh Gupta",
+        rating: 5,
+        comment: "The pediatric wing is excellent.",
+      },
+      {
+        patient_name: "Riya Sen",
+        rating: 4,
+        comment: "Clean and well-maintained environment.",
+      },
+    ],
+    image: "/uploads/hospitals/h2.jpeg",
+  },
+
+  {
+    hospital_id: "H003",
+    hospital_name: "Max Super Speciality Hospital",
+    hospital_type: "Private",
+    description:
+      "Leading healthcare facility in South Delhi specializing in cardiac and neurosciences.",
+    location: {
+      address: "1, 2, Press Enclave Road, Saket",
+      city: "Delhi",
+      state: "Delhi",
+      country: "India",
+      pincode: "110017",
+      latitude: 28.5273,
+      longitude: 77.2197,
+    },
+    contact: { phone: "01126515050", email: "info@maxhealthcare.com" },
+    facilities: [
+      "ICU",
+      "Dialysis",
+      "Cardiac Cath Lab",
+      "PET-CT Scan",
+      "Endoscopy Suite",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 210,
+      bed_capacity: 530,
+      icu_beds: 110,
+      operation_theatres: 10,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Aditya Birla", "Max Bupa", "HDFC ERGO"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 2800 },
+    graph: {
+      success_rate: 91,
+      hospital_rating: 86,
+      doctors_rating: 94,
+      average_rating: 90,
+    },
+    reviews: [
+      {
+        patient_name: "Vikram Rathore",
+        rating: 5,
+        comment: "The ENT department corrected my chronic sinus issue.",
+      },
+      {
+        patient_name: "Sonia Jha",
+        rating: 3,
+        comment: "Billing process is quite slow.",
+      },
+    ],
+    image: "/uploads/hospitals/h3.jpeg",
+  },
+
+  {
+    hospital_id: "H004",
+    hospital_name: "AIIMS (All India Institute of Medical Sciences)",
+    hospital_type: "Government",
+    description:
+      "India's premier public medical research university and hospital providing highly subsidized care.",
+    location: {
+      address: "Ansari Nagar",
+      city: "Delhi",
+      state: "Delhi",
+      country: "India",
+      pincode: "110029",
+      latitude: 28.5672,
+      longitude: 77.21,
+    },
+    contact: { phone: "01126588500", email: "director@aiims.edu" },
+    facilities: [
+      "Emergency Care",
+      "Advanced Labs",
+      "Research Center",
+      "Generic Pharmacy",
+      "Blood Bank",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 800,
+      bed_capacity: 2200,
+      icu_beds: 300,
+      operation_theatres: 45,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["CGHS", "ECHS", "PM-JAY (Ayushman Bharat)"],
+    },
+    timing: { opening_time: "00:00 AM", closing_time: "11:59 PM" },
+    ratings: { avg_rating: 4.3, total_reviews: 15000 },
+    graph: {
+      success_rate: 95,
+      hospital_rating: 80,
+      doctors_rating: 98,
+      average_rating: 91,
+    },
+    reviews: [
+      {
+        patient_name: "Rajesh Kumar",
+        rating: 5,
+        comment: "The best doctors in India, regardless of the crowd.",
+      },
+      {
+        patient_name: "Amit Singh",
+        rating: 4,
+        comment:
+          "Getting an appointment is difficult but treatment is top-notch.",
+      },
+    ],
+    image: "/uploads/hospitals/h4.jpeg",
+  },
+
+  {
+    hospital_id: "H005",
+    hospital_name: "Sir Ganga Ram Hospital",
+    hospital_type: "Private",
+    description:
+      "A multi-speciality state-of-the-art hospital known for its charitable trust and high quality of care.",
+    location: {
+      address: "Rajinder Nagar",
+      city: "Delhi",
+      state: "Delhi",
+      country: "India",
+      pincode: "110060",
+      latitude: 28.6408,
+      longitude: 77.1883,
+    },
+    contact: { phone: "01125750000", email: "gangaram@sgrh.com" },
+    facilities: [
+      "ICU",
+      "Organ Transplant Unit",
+      "Dialysis",
+      "Laboratory",
+      "Cafeteria",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 350,
+      bed_capacity: 675,
+      icu_beds: 85,
+      operation_theatres: 18,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "United India", "Oriental Insurance"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.2, total_reviews: 2100 },
+    graph: {
+      success_rate: 89,
+      hospital_rating: 83,
+      doctors_rating: 90,
+      average_rating: 87,
+    },
+    reviews: [
+      {
+        patient_name: "Lata Mangesh",
+        rating: 5,
+        comment: "Expert doctors for gastro issues.",
+      },
+      {
+        patient_name: "Varun Bajaj",
+        rating: 4,
+        comment: "Parking is a nightmare but hospital is great.",
+      },
+    ],
+    image: "/uploads/hospitals/h5.jpeg",
+  },
+
+  {
+    hospital_id: "H006",
+    hospital_name: "Medanta - The Medicity",
+    hospital_type: "Private",
+    description:
+      "Founded by Dr. Naresh Trehan, this hospital is a global destination for cardiac care.",
+    location: {
+      address: "CH Baktawar Singh Road, Sector 38",
+      city: "Gurgaon",
+      state: "Haryana",
+      country: "India",
+      pincode: "122001",
+      latitude: 28.4361,
+      longitude: 77.0402,
+    },
+    contact: { phone: "01244141414", email: "info@medanta.org" },
+    facilities: [
+      "Air Ambulance",
+      "CyberKnife",
+      "Heart Institute",
+      "Linear Accelerator",
+      "Robot Surgery",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 450,
+      bed_capacity: 1250,
+      icu_beds: 300,
+      operation_theatres: 40,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["HDFC ERGO", "Reliance General", "TATA AIG"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "07:00 PM" },
+    ratings: { avg_rating: 4.7, total_reviews: 5800 },
+    graph: {
+      success_rate: 96,
+      hospital_rating: 92,
+      doctors_rating: 97,
+      average_rating: 95,
+    },
+    reviews: [
+      {
+        patient_name: "Kabir Khan",
+        rating: 5,
+        comment: "Truly world class. The campus feels like a hotel.",
+      },
+      {
+        patient_name: "Pooja Hegde",
+        rating: 5,
+        comment: "Excellent endocrinology department.",
+      },
+    ],
+    image: "/uploads/hospitals/h6.jpeg",
+  },
+
+  {
+    hospital_id: "H007",
+    hospital_name: "Christian Medical College (CMC)",
+    hospital_type: "Trust",
+    description:
+      "Ranked among the best in India, specializing in low-cost, high-tech healthcare and education.",
+    location: {
+      address: "Ida Scudder Road",
+      city: "Vellore",
+      state: "Tamil Nadu",
+      country: "India",
+      pincode: "632004",
+      latitude: 12.9249,
+      longitude: 79.1353,
+    },
+    contact: { phone: "04162281000", email: "directorate@cmcvellore.ac.in" },
+    facilities: ["Hostels", "Advanced Lab", "Radiology", "Library", "Pharmacy"],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 600,
+      bed_capacity: 2800,
+      icu_beds: 150,
+      operation_theatres: 35,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "Government Schemes", "Self-Pay"],
+    },
+    timing: { opening_time: "07:30 AM", closing_time: "06:00 PM" },
+    ratings: { avg_rating: 4.8, total_reviews: 9000 },
+    graph: {
+      success_rate: 97,
+      hospital_rating: 88,
+      doctors_rating: 99,
+      average_rating: 94,
+    },
+    reviews: [
+      {
+        patient_name: "Senthil Kumar",
+        rating: 5,
+        comment: "God's hands work through these doctors.",
+      },
+      {
+        patient_name: "Ananya Rao",
+        rating: 5,
+        comment: "Best place for neurological disorders.",
+      },
+    ],
+    image: "/uploads/hospitals/h7.jpeg",
+  },
+
+  {
+    hospital_id: "H008",
+    hospital_name: "Apollo Hospitals",
+    hospital_type: "Private",
+    description:
+      "The main branch in Chennai, pioneering organ transplants and cardiac bypass in South India.",
+    location: {
+      address: "21, Greams Lane, Off Greams Road",
+      city: "Chennai",
+      state: "Tamil Nadu",
+      country: "India",
+      pincode: "600006",
+      latitude: 13.0604,
+      longitude: 80.2511,
+    },
+    contact: { phone: "04428293333", email: "greams_road@apollohospitals.com" },
+    facilities: [
+      "Proton Therapy",
+      "Liver Transplant Centre",
+      "Cardiac Lab",
+      "MRI",
+      "ICU",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 280,
+      bed_capacity: 600,
+      icu_beds: 100,
+      operation_theatres: 14,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "ICICI Lombard", "Cholamandalam"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 3500 },
+    graph: {
+      success_rate: 93,
+      hospital_rating: 89,
+      doctors_rating: 95,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Karthik Raja",
+        rating: 5,
+        comment: "Successful liver transplant. Highly grateful.",
+      },
+      {
+        patient_name: "Divya Balan",
+        rating: 4,
+        comment: "Expensive but worth the quality.",
+      },
+    ],
+    image: "/uploads/hospitals/h8.jpeg",
+  },
+
+  {
+    hospital_id: "H009",
+    hospital_name: "Fortis Hospital",
+    hospital_type: "Private",
+    description:
+      "Specialized care facility known for orthopedic and multi-organ transplant procedures.",
+    location: {
+      address: "154/9, Bannerghatta Road",
+      city: "Bangalore",
+      state: "Karnataka",
+      country: "India",
+      pincode: "560076",
+      latitude: 12.8933,
+      longitude: 77.597,
+    },
+    contact: {
+      phone: "08066214444",
+      email: "enquiry.bgroad@fortishealthcare.com",
+    },
+    facilities: [
+      "Robotic Joint Replacement",
+      "ICU",
+      "Physiotherapy",
+      "Pharmacy",
+      "MRI",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 150,
+      bed_capacity: 400,
+      icu_beds: 80,
+      operation_theatres: 11,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Niva Bupa", "HDFC ERGO", "Star Health"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "09:00 PM" },
+    ratings: { avg_rating: 4.4, total_reviews: 2900 },
+    graph: {
+      success_rate: 90,
+      hospital_rating: 84,
+      doctors_rating: 91,
+      average_rating: 88,
+    },
+    reviews: [
+      {
+        patient_name: "Sandeep Hegde",
+        rating: 5,
+        comment: "ENT surgery went very smooth.",
+      },
+      {
+        patient_name: "Pallavi Gowda",
+        rating: 4,
+        comment: "Good nursing care and hygiene.",
+      },
+    ],
+    image: "/uploads/hospitals/h9.jpeg",
+  },
+
+  {
+    hospital_id: "H010",
+    hospital_name: "Manipal Hospital",
+    hospital_type: "Private",
+    description:
+      "Flagship hospital of the Manipal Group, known for quaternary care and ethical practices.",
+    location: {
+      address: "98, Old Airport Road",
+      city: "Bangalore",
+      state: "Karnataka",
+      country: "India",
+      pincode: "560017",
+      latitude: 12.9583,
+      longitude: 77.6487,
+    },
+    contact: { phone: "08025024444", email: "info@manipalhospitals.com" },
+    facilities: [
+      "ICU",
+      "Dialysis",
+      "Oncology Wing",
+      "Cardiac Lab",
+      "Blood Bank",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 220,
+      bed_capacity: 650,
+      icu_beds: 110,
+      operation_theatres: 14,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Care Health", "Star Health", "ICICI Lombard"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 4100 },
+    graph: {
+      success_rate: 94,
+      hospital_rating: 87,
+      doctors_rating: 96,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Arun Joshi",
+        rating: 5,
+        comment: "Top class orthopedic surgeons here.",
+      },
+      {
+        patient_name: "Sneha Reddy",
+        rating: 4,
+        comment: "Very professional approach to neurology.",
+      },
+    ],
+    image: "/uploads/hospitals/h10.jpeg",
+  },
+
+  {
+    hospital_id: "H011",
+    hospital_name: "Narayana Health City",
+    hospital_type: "Private",
+    description:
+      "One of the world's largest cardiac centers, founded by Dr. Devi Shetty, focusing on affordable healthcare.",
+    location: {
+      address: "258/A, Bommasandra Industrial Area",
+      city: "Bangalore",
+      state: "Karnataka",
+      country: "India",
+      pincode: "560099",
+      latitude: 12.8168,
+      longitude: 77.6928,
+    },
+    contact: { phone: "08071222222", email: "info@narayanahealth.org" },
+    facilities: [
+      "ICU",
+      "Cardiac Cath Lab",
+      "Bone Marrow Transplant",
+      "MRI",
+      "Largest NICU in Asia",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 320,
+      bed_capacity: 1000,
+      icu_beds: 180,
+      operation_theatres: 22,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "HDFC ERGO", "Ayushman Bharat"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.7, total_reviews: 5200 },
+    graph: {
+      success_rate: 96,
+      hospital_rating: 90,
+      doctors_rating: 97,
+      average_rating: 94,
+    },
+    reviews: [
+      {
+        patient_name: "Manjunath K",
+        rating: 5,
+        comment: "Exceptional oncology care and transparency in billing.",
+      },
+      {
+        patient_name: "Leela Devi",
+        rating: 4,
+        comment:
+          "Very large campus, takes time to navigate but great treatment.",
+      },
+    ],
+    image: "/uploads/hospitals/h11.jpeg",
+  },
+
+  {
+    hospital_id: "H012",
+    hospital_name: "NIMHANS",
+    hospital_type: "Government",
+    description:
+      "The apex center for mental health and neuroscience education in India.",
+    location: {
+      address: "Hosur Road",
+      city: "Bangalore",
+      state: "Karnataka",
+      country: "India",
+      pincode: "560029",
+      latitude: 12.9432,
+      longitude: 77.5969,
+    },
+    contact: { phone: "08026995000", email: "director@nimhans.ac.in" },
+    facilities: [
+      "Advanced Neuro-imaging",
+      "Psychiatric Emergency",
+      "Brain Bank",
+      "Neuropathology Lab",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 400,
+      bed_capacity: 850,
+      icu_beds: 70,
+      operation_theatres: 12,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: false,
+      insurance_accepted: ["CGHS", "ECHS", "PM-JAY"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "04:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 8400 },
+    graph: {
+      success_rate: 92,
+      hospital_rating: 85,
+      doctors_rating: 98,
+      average_rating: 91,
+    },
+    reviews: [
+      {
+        patient_name: "Deepak S",
+        rating: 5,
+        comment: "Unmatched expertise in psychiatric care.",
+      },
+      {
+        patient_name: "Sarala Rao",
+        rating: 4,
+        comment: "Long waiting lines but it's the best in India.",
+      },
+    ],
+    image: "/uploads/hospitals/h12.jpeg",
+  },
+
+  {
+    hospital_id: "H013",
+    hospital_name: "Kokilaben Dhirubhai Ambani Hospital",
+    hospital_type: "Private",
+    description:
+      "A social initiative by Reliance Group, providing world-class healthcare technology in Mumbai.",
+    location: {
+      address: "Rao Saheb, Achutrao Patwardhan Marg, Andheri West",
+      city: "Mumbai",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "400053",
+      latitude: 19.1379,
+      longitude: 72.8258,
+    },
+    contact: { phone: "02230666666", email: "info@kokilabenhospital.com" },
+    facilities: [
+      "Intra-operative MRI",
+      "Da Vinci Robot",
+      "Full-time Specialist System",
+      "Sports Medicine Centre",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 210,
+      bed_capacity: 750,
+      icu_beds: 180,
+      operation_theatres: 22,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Reliance General", "Star Health", "ICICI Lombard"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "09:00 PM" },
+    ratings: { avg_rating: 4.7, total_reviews: 3900 },
+    graph: {
+      success_rate: 95,
+      hospital_rating: 91,
+      doctors_rating: 96,
+      average_rating: 94,
+    },
+    reviews: [
+      {
+        patient_name: "Sameer Deshmukh",
+        rating: 5,
+        comment: "Best neurological rehab center in the city.",
+      },
+      {
+        patient_name: "Anita Jain",
+        rating: 4,
+        comment: "Very professional staff and state-of-the-art diagnostics.",
+      },
+    ],
+    image: "/uploads/hospitals/h13.jpeg",
+  },
+
+  {
+    hospital_id: "H014",
+    hospital_name: "MIOT International",
+    hospital_type: "Private",
+    description:
+      "Known for its expertise in Orthopaedics, MIOT is now a multi-specialty leader in Chennai.",
+    location: {
+      address: "4/112, Mount Poonamallee Road",
+      city: "Chennai",
+      state: "Tamil Nadu",
+      country: "India",
+      pincode: "600089",
+      latitude: 13.0237,
+      longitude: 80.187,
+    },
+    contact: { phone: "04442002288", email: "enquiry@miotinternational.com" },
+    facilities: [
+      "Keyhole Surgery",
+      "Level 1 Trauma Centre",
+      "Bone Marrow Unit",
+      "Pathology Lab",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 170,
+      bed_capacity: 1000,
+      icu_beds: 200,
+      operation_theatres: 21,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Max Bupa", "Star Health", "Oriental Insurance"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 2100 },
+    graph: {
+      success_rate: 91,
+      hospital_rating: 87,
+      doctors_rating: 93,
+      average_rating: 90,
+    },
+    reviews: [
+      {
+        patient_name: "Ramesh Babu",
+        rating: 5,
+        comment: "Highly successful gastro surgery. Great post-op care.",
+      },
+      {
+        patient_name: "Preeti Pillai",
+        rating: 4,
+        comment: "Clean rooms and efficient emergency response.",
+      },
+    ],
+    image: "/uploads/hospitals/h14.jpeg",
+  },
+
+  {
+    hospital_id: "H015",
+    hospital_name: "Jehangir Hospital",
+    hospital_type: "Private",
+    description:
+      "A heritage hospital in Pune with a legacy of providing quality care and trust.",
+    location: {
+      address: "32, Sassoon Road",
+      city: "Pune",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "411001",
+      latitude: 18.5286,
+      longitude: 73.8743,
+    },
+    contact: { phone: "02066811000", email: "info@jehangirhospital.com" },
+    facilities: [
+      "ICU",
+      "Urology Centre",
+      "Breast Care Clinic",
+      "Dialysis",
+      "CT Scan",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 120,
+      bed_capacity: 350,
+      icu_beds: 65,
+      operation_theatres: 8,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "HDFC ERGO", "New India Assurance"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:30 PM" },
+    ratings: { avg_rating: 4.4, total_reviews: 3100 },
+    graph: {
+      success_rate: 88,
+      hospital_rating: 84,
+      doctors_rating: 91,
+      average_rating: 88,
+    },
+    reviews: [
+      {
+        patient_name: "Nikhil Kulkarni",
+        rating: 5,
+        comment: "Very polite staff and the ENT specialists are top tier.",
+      },
+      {
+        patient_name: "Snehal P",
+        rating: 4,
+        comment:
+          "Good service but billing can be a bit slow during rush hours.",
+      },
+    ],
+    image: "/uploads/hospitals/h15.jpeg",
+  },
+
+  {
+    hospital_id: "H016",
+    hospital_name: "Ruby Hall Clinic",
+    hospital_type: "Private",
+    description:
+      "A major multi-specialty hospital in Pune, pioneer in organ transplants and cancer care.",
+    location: {
+      address: "40, Sassoon Road",
+      city: "Pune",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "411001",
+      latitude: 18.5301,
+      longitude: 73.8767,
+    },
+    contact: { phone: "02066455100", email: "info@rubyhall.com" },
+    facilities: [
+      "ICU",
+      "Linear Accelerator",
+      "PET-CT",
+      "Cardiac Lab",
+      "Blood Bank",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 250,
+      bed_capacity: 600,
+      icu_beds: 120,
+      operation_theatres: 15,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["ICICI Lombard", "Bajaj Allianz", "Star Health"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "09:00 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 4200 },
+    graph: {
+      success_rate: 93,
+      hospital_rating: 88,
+      doctors_rating: 94,
+      average_rating: 91,
+    },
+    reviews: [
+      {
+        patient_name: "Amit Deshpande",
+        rating: 5,
+        comment: "Best orthopedic department in Pune.",
+      },
+      {
+        patient_name: "Priya Rao",
+        rating: 4,
+        comment: "Very clean and efficient diagnostic center.",
+      },
+    ],
+    image: "/uploads/hospitals/h16.jpeg",
+  },
+
+  {
+    hospital_id: "H017",
+    hospital_name: "Nanavati Max Super Speciality",
+    hospital_type: "Private",
+    description:
+      "One of Mumbai’s oldest and most iconic hospitals, now part of the Max Healthcare network.",
+    location: {
+      address: "S.V. Road, Vile Parle (West)",
+      city: "Mumbai",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "400056",
+      latitude: 19.0979,
+      longitude: 72.8406,
+    },
+    contact: { phone: "02226267500", email: "info@nanavatihospital.org" },
+    facilities: [
+      "ICU",
+      "Liver Transplant Centre",
+      "Advanced Oncology",
+      "MRI",
+      "Pathology",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 180,
+      bed_capacity: 350,
+      icu_beds: 75,
+      operation_theatres: 10,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Max Bupa", "HDFC ERGO", "Aditya Birla"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.3, total_reviews: 2800 },
+    graph: {
+      success_rate: 90,
+      hospital_rating: 85,
+      doctors_rating: 92,
+      average_rating: 89,
+    },
+    reviews: [
+      {
+        patient_name: "Rajesh Khanna",
+        rating: 5,
+        comment: "Top-tier pediatric care for my newborn.",
+      },
+      {
+        patient_name: "Suman Shah",
+        rating: 4,
+        comment: "Excellent doctors, although the building is old.",
+      },
+    ],
+    image: "/uploads/hospitals/h17.jpeg",
+  },
+
+  {
+    hospital_id: "H018",
+    hospital_name: "Sir H. N. Reliance Foundation Hospital",
+    hospital_type: "Private",
+    description:
+      "A state-of-the-art quaternary care hospital known for luxury care and cutting-edge tech.",
+    location: {
+      address: "Raja Rammohan Roy Road, Prarthana Samaj",
+      city: "Mumbai",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "400004",
+      latitude: 18.9543,
+      longitude: 72.8145,
+    },
+    contact: { phone: "1800221166", email: "info@rfhospital.org" },
+    facilities: [
+      "Smart Hospital Rooms",
+      "Hybrid OT",
+      "Robotic Surgery",
+      "ICU",
+      "Blood Bank",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 200,
+      bed_capacity: 345,
+      icu_beds: 90,
+      operation_theatres: 12,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Reliance General", "Star Health", "TATA AIG"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.8, total_reviews: 2500 },
+    graph: {
+      success_rate: 96,
+      hospital_rating: 94,
+      doctors_rating: 97,
+      average_rating: 96,
+    },
+    reviews: [
+      {
+        patient_name: "Vinod Mehta",
+        rating: 5,
+        comment: "The most advanced hospital I have visited in India.",
+      },
+      {
+        patient_name: "Meena G",
+        rating: 5,
+        comment: "Endocrinology treatment was very effective.",
+      },
+    ],
+    image: "/uploads/hospitals/h18.jpeg",
+  },
+
+  {
+    hospital_id: "H019",
+    hospital_name: "Continental Hospital",
+    hospital_type: "Private",
+    description:
+      "A JCI accredited hospital in Hyderabad providing integrated multi-specialty care.",
+    location: {
+      address: "Financial District, Nanakramguda",
+      city: "Hyderabad",
+      state: "Telangana",
+      country: "India",
+      pincode: "500032",
+      latitude: 17.4239,
+      longitude: 78.3409,
+    },
+    contact: { phone: "04067000000", email: "info@continentalhospitals.com" },
+    facilities: [
+      "ICU",
+      "Cath Lab",
+      "Modular OTs",
+      "MRI",
+      "Comprehensive Rehab",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 160,
+      bed_capacity: 750,
+      icu_beds: 120,
+      operation_theatres: 14,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Care Health", "Star Health", "HDFC ERGO"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 1900 },
+    graph: {
+      success_rate: 93,
+      hospital_rating: 88,
+      doctors_rating: 94,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Suresh Reddy",
+        rating: 5,
+        comment: "Fast emergency response and great cardiac team.",
+      },
+      {
+        patient_name: "Divya T",
+        rating: 4,
+        comment: "Modern infrastructure and highly qualified doctors.",
+      },
+    ],
+    image: "/uploads/hospitals/h19.jpeg",
+  },
+
+  {
+    hospital_id: "H020",
+    hospital_name: "Medanta - The Medicity",
+    hospital_type: "Private",
+    description:
+      "The main campus of Medanta, a global leader in complex cardiac and liver transplants.",
+    location: {
+      address: "Sector 38",
+      city: "Gurgaon",
+      state: "Haryana",
+      country: "India",
+      pincode: "122001",
+      latitude: 28.4361,
+      longitude: 77.0402,
+    },
+    contact: { phone: "01244141414", email: "info@medanta.org" },
+    facilities: [
+      "Air Ambulance",
+      "CyberKnife",
+      "Organ Transplant Unit",
+      "Pathology",
+      "ICU",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 450,
+      bed_capacity: 1250,
+      icu_beds: 300,
+      operation_theatres: 40,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "Niva Bupa", "TATA AIG"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "07:00 PM" },
+    ratings: { avg_rating: 4.7, total_reviews: 6200 },
+    graph: {
+      success_rate: 96,
+      hospital_rating: 92,
+      doctors_rating: 97,
+      average_rating: 95,
+    },
+    reviews: [
+      {
+        patient_name: "Aryan Singh",
+        rating: 5,
+        comment: "The best oncology care available in North India.",
+      },
+      {
+        patient_name: "Neha Kapur",
+        rating: 5,
+        comment: "Very comprehensive pediatric wing.",
+      },
+    ],
+    image: "/uploads/hospitals/h20.jpeg",
+  },
+
+  {
+    hospital_id: "H021",
+    hospital_name: "Fortis Memorial Research Institute",
+    hospital_type: "Private",
+    description:
+      "A flagship hospital of Fortis, known for its focus on robotic surgeries and neurosciences.",
+    location: {
+      address: "Sector 44, Opposite HUDA City Centre",
+      city: "Gurgaon",
+      state: "Haryana",
+      country: "India",
+      pincode: "122002",
+      latitude: 28.4595,
+      longitude: 77.0588,
+    },
+    contact: { phone: "01244921021", email: "care.fmri@fortishealthcare.com" },
+    facilities: [
+      "ICU",
+      "3 Tesla MRI",
+      "Robotic Surgery",
+      "Bone Marrow Transplant",
+      "Radiology",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 190,
+      bed_capacity: 450,
+      icu_beds: 90,
+      operation_theatres: 12,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Niva Bupa", "Star Health", "HDFC ERGO"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:30 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 3400 },
+    graph: {
+      success_rate: 91,
+      hospital_rating: 86,
+      doctors_rating: 94,
+      average_rating: 90,
+    },
+    reviews: [
+      {
+        patient_name: "Rohan Mehra",
+        rating: 5,
+        comment: "Excellent ophthalmology department.",
+      },
+      {
+        patient_name: "Kiran Bedi",
+        rating: 4,
+        comment: "Clean and highly professional.",
+      },
+    ],
+    image: "/uploads/hospitals/h21.jpeg",
+  },
+
+  {
+    hospital_id: "H022",
+    hospital_name: "Fortis Hospital",
+    hospital_type: "Private",
+    description:
+      "Leading multi-specialty hospital in Noida with a focus on cardiac and orthopedic care.",
+    location: {
+      address: "B-22, Sector 62",
+      city: "Noida",
+      state: "Uttar Pradesh",
+      country: "India",
+      pincode: "201301",
+      latitude: 28.627,
+      longitude: 77.3649,
+    },
+    contact: {
+      phone: "01202400222",
+      email: "contact.noida@fortishealthcare.com",
+    },
+    facilities: ["ICU", "Dialysis", "Cardiac Lab", "CT Scan", "Emergency 24x7"],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 140,
+      bed_capacity: 200,
+      icu_beds: 45,
+      operation_theatres: 7,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Bajaj Allianz", "Star Health", "Care Health"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.4, total_reviews: 2100 },
+    graph: {
+      success_rate: 90,
+      hospital_rating: 84,
+      doctors_rating: 92,
+      average_rating: 88,
+    },
+    reviews: [
+      {
+        patient_name: "Amitabh S",
+        rating: 5,
+        comment: "Very good orthopedic surgeons.",
+      },
+      {
+        patient_name: "Sunita P",
+        rating: 4,
+        comment: "Supportive nursing staff.",
+      },
+    ],
+    image: "/uploads/hospitals/h22.jpeg",
+  },
+
+  {
+    hospital_id: "H023",
+    hospital_name: "Jaypee Hospital",
+    hospital_type: "Private",
+    description:
+      "A large-scale multi-specialty facility designed to provide tertiary care in a patient-friendly environment.",
+    location: {
+      address: "Sector 128",
+      city: "Noida",
+      state: "Uttar Pradesh",
+      country: "India",
+      pincode: "201304",
+      latitude: 28.5253,
+      longitude: 77.3775,
+    },
+    contact: { phone: "01204122222", email: "info@jaypeehospital.com" },
+    facilities: [
+      "ICU",
+      "Advanced Oncology",
+      "Liver Transplant",
+      "MRI",
+      "Pathology",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 220,
+      bed_capacity: 504,
+      icu_beds: 150,
+      operation_theatres: 15,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["TATA AIG", "HDFC ERGO", "Star Health"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "07:30 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 2800 },
+    graph: {
+      success_rate: 93,
+      hospital_rating: 87,
+      doctors_rating: 95,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Sanjay Dutta",
+        rating: 5,
+        comment: "The pediatric department is very thorough.",
+      },
+      {
+        patient_name: "Neha Tyagi",
+        rating: 4,
+        comment: "Top class oncology treatment.",
+      },
+    ],
+    image: "/uploads/hospitals/h23.jpeg",
+  },
+
+  {
+    hospital_id: "H024",
+    hospital_name: "PGIMER",
+    hospital_type: "Government",
+    description:
+      "A prestigious medical and research institution providing advanced healthcare to North India.",
+    location: {
+      address: "Sector 12",
+      city: "Chandigarh",
+      state: "Chandigarh",
+      country: "India",
+      pincode: "160012",
+      latitude: 30.7624,
+      longitude: 76.7756,
+    },
+    contact: { phone: "01722747585", email: "pgimer-chd@nic.in" },
+    facilities: [
+      "Emergency care",
+      "Research Labs",
+      "Organ Transplant",
+      "Specialized Clinics",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 700,
+      bed_capacity: 2100,
+      icu_beds: 250,
+      operation_theatres: 35,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["CGHS", "ECHS", "PM-JAY"],
+    },
+    timing: { opening_time: "00:00 AM", closing_time: "11:59 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 12000 },
+    graph: {
+      success_rate: 95,
+      hospital_rating: 82,
+      doctors_rating: 98,
+      average_rating: 91,
+    },
+    reviews: [
+      {
+        patient_name: "Jaspreet Singh",
+        rating: 5,
+        comment: "Best doctors in the country for complex cases.",
+      },
+      {
+        patient_name: "Rajiv M",
+        rating: 4,
+        comment: "Crowded but the treatment is the best.",
+      },
+    ],
+    image: "/uploads/hospitals/h24.jpeg",
+  },
+
+  {
+    hospital_id: "H025",
+    hospital_name: "Medanta Hospital",
+    hospital_type: "Private",
+    description:
+      "Bringing world-class cardiac and multi-specialty care to the heart of Uttar Pradesh.",
+    location: {
+      address: "Sector 7, Amar Shaheed Path",
+      city: "Lucknow",
+      state: "Uttar Pradesh",
+      country: "India",
+      pincode: "226002",
+      latitude: 26.7725,
+      longitude: 80.991,
+    },
+    contact: { phone: "05224505050", email: "info.lucknow@medanta.org" },
+    facilities: ["ICU", "Cath Lab", "MRI", "Dialysis", "Pathology"],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 150,
+      bed_capacity: 1000,
+      icu_beds: 200,
+      operation_theatres: 20,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "HDFC ERGO", "Niva Bupa"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.7, total_reviews: 3100 },
+    graph: {
+      success_rate: 94,
+      hospital_rating: 90,
+      doctors_rating: 96,
+      average_rating: 93,
+    },
+    reviews: [
+      {
+        patient_name: "Vikas Khanna",
+        rating: 5,
+        comment: "Finally, world-class cardiology in Lucknow.",
+      },
+      { patient_name: "Priya S", rating: 5, comment: "Great orthopedic care." },
+    ],
+    image: "/uploads/hospitals/h25.jpeg",
+  },
+
+  {
+    hospital_id: "H026",
+    hospital_name: "Jeevan Rekha Hospital",
+    hospital_type: "Private",
+    description:
+      "A leading healthcare provider in Jaipur, focusing on critical care and mother & child health.",
+    location: {
+      address: "Jagatpura",
+      city: "Jaipur",
+      state: "Rajasthan",
+      country: "India",
+      pincode: "302017",
+      latitude: 26.8228,
+      longitude: 75.865,
+    },
+    contact: { phone: "01412753333", email: "info@jeevanrekha.com" },
+    facilities: ["NICU", "ICU", "Modular OTs", "Blood Bank", "Diagnostics"],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 110,
+      bed_capacity: 200,
+      icu_beds: 50,
+      operation_theatres: 6,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "Reliance", "United India"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "09:00 PM" },
+    ratings: { avg_rating: 4.3, total_reviews: 1800 },
+    graph: {
+      success_rate: 89,
+      hospital_rating: 83,
+      doctors_rating: 91,
+      average_rating: 87,
+    },
+    reviews: [
+      {
+        patient_name: "Ram Gopal",
+        rating: 5,
+        comment: "Best pediatricians in Jagatpura area.",
+      },
+      {
+        patient_name: "Anita M",
+        rating: 4,
+        comment: "Affordable and clean hospital.",
+      },
+    ],
+    image: "/uploads/hospitals/h26.jpeg",
+  },
+
+  {
+    hospital_id: "H027",
+    hospital_name: "Fortis ESCORTS",
+    hospital_type: "Private",
+    description:
+      "Specialized cardiac care hospital known for non-invasive cardiology and emergency heart care.",
+    location: {
+      address: "Jawaharlal Nehru Marg",
+      city: "Jaipur",
+      state: "Rajasthan",
+      country: "India",
+      pincode: "302018",
+      latitude: 26.8798,
+      longitude: 75.803,
+    },
+    contact: {
+      phone: "01412547000",
+      email: "contact.jaipur@fortishealthcare.com",
+    },
+    facilities: ["Cath Lab", "ICU", "Endocrinology Lab", "ENT Unit", "MRI"],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 130,
+      bed_capacity: 250,
+      icu_beds: 60,
+      operation_theatres: 8,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["HDFC ERGO", "Max Bupa", "Star Health"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 2400 },
+    graph: {
+      success_rate: 92,
+      hospital_rating: 88,
+      doctors_rating: 95,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Suresh Meena",
+        rating: 5,
+        comment: "Excellent endocrinology specialists.",
+      },
+      {
+        patient_name: "Komal J",
+        rating: 4,
+        comment: "Quick response in emergency.",
+      },
+    ],
+    image: "/uploads/hospitals/h27.jpeg",
+  },
+
+  {
+    hospital_id: "H028",
+    hospital_name: "CKS Hospital",
+    hospital_type: "Private",
+    description:
+      "Comprehensive multi-specialty hospital providing affordable healthcare in Rajasthan.",
+    location: {
+      address: "Vishwakarma Industrial Area",
+      city: "Jaipur",
+      state: "Rajasthan",
+      country: "India",
+      pincode: "302013",
+      latitude: 26.9816,
+      longitude: 75.7766,
+    },
+    contact: { phone: "01412334455", email: "info@ckshospital.com" },
+    facilities: [
+      "ICU",
+      "Neuro Labs",
+      "Joint Replacement",
+      "Emergency Room",
+      "Pharmacy",
+    ],
+    specializations: [
+      "Cardiologist",
+      "Dermatologist",
+      "Neurologist",
+      "Orthopedic",
+    ], // Set A
+    hospital_stats: {
+      total_doctors: 95,
+      bed_capacity: 150,
+      icu_beds: 35,
+      operation_theatres: 5,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: [
+        "Star Health",
+        "ICICI Lombard",
+        "Government Schemes",
+      ],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.4, total_reviews: 1500 },
+    graph: {
+      success_rate: 91,
+      hospital_rating: 84,
+      doctors_rating: 93,
+      average_rating: 89,
+    },
+    reviews: [
+      {
+        patient_name: "Devendra S",
+        rating: 5,
+        comment: "The orthopedic team is highly skilled.",
+      },
+      {
+        patient_name: "Maya Devi",
+        rating: 4,
+        comment: "Well managed and professional staff.",
+      },
+    ],
+    image: "/uploads/hospitals/h28.jpeg",
+  },
+
+  {
+    hospital_id: "H029",
+    hospital_name: "Apollo Hospitals",
+    hospital_type: "Private",
+    description:
+      "Gujarat's leading multi-specialty hospital known for high success rates in transplants.",
+    location: {
+      address: "Gandhinagar-Ahmedabad Highway",
+      city: "Ahmedabad",
+      state: "Gujarat",
+      country: "India",
+      pincode: "382428",
+      latitude: 23.1645,
+      longitude: 72.634,
+    },
+    contact: { phone: "07966701801", email: "ahmedabad@apollohospitals.com" },
+    facilities: [
+      "ICU",
+      "Liver Transplant Centre",
+      "Robotic Surgery",
+      "MRI",
+      "Pathology",
+    ],
+    specializations: [
+      "Gynecologist",
+      "Pediatrician",
+      "Gastroenterologist",
+      "Oncologist",
+    ], // Set B
+    hospital_stats: {
+      total_doctors: 240,
+      bed_capacity: 500,
+      icu_beds: 100,
+      operation_theatres: 12,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Star Health", "HDFC ERGO", "Bajaj Allianz"],
+    },
+    timing: { opening_time: "08:00 AM", closing_time: "08:00 PM" },
+    ratings: { avg_rating: 4.6, total_reviews: 4200 },
+    graph: {
+      success_rate: 94,
+      hospital_rating: 89,
+      doctors_rating: 95,
+      average_rating: 92,
+    },
+    reviews: [
+      {
+        patient_name: "Bhavin Patel",
+        rating: 5,
+        comment: "Best oncology department in Gujarat.",
+      },
+      {
+        patient_name: "Seema Shah",
+        rating: 5,
+        comment: "Very advanced facilities for pediatric care.",
+      },
+    ],
+    image: "/uploads/hospitals/h29.jpeg",
+  },
+
+  {
+    hospital_id: "H030",
+    hospital_name: "Sterling Hospital",
+    hospital_type: "Private",
+    description:
+      "A major player in Gujarat’s healthcare landscape, specialized in critical care and endocrinology.",
+    location: {
+      address: "Sterling Hospital Road, Memnagar",
+      city: "Ahmedabad",
+      state: "Gujarat",
+      country: "India",
+      pincode: "380052",
+      latitude: 23.0469,
+      longitude: 72.5336,
+    },
+    contact: { phone: "07940011111", email: "info@sterlinghospitals.com" },
+    facilities: [
+      "ICU",
+      "Renal Transplant Unit",
+      "Dialysis",
+      "CT Scan",
+      "ENT Unit",
+    ],
+    specializations: [
+      "Psychiatrist",
+      "Ophthalmologist",
+      "Endocrinologist",
+      "ENT Specialist",
+    ], // Set C
+    hospital_stats: {
+      total_doctors: 160,
+      bed_capacity: 310,
+      icu_beds: 80,
+      operation_theatres: 10,
+    },
+    services: {
+      emergency_24x7: true,
+      ambulance_service: true,
+      online_appointment: true,
+      blood_bank_available: true,
+      insurance_accepted: ["Care Health", "Star Health", "ICICI Lombard"],
+    },
+    timing: { opening_time: "09:00 AM", closing_time: "08:30 PM" },
+    ratings: { avg_rating: 4.5, total_reviews: 2900 },
+    graph: {
+      success_rate: 92,
+      hospital_rating: 85,
+      doctors_rating: 93,
+      average_rating: 90,
+    },
+    reviews: [
+      {
+        patient_name: "Jignesh V",
+        rating: 5,
+        comment: "Expert endocrinologists for diabetes management.",
+      },
+      {
+        patient_name: "Alpa P",
+        rating: 4,
+        comment: "Good service and hygiene.",
+      },
+    ],
+    image: "/uploads/hospitals/h30.jpeg",
+  },
+];
+
+export default hospitals;

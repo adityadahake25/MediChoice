@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Animated Logo Text */
+.logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8, #2563eb);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientMove 3s linear infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-text {
+  transform: scale(1.08);
+}
+
+@keyframes gradientMove {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ================= MENU ================= */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a:hover {
+  color: #2563eb;
+}
+
+/* ================= BUTTONS ================= */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  border: 2px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #eff6ff;
+}
+
+.signup-btn {
+  padding: 8px 16px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.signup-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.35);
+}
+
+/* ================= AUTH AREA ================= */
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Welcome Text */
+.welcome-text-box {
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151; /* soft dark gray */
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 8px 18px;
+  background: #ffffff;
+  color: #e11d48; /* soft red */
+  border: 1px solid #e11d48;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.logout-btn:hover {
+  background: #e11d48;
+  color: #ffffff;
+  border-color: #e11d48;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+  transform: translateY(-1px);
+}
+
+.logout-btn:active {
+  transform: scale(0.97);
+}

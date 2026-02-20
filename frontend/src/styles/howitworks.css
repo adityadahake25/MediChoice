@@ -1,0 +1,103 @@
+/* SECTION */
+.howworks-section {
+  padding: 80px 8%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+/* TOP TEXT */
+.howworks-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 2px;
+}
+
+.howworks-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin-top: 6px;
+}
+
+.howworks-desc {
+  font-size: 14px;
+  color: #141313;
+  margin: 10px auto 50px;
+  max-width: 600px;
+}
+
+/* GRID 4 CARDS */
+.howworks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.howworks-card {
+  background: #ffffff;
+  padding: 26px 18px;
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.howworks-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.18);
+}
+
+/* NUMBER BADGE */
+.howworks-number {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* ICON BOX */
+.howworks-icon {
+  width: 56px;
+  height: 56px;
+  background: #dbe3f3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px auto 12px;
+  color: #2563eb;
+}
+
+/* TEXT */
+.howworks-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.howworks-card p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .howworks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .howworks-grid {
+    grid-template-columns: 1fr;
+  }
+}

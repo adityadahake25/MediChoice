@@ -1,0 +1,291 @@
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+}
+
+/* ================= MAIN LAYOUT ================= */
+
+.dashboard-layout {
+  display: flex;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 40px;
+  /* margin-left: 260px;  */
+
+  /* flex: 1;
+  padding: 40px;
+  margin-left: 260px;
+  margin-top: 70px; same navbar height*/
+}
+
+/* ================= WELCOME ================= */
+
+.welcome-text {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+/* ================= KPI CARDS ================= */
+
+.kpi-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: 0.3s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+}
+
+.kpi-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 8px 0;
+}
+
+.kpi-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.kpi-icon {
+  font-size: 20px;
+}
+
+.blue {
+  color: #3b82f6;
+}
+.green {
+  color: #10b981;
+}
+.purple {
+  color: #8b5cf6;
+}
+.red {
+  color: #ef4444;
+}
+
+/* ================= COMMON CARD ================= */
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ================= CHART + REQUEST ROW ================= */
+
+.chart-request-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+/* ================= APPOINTMENTS ROW ================= */
+
+.row-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+/* ================= APPOINTMENT ITEMS ================= */
+
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.appointment-item strong {
+  font-size: 15px;
+}
+
+.appointment-item p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.time {
+  color: #14b8a6;
+  font-weight: 600;
+}
+
+.status.ongoing {
+  background: #d1fae5;
+  color: #059669;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================= PATIENT DETAILS ================= */
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.patient-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.patient-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ================= PERFECT BUTTON ALIGNMENT ================= */
+
+.patient-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.patient-buttons button {
+  flex: 1; /* Equal width */
+  height: 48px; /* Equal height */
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Call Button */
+.primary-btn {
+  background: #14b8a6;
+  color: white;
+  border: none;
+  margin-top: 0;
+}
+
+.primary-btn:hover {
+  background: #0d9488;
+}
+
+/* Documents + Chat */
+.outline-btn {
+  background: white;
+  border: 2px solid #14b8a6;
+  color: #14b8a6;
+}
+
+.outline-btn:hover {
+  background: #14b8a6;
+  color: white;
+}
+
+/* ================= APPOINTMENT REQUEST ================= */
+
+.request-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.accept {
+  background: #d1fae5;
+  border: none;
+  color: #059669;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.reject {
+  background: #fee2e2;
+  border: none;
+  color: #dc2626;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .kpi-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-request-row,
+  .row-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .kpi-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-main {
+    padding: 20px;
+  }
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-buttons button {
+  padding: 6px 12px;
+  border: none;
+  background: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filter-buttons button:hover {
+  background: #14b8a6;
+  color: white;
+}

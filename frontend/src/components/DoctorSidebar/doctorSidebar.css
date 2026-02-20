@@ -1,0 +1,115 @@
+/* SIDEBAR CONTAINER */
+.sidebar {
+  width: 260px;
+  top: 90px;                     /* match navbar height */
+  left: 0;
+  height: calc(100vh - 90px);    /* full height minus navbar */
+
+  background: linear-gradient(180deg, #1e3a8a, #2563eb);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px 18px 30px 18px;   /* extra top spacing */
+  box-sizing: border-box;
+  overflow-y: auto;
+
+}
+
+
+
+/* PROFILE */
+.sidebar-profile {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sidebar-avatar {
+  /* width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 12px; */
+  .sidebar-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 12px;
+
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+.sidebar-profile h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.sidebar-profile p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* DIVIDER */
+.sidebar-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 20px 0;
+}
+
+/* MENU */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* SIDEBAR ITEMS */
+.sidebar-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* ICON SIZE */
+.sidebar-item svg {
+  font-size: 16px;
+}
+
+/* ACTIVE STATE */
+.sidebar-item.active {
+  background: white;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* HOVER */
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* LOGOUT SECTION */
+.sidebar-logout {
+  margin-top: auto; /* pushes it to bottom correctly */
+  padding-top: 20px;
+}
+
+/* Logout hover */
+.sidebar-item.logout:hover {
+  background: rgba(255, 0, 0, 0.15);
+}

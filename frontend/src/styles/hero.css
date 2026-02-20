@@ -1,0 +1,227 @@
+/* ================= HERO SECTION ================= */
+.hero {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: bgZoom 20s ease-in-out infinite alternate;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= BACKGROUND ZOOM ================= */
+@keyframes bgZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 108%;
+  }
+}
+
+/* ================= CONTENT ================= */
+.hero-content {
+  max-width: 650px;
+  animation: fadeSlide 1.4s ease forwards;
+}
+
+/* Text floating animation */
+.hero-content {
+  animation: floatText 5s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= HEADINGS ================= */
+.hero-content h1 {
+  font-size: 74px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.hero-content h1 span {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= DESCRIPTION ================= */
+.hero-content p {
+  margin-top: 22px;
+  font-size: 25px;
+  color: #e5e7eb;
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+/* ================= SEARCH ================= */
+.search-wrapper {
+  position: relative;
+  width: 460px;
+  margin-top: 36px;
+  animation: glowPulse 3s infinite;
+}
+
+.search-box {
+  display: flex;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.search-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Glow animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+/* ================= SEARCH BUTTON ================= */
+.search-box button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.45);
+}
+
+/* ================= AI SUGGESTIONS ================= */
+.suggestions {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background: white;
+  border-radius: 14px;
+  list-style: none;
+  padding: 8px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
+  animation: fadeUp 0.35s ease;
+  z-index: 10;
+}
+
+.suggestions li {
+  padding: 12px 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.suggestions li:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  transform: translateX(4px);
+}
+
+/* Suggestion animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 6%;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: auto;
+    animation: none;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .search-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,283 @@
+:root {
+  --primary: #2d54e3;
+  --secondary: #6c757d;
+  --bg-main: #f4f7fe;
+  --white: #ffffff;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.medichoice-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SIDEBAR STYLES */
+.medichoice-sidebar {
+  width: 280px;
+  background: var(--primary);
+  color: white;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.logo-icon {
+  background: white;
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin: 20px 0 10px 10px;
+}
+
+.nav-link {
+  padding: 14px 15px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link.logout {
+  margin-top: 20px;
+  color: #ffadad;
+}
+
+/* MAIN CONTENT STYLES */
+.medichoice-main {
+  flex: 1;
+  padding: 40px 50px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.greeting h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #1b2559;
+}
+.greeting p {
+  color: #a3aed0;
+  margin: 5px 0 0 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-bar-box {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: #a3aed0;
+  width: 250px;
+  font-size: 14px;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  background: #e0e5f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* STAT CARDS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--card-shadow);
+}
+
+.stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Colors for stats icon backgrounds */
+.blue .stat-icon {
+  background: #eef2ff;
+  color: #4318ff;
+}
+.green .stat-icon {
+  background: #e6fffa;
+  color: #05cd99;
+}
+.purple .stat-icon {
+  background: #f4f1ff;
+  color: #7047eb;
+}
+.orange .stat-icon {
+  background: #fff7ed;
+  color: #ff9900;
+}
+
+.stat-info .label {
+  color: #a3aed0;
+  font-size: 12px;
+  display: block;
+}
+.stat-info .value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1b2559;
+  display: block;
+  margin: 2px 0;
+}
+.stat-info .subtext {
+  font-size: 11px;
+  color: #a3aed0;
+}
+
+/* CONTENT GRID */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 25px;
+}
+
+.content-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f4f7fe;
+}
+
+.doc-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.tag-upcoming {
+  background: #eef2ff;
+  color: #4318ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.tag-past {
+  background: #f4f7fe;
+  color: #a3aed0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Report Item Styles */
+.report-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.report-item:hover {
+  background: #f8fafc;
+}
+
+.file-type {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.pdf {
+  background: #ffebee;
+  color: #e53935;
+}
+.img {
+  background: #e3f2fd;
+  color: #1e88e5;
+}
+
+.upload-btn {
+  width: 100%;
+  padding: 15px;
+  border: 2px dashed #e0e5f2;
+  background: none;
+  border-radius: 12px;
+  color: var(--primary);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}

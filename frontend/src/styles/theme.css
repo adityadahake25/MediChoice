@@ -1,0 +1,10 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f0f9ff;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+}
