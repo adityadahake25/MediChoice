@@ -52,9 +52,7 @@ const Estimator = () => {
   ];
 
   // ------------------ STATE ------------------
-  const [selectedTreatment, setSelectedTreatment] = useState(
-    treatments[0].name,
-  );
+  const [selectedTreatment, setSelectedTreatment] = useState(treatments[0].name);
   const [selectedCity, setSelectedCity] = useState("Delhi");
   const [insuranceType, setInsuranceType] = useState(0.7);
 
@@ -77,19 +75,19 @@ const Estimator = () => {
 
   const bestHospital = topHospitals[0];
 
-  // ------------------ GRAPH DATA (VARIES BY BEST HOSPITAL) ------------------
+  // ------------------ GRAPH DATA (FINANCIAL DATA) ------------------
   const chartData = [
     {
-      name: "Hospital Rating",
-      value: bestHospital?.graph.hospital_rating || 0,
+      name: "Total Estimate",
+      value: totalCost,
     },
     {
-      name: "Doctors Rating",
-      value: bestHospital?.graph.doctors_rating || 0,
+      name: "Insurance Pays",
+      value: insurancePays,
     },
     {
-      name: "Success Rate",
-      value: bestHospital?.graph.success_rate || 0,
+      name: "Your Pay",
+      value: yourPay,
     },
   ];
 
@@ -188,7 +186,7 @@ const Estimator = () => {
         <div className="details-grid">
           {/* -------- GRAPH -------- */}
           <div className="chart-section">
-            <h3>Performance Metrics of Best Hospital</h3>
+            <h3>Financial Breakdown (INR)</h3>
 
             <div className="chart-wrapper">
               <ResponsiveContainer width="100%" height={340}>
@@ -221,7 +219,8 @@ const Estimator = () => {
                     tickLine={false}
                   />
 
-                  <YAxis hide domain={[0, 100]} />
+                  {/* Removed domain={[0, 100]} to scale for currency */}
+                  <YAxis hide />
 
                   <Tooltip
                     cursor={{ fill: "rgba(37, 99, 235, 0.08)" }}
@@ -231,7 +230,7 @@ const Estimator = () => {
                       background: "#ffffff",
                       boxShadow: "0 15px 35px rgba(37,99,235,0.2)",
                     }}
-                    formatter={(value) => `${value}%`}
+                    formatter={(value) => `₹${value.toLocaleString("en-IN")}`}
                   />
 
                   <Bar dataKey="value" radius={[14, 14, 0, 0]} barSize={65}>
@@ -242,7 +241,7 @@ const Estimator = () => {
                     <LabelList
                       dataKey="value"
                       position="top"
-                      formatter={(value) => `${value}%`}
+                      formatter={(value) => `₹${(value / 1000).toFixed(0)}k`}
                       style={{
                         fill: "#1e293b",
                         fontWeight: 700,
@@ -255,8 +254,7 @@ const Estimator = () => {
 
               {bestHospital && (
                 <div className="best-hospital-label">
-                  {bestHospital.hospital_name}
-                  <span className="trophy-text"> (🏆 Best Overall)</span>
+                  Estimates adjusted for {bestHospital.hospital_name}
                 </div>
               )}
             </div>

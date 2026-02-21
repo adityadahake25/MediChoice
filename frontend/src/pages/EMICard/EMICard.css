@@ -1,0 +1,126 @@
+.emi-card {
+  width: 380px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  color: #2d3748;
+}
+
+.emi-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.emi-icon {
+  background-color: #e6fffa;
+  color: #38b2ac;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.emi-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emi-inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.75rem;
+  color: #718096;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group input, 
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.emi-display {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.emi-label {
+  font-size: 0.75rem;
+  color: #718096;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.emi-amount {
+  font-size: 2.25rem;
+  margin: 8px 0;
+  font-weight: 800;
+}
+
+.emi-rate {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.emi-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.insurance-badge {
+  background-color: #e6fffa;
+  color: #2c7a7b;
+  border: 1px solid #b2f5ea;
+}
+
+.emi-gov-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  background: white;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  color: #2d3748;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.emi-gov-btn:hover {
+  background-color: #f7fafc;
+}

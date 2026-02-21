@@ -33,7 +33,7 @@ router.post("/signup", async (req, res) => {
 
     if (role === "doctor") {
       // ⚠️ Replace this with a real hospital ObjectId from your DB
-      const hospitalId = "PUT_REAL_HOSPITAL_OBJECT_ID_HERE";
+      const hospitalId = "699590bd477beeedd1d6b170";
 
       await Doctor.create({
         doctor_id: `DOC-${Date.now()}`,
