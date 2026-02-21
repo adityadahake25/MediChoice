@@ -7,16 +7,29 @@ const userSchema = new mongoose.Schema(
     email: { type: String, required: true, unique: true },
     mobile: { type: String, required: true },
     password: { type: String, required: true },
+
+    // 🔥 Add These
     role: {
       type: String,
-      enum: ["patient", "doctor"],
-      required: true,
+      enum: ["patient", "doctor", "admin"],
+      default: "patient",
+    },
+
+    verificationStatus: {
+      type: String,
+      enum: ["pending", "approved", "rejected"],
+      default: "approved", // patients auto approved
+    },
+
+    isVerified: {
+      type: Boolean,
+      default: true, // patients true, doctors override below
     },
   },
   { timestamps: true },
 );
 
-// 🔐 Hash password before saving
+// Hash password
 userSchema.pre("save", async function () {
   if (!this.isModified("password")) return;
 
@@ -24,7 +37,6 @@ userSchema.pre("save", async function () {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-// 🔐 Compare password
 userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };

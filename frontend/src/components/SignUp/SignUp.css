@@ -1,105 +1,242 @@
+/* ================= PAGE ================= */
 .signup-page {
   min-height: 100vh;
-  background: #ffffff;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
+  font-family: "Inter", sans-serif;
 }
 
+/* ================= WRAPPER ================= */
 .signup-wrapper {
-  width: 700px;
+  width: 720px;
   max-width: 100%;
-  padding: 40px;
-  border-radius: 18px;
+  padding: 45px;
+  border-radius: 22px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
   background: white;
+  transition: 0.3s ease;
 }
 
+.signup-wrapper:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= TITLE ================= */
 .signup-wrapper h2 {
-  font-size: 28px;
-  color: #1e3a8a;
+  font-size: 30px;
+  color: #0f172a;
   text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
   text-align: center;
   font-size: 14px;
-  color: #6b7280;
-  margin-bottom: 25px;
+  color: #64748b;
+  margin-bottom: 30px;
 }
 
-/* Role Buttons */
+/* ================= ROLE SELECTOR ================= */
 .role-selector {
   display: flex;
   background: #f1f5f9;
-  border-radius: 10px;
-  padding: 4px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 25px;
 }
 
 .role-selector button {
   flex: 1;
-  padding: 10px;
+  padding: 12px;
   border: none;
   background: transparent;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #1e3a8a;
+  transition: all 0.3s ease;
+}
+
+.role-selector button:hover {
+  background: #e2e8f0;
 }
 
 .role-selector button.active {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
 }
 
-/* Form Inputs */
+/* ================= FORM INPUTS ================= */
 .signup-form input,
 .signup-form select,
 .signup-form textarea {
   width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
   font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  background: #f8fafc;
+  transition: all 0.25s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .signup-form textarea {
   resize: none;
-  height: 70px;
+  height: 80px;
 }
 
-/* GRID 2 COLUMN */
+/* ================= GRID ================= */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
 }
 
-/* Button */
+/* ================= SECTION TITLES ================= */
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 30px 0 12px;
+  /* border-left: 4px solid #2563eb; */
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.section-subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* ================= BEAUTIFUL FILE UPLOAD ================= */
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.file-upload label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+/* Hide default input */
+.file-upload input[type="file"] {
+  display: none;
+}
+
+/* Custom Upload Box */
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+.upload-box span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.upload-box strong {
+  color: #2563eb;
+}
+
+/* ================= DECLARATION ================= */
+/* ================= DECLARATION CLEAN STYLE ================= */
+.declaration-box {
+  display: flex;
+  align-items: center; /* Align checkbox & text properly */
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.declaration-box:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+/* Checkbox styling */
+.declaration-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #2563eb; /* Modern checkbox color */
+  flex-shrink: 0;
+}
+
+/* Text should stay in proper line */
+.declaration-box span {
+  flex: 1;
+}
+
+.declaration-box input {
+  margin-top: 3px;
+  transform: scale(1.2);
+}
+
+/* ================= BUTTON ================= */
 .submit-btn {
   width: 100%;
-  padding: 14px;
-  background: #2563eb;
+  padding: 15px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
   border: none;
-  border-radius: 10px;
-  font-weight: 600;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 15px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }
 
 .submit-btn:hover {
-  background: #1e40af;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
 }
 
-/* Login Link */
+/* ================= LOGIN LINK ================= */
 .login-link {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #64748b;
 }
 
 .login-link a {
@@ -108,9 +245,48 @@
   text-decoration: none;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 650px) {
+  .signup-wrapper {
+    padding: 30px 20px;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
   }
+}
+
+/* Hide default file input */
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+.upload-box span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.file-success {
+  font-size: 13px;
+  font-weight: 600;
+  color: #16a34a;
 }

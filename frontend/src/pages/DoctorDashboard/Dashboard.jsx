@@ -32,55 +32,91 @@ const data = [
 ];
 
 const Dashboard = () => {
-  const user = JSON.parse(localStorage.getItem("userInfo"));
-  const userId = user?._id;
-
   const [doctor, setDoctor] = useState(null);
   const [requests, setRequests] = useState([]);
   const [filter, setFilter] = useState("All");
 
-  if (!userId || user.role !== "doctor") {
-    return <h2>Access Denied</h2>;
+  const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+  // 🔍 Debug
+  console.log("User Info:", userInfo);
+
+  // 🚫 If no user logged in
+  if (!userInfo) {
+    return <h2>Please Login First</h2>;
   }
 
-  // 1️⃣ Fetch Doctor Profile using userId
+  // 🚫 If not doctor
+  if (userInfo.role !== "doctor") {
+    return <h2>Access Denied - Not a Doctor</h2>;
+  }
+
+  const userId = userInfo._id;
+  const token = userInfo.token;
+
+  /* ================= FETCH DOCTOR PROFILE ================= */
+
   useEffect(() => {
     const fetchDoctorProfile = async () => {
       try {
         const res = await axios.get(
           `http://localhost:5000/api/doctors/user/${userId}`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          },
         );
+
+        console.log("Doctor Profile:", res.data);
         setDoctor(res.data);
       } catch (error) {
-        console.log(error);
+        console.log("Doctor fetch error:", error);
       }
     };
 
-    if (userId) fetchDoctorProfile();
-  }, [userId]);
+    if (userId && token) fetchDoctorProfile();
+  }, [userId, token]);
 
-  // 2️⃣ Fetch Appointments using doctor._id
+  /* ================= FETCH APPOINTMENTS ================= */
+
   useEffect(() => {
+    if (!doctor?._id) return;
+
     const fetchAppointments = async () => {
       try {
         const res = await axios.get(
           `http://localhost:5000/api/appointments/doctor/${doctor._id}`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          },
         );
+
+        console.log("Appointments:", res.data);
         setRequests(res.data);
       } catch (error) {
-        console.log(error);
+        console.log("Appointment fetch error:", error);
       }
     };
 
-    if (doctor?._id) fetchAppointments();
-  }, [doctor]);
+    fetchAppointments();
+  }, [doctor, token]);
 
-  // ================= UPDATE STATUS =================
+  /* ================= UPDATE STATUS ================= */
+
   const updateStatus = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/appointments/${id}`, {
-        status,
-      });
+      await axios.put(
+        `http://localhost:5000/api/appointments/${id}`,
+        { status },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        },
+      );
 
       setRequests((prev) =>
         prev.map((req) => (req._id === id ? { ...req, status } : req)),
@@ -90,10 +126,7 @@ const Dashboard = () => {
     }
   };
 
-  // ================= FILTERED DATA =================
-  const acceptedAppointments = requests.filter(
-    (req) => req.status === "Accepted",
-  );
+  /* ================= FILTER LOGIC ================= */
 
   const pendingAppointments = requests.filter(
     (req) => req.status === "Pending",
@@ -115,162 +148,58 @@ const Dashboard = () => {
       <DoctorSidebar />
 
       <div className="dashboard-main">
-        <h1 className="welcome-text">Welcome, Dr. Anjali 👩‍⚕️</h1>
+        <h1 className="welcome-text">
+          Welcome, Dr. {doctor?.doctor_name || "Doctor"} 👩‍⚕️
+        </h1>
 
-        {/* ================= KPI CARDS ================= */}
         <div className="kpi-container">
-          <div className="kpi-card">
-            <FaUserInjured className="kpi-icon blue" />
-            <p>Patients</p>
-            <h2>1,420</h2>
-          </div>
-
-          <div className="kpi-card">
-            <FaRupeeSign className="kpi-icon green" />
-            <p>Income</p>
-            <h2>₹3,95,000</h2>
-          </div>
-
           <div className="kpi-card">
             <FaCalendarCheck className="kpi-icon purple" />
             <p>Appointments</p>
             <h2>{requests.length}</h2>
           </div>
-
-          <div className="kpi-card">
-            <FaHeartbeat className="kpi-icon red" />
-            <p>Treatments</p>
-            <h2>845</h2>
-          </div>
         </div>
 
-        {/* ================= CHART + REQUESTS ================= */}
-        <div className="chart-request-row">
-          {/* Weekly Chart */}
-          <div className="card chart-small">
-            <h3>Weekly Patient Flow</h3>
-            <ResponsiveContainer width="100%" height={260}>
-              <BarChart data={data}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                <XAxis dataKey="day" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="patients" fill="#14b8a6" radius={[8, 8, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+        <div className="card request-small">
+          <h3>Appointment Requests ({pendingAppointments.length})</h3>
 
-          {/* ================= APPOINTMENT REQUESTS ================= */}
-          <div className="card request-small">
-            <h3>Appointment Requests ({pendingAppointments.length})</h3>
+          {requests.length === 0 && <p>No appointments found</p>}
 
-            <div className="filter-buttons">
-              <button onClick={() => setFilter("All")}>All</button>
-              <button onClick={() => setFilter("Pending")}>Pending</button>
-              <button onClick={() => setFilter("Accepted")}>Accepted</button>
-              <button onClick={() => setFilter("Rejected")}>Rejected</button>
-            </div>
-
-            {requests.length === 0 && <p>No appointments found</p>}
-
-            {filteredRequests.map((req) => (
-              <div key={req._id} className="request-item">
-                <div>
-                  <strong>{req.patientName}</strong>
-                  <p>{req.problem}</p>
-                  <small>
-                    {req.date} | {req.time}
-                  </small>
-                </div>
-
-                <div>
-                  {req.status === "Pending" ? (
-                    <>
-                      <button
-                        className="accept"
-                        onClick={() => updateStatus(req._id, "Accepted")}
-                      >
-                        <FaCheck />
-                      </button>
-
-                      <button
-                        className="reject"
-                        onClick={() => updateStatus(req._id, "Rejected")}
-                      >
-                        <FaTimes />
-                      </button>
-                    </>
-                  ) : (
-                    <span className={`status ${req.status.toLowerCase()}`}>
-                      {req.status}
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ================= TODAY'S APPOINTMENTS ================= */}
-        <div className="row-container">
-          <div className="card large">
-            <h3>Today's Appointments ({todaysAppointments.length})</h3>
-
-            {todaysAppointments.length === 0 && <p>No appointments today</p>}
-
-            {todaysAppointments.map((appt) => (
-              <div key={appt._id} className="appointment-item">
-                <div>
-                  <strong>{appt.patientName}</strong>
-                  <p>{appt.problem}</p>
-                </div>
-                <span className="time">{appt.time}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* ================= PATIENT DETAILS (STATIC FOR NOW) ================= */}
-          <div className="card large">
-            <h3>Patient Details</h3>
-
-            <div className="patient-header">
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="patient"
-              />
+          {filteredRequests.map((req) => (
+            <div key={req._id} className="request-item">
               <div>
-                <h4>Rahul Mehta</h4>
-                <p>Cardiology Patient</p>
+                <strong>{req.patientName}</strong>
+                <p>{req.problem}</p>
+                <small>
+                  {req.date} | {req.time}
+                </small>
+              </div>
+
+              <div>
+                {req.status === "Pending" ? (
+                  <>
+                    <button
+                      className="accept"
+                      onClick={() => updateStatus(req._id, "Accepted")}
+                    >
+                      <FaCheck />
+                    </button>
+
+                    <button
+                      className="reject"
+                      onClick={() => updateStatus(req._id, "Rejected")}
+                    >
+                      <FaTimes />
+                    </button>
+                  </>
+                ) : (
+                  <span className={`status ${req.status.toLowerCase()}`}>
+                    {req.status}
+                  </span>
+                )}
               </div>
             </div>
-
-            <div className="patient-info">
-              <p>
-                <strong>D.O.B:</strong> 12 Jan 1995
-              </p>
-              <p>
-                <strong>Sex:</strong> Male
-              </p>
-              <p>
-                <strong>Height:</strong> 175 cm
-              </p>
-              <p>
-                <strong>Weight:</strong> 70 kg
-              </p>
-              <p>
-                <strong>Last Visit:</strong> 02 Jan 2026
-              </p>
-              <p>
-                <strong>Registered:</strong> 15 Mar 2023
-              </p>
-            </div>
-
-            <div className="patient-buttons">
-              <button className="primary-btn">Call</button>
-              <button className="outline-btn">Documents</button>
-              <button className="outline-btn">Chat</button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

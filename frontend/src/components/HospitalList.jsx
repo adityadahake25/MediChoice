@@ -1,6 +1,7 @@
 import HospitalCard from "./HospitalCard";
 import { hospitals } from "../data/hospitals";
 import "./HospitalList.css";
+import { Link } from "react-router-dom";
 
 const HospitalList = () => {
   // Sort hospitals by rating (highest first)
@@ -17,7 +18,7 @@ const HospitalList = () => {
 
       <div className="hospital-grid">
         {sortedHospitals.map((hospital) => (
-          <HospitalCard key={hospital.hospital_id} hospital={hospital} />
+          <HospitalCard hospital={hospital} />
         ))}
       </div>
     </section>

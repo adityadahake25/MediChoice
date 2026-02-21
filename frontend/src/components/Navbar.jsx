@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/navbar.css";
 import logo from "../assets/logo.png";
+import Translate from "../components/Translate/Translate.jsx";
 
 export default function Navbar() {
   const location = useLocation();
@@ -13,7 +14,7 @@ export default function Navbar() {
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("userInfo"));
     setUserInfo(storedUser);
-  }, [location]); // 🔥 updates when route changes
+  }, [location]);
 
   /* ================= SMOOTH SCROLL ================= */
   useEffect(() => {
@@ -56,6 +57,7 @@ export default function Navbar() {
             Home
           </Link>
         </li>
+
         <li>
           <Link
             to="/#how-it-works"
@@ -64,6 +66,7 @@ export default function Navbar() {
             How It Works
           </Link>
         </li>
+
         <li>
           <Link
             to="/#features-section"
@@ -72,12 +75,11 @@ export default function Navbar() {
             Features
           </Link>
         </li>
+
         <li>
           <Link to="/hospitals">Top Hospitals</Link>
         </li>
-        <li>
-          <Link to="/compare">Compare</Link>
-        </li>
+
         <li>
           <Link
             to="/#treatments-section"
@@ -86,6 +88,11 @@ export default function Navbar() {
             Treatments
           </Link>
         </li>
+
+        <li>
+          <Link to="/all-treatments">All Treatments</Link>
+        </li>
+
         <li>
           <Link
             to="/#testimonials-section"
@@ -106,8 +113,12 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* ================= AUTH BUTTONS ================= */}
+      {/* ================= RIGHT SIDE ================= */}
       <div className="nav-buttons">
+        <div className="language-wrapper">
+          🌍 <Translate />
+        </div>
+
         {userInfo ? (
           <>
             <span className="welcome-text-box">Hello, {userInfo.name}</span>

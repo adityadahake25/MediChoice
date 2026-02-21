@@ -22,22 +22,38 @@ const BookAppointment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+    if (!userInfo) {
+      alert("Please login first");
+      return;
+    }
+
     try {
-      await axios.post("http://localhost:5000/api/appointments/book", {
-        ...formData,
-        doctorId, // ✅ coming from URL
-      });
+      await axios.post(
+        "http://localhost:5000/api/appointments/book",
+        {
+          doctorId,
+          problem: formData.problem,
+          date: formData.date,
+          time: formData.time,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${userInfo.token}`,
+          },
+        },
+      );
 
       alert("Appointment Booked Successfully!");
 
       setFormData({
-        patientName: "",
         problem: "",
         date: "",
         time: "",
       });
     } catch (error) {
-      alert("Error booking appointment");
+      alert(error.response?.data?.message || "Error booking appointment");
     }
   };
 

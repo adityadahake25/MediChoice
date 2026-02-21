@@ -1,19 +1,29 @@
 import express from "express";
 import Appointment from "../models/Appointment.js";
+import { protect } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-// ================= BOOK APPOINTMENT =================
-router.post("/book", async (req, res) => {
+/* =========================================================
+   ================= BOOK APPOINTMENT ======================
+   ========================================================= */
+
+router.post("/book", protect, async (req, res) => {
   try {
-    const { patientName, doctorId, problem, date, time } = req.body;
+    const { doctorId, problem, date, time } = req.body;
+
+    if (!doctorId || !problem || !date || !time) {
+      return res.status(400).json({ message: "All fields are required" });
+    }
 
     const newAppointment = new Appointment({
-      patientName,
+      patientId: req.user._id, // 🔥 from token
+      patientName: req.user.name, // 🔥 from token
       doctorId,
       problem,
       date,
       time,
+      status: "Pending",
     });
 
     await newAppointment.save();
@@ -27,12 +37,17 @@ router.post("/book", async (req, res) => {
   }
 });
 
-// ================= GET DOCTOR APPOINTMENTS =================
-router.get("/doctor/:doctorId", async (req, res) => {
+/* =========================================================
+   ============== GET DOCTOR APPOINTMENTS ==================
+   ========================================================= */
+
+router.get("/doctor/:doctorId", protect, async (req, res) => {
   try {
     const appointments = await Appointment.find({
       doctorId: req.params.doctorId,
-    }).sort({ createdAt: -1 });
+    })
+      .populate("patientId", "name email mobile")
+      .sort({ createdAt: -1 });
 
     res.status(200).json(appointments);
   } catch (error) {
@@ -40,14 +55,27 @@ router.get("/doctor/:doctorId", async (req, res) => {
   }
 });
 
-// ================= UPDATE STATUS =================
-router.put("/:id", async (req, res) => {
+/* =========================================================
+   ================= UPDATE STATUS ==========================
+   ========================================================= */
+
+router.put("/:id", protect, async (req, res) => {
   try {
+    const { status } = req.body;
+
+    if (!["Pending", "Accepted", "Rejected"].includes(status)) {
+      return res.status(400).json({ message: "Invalid status value" });
+    }
+
     const updatedAppointment = await Appointment.findByIdAndUpdate(
       req.params.id,
-      { status: req.body.status },
+      { status },
       { new: true },
     );
+
+    if (!updatedAppointment) {
+      return res.status(404).json({ message: "Appointment not found" });
+    }
 
     res.status(200).json(updatedAppointment);
   } catch (error) {

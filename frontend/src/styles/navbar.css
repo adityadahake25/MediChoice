@@ -159,3 +159,44 @@
 .logout-btn:active {
   transform: scale(0.97);
 }
+
+#google_translate_element {
+  margin-left: 20px;
+}
+
+.goog-te-gadget {
+  font-size: 14px;
+}
+
+/* ===== LANGUAGE SWITCHER ===== */
+
+.language-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.translate-box {
+  margin-left: 5px;
+}
+
+.goog-te-gadget {
+  font-size: 13px !important;
+}
+
+.goog-te-combo {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Hide Google Branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}

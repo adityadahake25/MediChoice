@@ -189,8 +189,6 @@ const HospitalsAll = () => {
         {/* Hospital Grid */}
         <div className="hospital-grid">
           {filteredHospitals.map((hospital) => {
-            console.log("Image path:", hospital.image);
-
             return (
               <div className="hospital-card" key={hospital._id}>
                 <div className="hospital-image">
