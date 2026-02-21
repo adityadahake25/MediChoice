@@ -50,7 +50,7 @@ export default function Navbar() {
         <h2 className="logo-text">MediChoice</h2>
       </Link>
 
-      {/* Menu */}
+      {/* ================= MENU ================= */}
       <ul className="menu">
         <li>
           <Link to="/" onClick={() => scrollToSection("home")}>
@@ -89,8 +89,9 @@ export default function Navbar() {
           </Link>
         </li>
 
+        {/* 🔥 NEW CROWDFUNDING OPTION */}
         <li>
-          <Link to="/all-treatments">All Treatments</Link>
+          <Link to="/crowdfunding">Crowdfunding</Link>
         </li>
 
         <li>
@@ -116,7 +117,7 @@ export default function Navbar() {
       {/* ================= RIGHT SIDE ================= */}
       <div className="nav-buttons">
         <div className="language-wrapper">
-          🌍 <Translate />
+          <Translate />
         </div>
 
         {userInfo ? (

@@ -1,0 +1,111 @@
+.cf-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef4ff, #f9fbff);
+  padding: 70px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.cf-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cf-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.cf-header p {
+  color: #6b7280;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ================= PROGRESS BAR ================= */
+
+.cf-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.cf-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  color: #9ca3af;
+  transition: 0.3s;
+}
+
+.cf-step.active {
+  color: #2563eb;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.cf-step.active .circle {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+  background: #e5e7eb;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+/* ================= CARD ================= */
+
+.cf-card {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .cf-progress {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .cf-card {
+    padding: 30px;
+  }
+}

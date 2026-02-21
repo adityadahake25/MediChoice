@@ -1,15 +1,16 @@
-/* ================= SECTION ================= */
-.treatments-section {
-  padding: 80px 80px;
-  background: #ffffff;
+/* ===== ALL TREATMENTS PAGE ===== */
+.alltreatments-section {
+  padding: 70px 80px;
+  background: #f8fafc;
+  min-height: 100vh;
 }
 
-/* ================= HEADER ================= */
-.treatments-header {
+/* Header */
+.alltreatments-header {
   margin-bottom: 50px;
 }
 
-.treatments-header .tag {
+.alltreatments-header .tag {
   color: #2563eb;
   font-weight: 600;
   font-size: 12px;
@@ -17,29 +18,28 @@
   text-transform: uppercase;
 }
 
-.treatments-header h2 {
+.alltreatments-header h2 {
   font-size: 36px;
   font-weight: 700;
   margin: 8px 0;
   color: #1e293b;
 }
 
-.treatments-header p {
+.alltreatments-header p {
   color: #64748b;
-  max-width: 650px;
   font-size: 15px;
   line-height: 1.6;
 }
 
-/* ================= GRID ================= */
-.treatments-grid {
+/* Grid */
+.alltreatments-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 28px;
 }
 
-/* ================= CARD ================= */
-.treatment-card {
+/* Card */
+.alltreatment-card {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -49,17 +49,17 @@
     box-shadow 0.3s ease;
 }
 
-.treatment-card:hover {
+.alltreatment-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* ================= IMAGE ================= */
-.treatment-image {
+/* Image */
+.alltreatment-image {
   position: relative;
 }
 
-.treatment-image img {
+.alltreatment-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -67,7 +67,7 @@
   border-top-right-radius: 16px;
 }
 
-.treatment-image h3 {
+.alltreatment-image h3 {
   position: absolute;
   bottom: 16px;
   left: 16px;
@@ -77,18 +77,12 @@
   text-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
 }
 
-/* ================= CONTENT ================= */
-.treatment-content {
+/* Content */
+.alltreatment-content {
   padding: 18px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.description {
-  font-size: 14px;
-  color: #475569;
-  line-height: 1.5;
 }
 
 .info {
@@ -104,7 +98,6 @@
   gap: 6px;
 }
 
-/* ================= FOOTER ================= */
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -117,8 +110,7 @@
   color: #94a3b8;
 }
 
-/* ================= BUTTON ================= */
-.learn-more {
+.learn-more-btn {
   background: none;
   border: none;
   color: #2563eb;
@@ -130,27 +122,27 @@
   transition: 0.2s;
 }
 
-.learn-more:hover {
+.learn-more-btn:hover {
   text-decoration: underline;
 }
 
-/* ================= RESPONSIVE ================= */
+/* Responsive */
 @media (max-width: 1024px) {
-  .treatments-section {
+  .alltreatments-section {
     padding: 60px 40px;
   }
 }
 
 @media (max-width: 640px) {
-  .treatments-header h2 {
+  .alltreatments-header h2 {
     font-size: 28px;
   }
 
-  .treatments-grid {
+  .alltreatments-grid {
     gap: 20px;
   }
 
-  .treatment-image img {
+  .alltreatment-image img {
     height: 160px;
   }
 }

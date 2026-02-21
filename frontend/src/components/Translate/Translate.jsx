@@ -1,27 +1,47 @@
 import { useEffect } from "react";
+import "./translate.css";
 
 export default function Translate() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
+    const addScript = document.createElement("script");
+    addScript.src =
       "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.body.appendChild(script);
+    addScript.async = true;
+    document.body.appendChild(addScript);
 
     window.googleTranslateElementInit = () => {
-      if (window.google && window.google.translate) {
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "en,hi,mr",
-            layout:
-              window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element",
-        );
-      }
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          autoDisplay: false,
+        },
+        "google_translate_element",
+      );
     };
   }, []);
 
-  return <div id="google_translate_element" className="translate-box"></div>;
+  const handleLanguageChange = (lang) => {
+    const select = document.querySelector(".goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  };
+
+  return (
+    <div className="translate-wrapper">
+      {/* Hidden Google Element */}
+      <div id="google_translate_element" style={{ display: "none" }}></div>
+
+      {/* Custom Dropdown */}
+      <select
+        className="custom-language-dropdown"
+        onChange={(e) => handleLanguageChange(e.target.value)}
+      >
+        <option value="en">🇬🇧 English</option>
+        <option value="hi">🇮🇳 हिंदी (Hindi)</option>
+        <option value="mr">🇮🇳 मराठी (Marathi)</option>
+      </select>
+    </div>
+  );
 }

@@ -1,0 +1,276 @@
+/* ================= STEP WRAPPER ================= */
+
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.step-wrapper h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* ================= INPUT GROUP ================= */
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 16px 14px;
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+  background: #f8fbff;
+  font-size: 14px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.input-group textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Floating Label */
+
+.input-group label {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  font-size: 14px;
+  color: #6b7280;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: transparent;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  background: white;
+  padding: 0 6px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ================= ERROR MESSAGE ================= */
+
+.error {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ================= BUTTONS ================= */
+
+.primary-btn {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* ================= UPLOAD BOX ================= */
+
+.upload-box {
+  background: linear-gradient(135deg, #eef4ff, #f1f5ff);
+  padding: 25px;
+  border-radius: 14px;
+  border: 2px dashed #2563eb;
+  text-align: center;
+  font-weight: 600;
+  color: #2563eb;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-box:hover {
+  background: #e0ecff;
+  transform: scale(1.02);
+}
+
+/* ================= CAMPAIGN PREVIEW ================= */
+
+.campaign-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.preview-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.15);
+  transition: 0.3s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-5px);
+}
+
+.preview-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.preview-card p {
+  font-size: 14px;
+  color: #374151;
+  margin-top: 5px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ================= PROGRESS BAR ================= */
+
+.progress-bar {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  margin: 18px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 20px;
+  transition: width 0.6s ease;
+}
+
+.amount-text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #111827;
+}
+
+/* ================= DONATE BUTTON ================= */
+
+.donate-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 18px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.donate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.4);
+}
+
+/* ================= SHARE SECTION ================= */
+
+.share-section {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.share-section button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.share-section button:hover {
+  background: #1e40af;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .share-section {
+    flex-direction: column;
+  }
+}

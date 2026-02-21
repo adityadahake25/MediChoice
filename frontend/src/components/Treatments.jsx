@@ -1,6 +1,6 @@
 import "./Treatments.css";
 import { Clock, IndianRupee, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom"; // ✅ Added
+import { Link } from "react-router-dom";
 
 import Cardiology from "../assets/Cardiology.jpeg";
 import Dermatology from "../assets/Dermatology.jpeg";
@@ -92,7 +92,7 @@ const Treatments = () => {
       </div>
 
       {/* 🔽 Explore More Treatments */}
-      <Link to="/all-treatments" className="explore-more">
+      <Link to="/treatments" className="explore-more">
         <span>Explore more treatment options</span>
         <ArrowRight size={18} />
       </Link>

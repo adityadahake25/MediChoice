@@ -1,0 +1,41 @@
+.translate-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-language-dropdown {
+  padding: 8px 14px;
+  border-radius: 25px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.custom-language-dropdown:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.custom-language-dropdown:focus {
+  border-color: #2563eb;
+}
+
+/* Remove top Google translate bar */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+/* Hide Google logo */
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
