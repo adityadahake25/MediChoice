@@ -22,7 +22,7 @@ import Estimator from "./pages/Estimator/Estimator.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Login from "./components/Login/Login.jsx";
 
-// 1. Import the component at the top
+// 1. Dashboard and Extra Imports
 import PatientDashboard from "./pages/Dashboards/PatientDashboard";
 import Dashboard from "./pages/DoctorDashboard/Dashboard";
 import Schedule from "./pages/SidebarExtras/Schedule";
@@ -30,16 +30,20 @@ import Patients from "./pages/SidebarExtras/Patients";
 import Messages from "./pages/SidebarExtras/Messages";
 import Medicines from "./pages/SidebarExtras/Medicines";
 
-// importing booking appointment
+// Importing booking appointment
 import BookAppointment from "./pages/BookAppointment/BookAppointment.jsx";
 
-// 2. Inside your <Routes> component, add:
+// NEW: Import the ChatWidget component
+import ChatWidget from "./components/ChatWidget";
+
+// ADDED: Import the new EMICard component
+import EMICard from "./pages/EMICard/EMICard.jsx";
 
 /* ================= Layout Wrapper ================= */
 function Layout() {
   const location = useLocation();
 
-  // Hide Navbar & Footer on auth pages
+  // Hide Navbar, Footer, and Chatbot on auth pages
   const hideLayout =
     location.pathname === "/login" || location.pathname === "/signup";
 
@@ -67,6 +71,16 @@ function Layout() {
         {/* ================= AI ESTIMATOR PAGE ================= */}
         <Route path="/estimate" element={<Estimator />} />
 
+        {/* ================= NEW: EMI CALCULATOR PAGE ================= */}
+        <Route 
+          path="/EMI" 
+          element={
+            <div style={{ padding: '100px 20px', display: 'flex', justifyContent: 'center', backgroundColor: '#f4f7f6' }}>
+              <EMICard />
+            </div>
+          } 
+        />
+
         {/* ================= OTHER PAGES ================= */}
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
@@ -83,6 +97,9 @@ function Layout() {
         <Route path="/doctor/medicines" element={<Medicines />} />
         <Route path="/book/:doctorId" element={<BookAppointment />} />
       </Routes>
+
+      {/* NEW: ChatWidget is added here so it persists across medical pages */}
+      {!hideLayout && <ChatWidget />}
 
       {!hideLayout && <Footer />}
     </>

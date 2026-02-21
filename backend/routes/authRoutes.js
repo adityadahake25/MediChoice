@@ -9,7 +9,6 @@ const router = express.Router();
 
 /* ================= MULTER CONFIG ================= */
 
-// Store files in uploads folder with unique names
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads/");
@@ -41,7 +40,6 @@ router.post(
   ]),
   async (req, res) => {
     try {
-      // 🔥 Safe destructuring
       const { name, email, password, mobile, role } = req.body || {};
 
       if (!name || !email || !password || !mobile) {
@@ -75,7 +73,6 @@ router.post(
       /* ================= DOCTOR PROFILE ================= */
 
       if (isDoctor) {
-        // Validate uploaded files
         if (
           !req.files ||
           !req.files.license ||
@@ -87,7 +84,7 @@ router.post(
           });
         }
 
-        const hospitalId = "699590bd477beeedd1d6b170";
+        const hospitalId = "699590bd477beeedd1d6b170"; // replace with dynamic later
 
         await Doctor.create({
           doctor_id: `DOC-${Date.now()}`,
@@ -99,7 +96,6 @@ router.post(
           contact_number: mobile,
           userId: user._id,
 
-          // 🔥 Save file paths
           licenseDocument: req.files.license[0].path,
           degreeDocument: req.files.degree[0].path,
           idProofDocument: req.files.idProof[0].path,
@@ -111,7 +107,7 @@ router.post(
         });
       }
 
-      /* ================= PATIENT LOGIN ================= */
+      /* ================= PATIENT RESPONSE ================= */
 
       res.status(201).json({
         _id: user._id,
@@ -144,7 +140,6 @@ router.post("/login", async (req, res) => {
     const user = await User.findOne({ email });
 
     if (user && (await user.matchPassword(password))) {
-      // 🔥 Block unverified doctors
       if (user.role === "doctor" && !user.isVerified) {
         return res.status(403).json({
           message: "Your account is pending admin approval.",

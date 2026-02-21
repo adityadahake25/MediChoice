@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/hero.css";
-import bgImage from "../assets/bg1.png";
+import bgImage from "../assets/bg3.jpeg";
 
 const suggestions = [
   "Heart Bypass Surgery",
@@ -46,10 +46,10 @@ export default function HeroSection() {
       ref={heroRef}
       className="hero scroll-hidden"
       style={{
-        backgroundImage: `linear-gradient(
-          rgba(2, 6, 23, 0.72),
-          rgba(2, 6, 23, 0.72)
-        ), url(${bgImage})`,
+       backgroundImage: `linear-gradient(
+        rgba(2, 6, 23, 0.4),
+        rgba(2, 6, 23, 0.4)
+      ), url(${bgImage})`
       }}
     >
       <div className="hero-content floating">
