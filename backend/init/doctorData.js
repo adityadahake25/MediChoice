@@ -3,7 +3,7 @@ const doctors =
   {
     doctor_id: "D01",
     doctor_name: "Dr. Aditya Sharma",
-    image: "/uploads/doctors/d1.jpeg",
+    image: "/uploads/doctors/d2.jpeg",
     specialization: "Cardiologist",
     experience_years: 15,
     hospital: { hospital_id: "H001", hospital_name: "Apollo Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -23,7 +23,7 @@ const doctors =
   {
     doctor_id: "D02",
     doctor_name: "Dr. Priya Mehta",
-    image: "/uploads/doctors/d2.jpeg",
+    image: "/uploads/doctors/d1.jpeg",
     specialization: "Dermatologist",
     experience_years: 10,
     hospital: { hospital_id: "H001", hospital_name: "Apollo Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -83,7 +83,7 @@ const doctors =
   {
     doctor_id: "D05",
     doctor_name: "Dr. Anjali Deshmukh",
-    image: "/uploads/doctors/d5.jpeg",
+    image: "/uploads/doctors/d7.jpeg",
     specialization: "Gynecologist",
     experience_years: 14,
     hospital: { hospital_id: "H002", hospital_name: "Lilavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -103,7 +103,7 @@ const doctors =
   {
     doctor_id: "D06",
     doctor_name: "Dr. Rohan Varma",
-    image: "/uploads/doctors/d6.jpeg",
+    image: "/uploads/doctors/d5.jpeg",
     specialization: "Pediatrician",
     experience_years: 9,
     hospital: { hospital_id: "H002", hospital_name: "Lilavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -123,7 +123,7 @@ const doctors =
   {
     doctor_id: "D07",
     doctor_name: "Dr. Sameer Gupta",
-    image: "/uploads/doctors/d7.jpeg",
+    image: "/uploads/doctors/d6.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 20,
     hospital: { hospital_id: "H002", hospital_name: "Lilavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -143,7 +143,7 @@ const doctors =
   {
     doctor_id: "D08",
     doctor_name: "Dr. Kavita Rao",
-    image: "/uploads/doctors/d8.jpeg",
+    image: "/uploads/doctors/d9.jpeg",
     specialization: "Oncologist",
     experience_years: 11,
     hospital: { hospital_id: "H002", hospital_name: "Lilavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -163,7 +163,7 @@ const doctors =
   {
     doctor_id: "D09",
     doctor_name: "Dr. Rajesh Khanna",
-    image: "/uploads/doctors/d9.jpeg",
+    image: "/uploads/doctors/d8.jpeg",
     specialization: "Psychiatrist",
     experience_years: 16,
     hospital: { hospital_id: "H003", hospital_name: "Fortis Hospital", city: "Bangalore", state: "Karnataka" },
@@ -203,7 +203,7 @@ const doctors =
   {
     doctor_id: "D11",
     doctor_name: "Dr. Meena Reddy",
-    image: "/uploads/doctors/d11.jpeg",
+    image: "/uploads/doctors/d14.jpeg",
     specialization: "Endocrinologist",
     experience_years: 10,
     hospital: { hospital_id: "H003", hospital_name: "Fortis Hospital", city: "Bangalore", state: "Karnataka" },
@@ -223,7 +223,7 @@ const doctors =
   {
     doctor_id: "D12",
     doctor_name: "Dr. Amit Taneja",
-    image: "/uploads/doctors/d12.jpeg",
+    image: "/uploads/doctors/d11.jpeg",
     specialization: "ENT Specialist",
     experience_years: 12,
     hospital: { hospital_id: "H003", hospital_name: "Fortis Hospital", city: "Bangalore", state: "Karnataka" },
@@ -244,7 +244,7 @@ const doctors =
   {
     doctor_id: "D13",
     doctor_name: "Dr. Karan Malhotra",
-    image: "/uploads/doctors/d13.jpeg",
+    image: "/uploads/doctors/d12.jpeg",
     specialization: "Cardiologist",
     experience_years: 17,
     hospital: { hospital_id: "H004", hospital_name: "Max Super Speciality", city: "Delhi", state: "Delhi" },
@@ -264,7 +264,7 @@ const doctors =
   {
     doctor_id: "D14",
     doctor_name: "Dr. Shalini Vats",
-    image: "/uploads/doctors/d14.jpeg",
+    image: "/uploads/doctors/d19.jpeg",
     specialization: "Dermatologist",
     experience_years: 9,
     hospital: { hospital_id: "H004", hospital_name: "Max Super Speciality", city: "Delhi", state: "Delhi" },
@@ -284,7 +284,7 @@ const doctors =
   {
     doctor_id: "D15",
     doctor_name: "Dr. Abhinav Gupta",
-    image: "/uploads/doctors/d15.jpeg",
+    image: "/uploads/doctors/d13.jpeg",
     specialization: "Neurologist",
     experience_years: 14,
     hospital: { hospital_id: "H004", hospital_name: "Max Super Speciality", city: "Delhi", state: "Delhi" },
@@ -304,7 +304,7 @@ const doctors =
   {
     doctor_id: "D16",
     doctor_name: "Dr. Rahul Oberoi",
-    image: "/uploads/doctors/d16.jpeg",
+    image: "/uploads/doctors/d15.jpeg",
     specialization: "Orthopedic",
     experience_years: 20,
     hospital: { hospital_id: "H004", hospital_name: "Max Super Speciality", city: "Delhi", state: "Delhi" },
@@ -326,7 +326,7 @@ const doctors =
   {
     doctor_id: "D17",
     doctor_name: "Dr. Sonali Bose",
-    image: "/uploads/doctors/d17.jpeg",
+    image: "/uploads/doctors/d22.jpeg",
     specialization: "Gynecologist",
     experience_years: 15,
     hospital: { hospital_id: "H005", hospital_name: "Manipal Hospital", city: "Bangalore", state: "Karnataka" },
@@ -346,7 +346,7 @@ const doctors =
   {
     doctor_id: "D18",
     doctor_name: "Dr. Naveen Kumar",
-    image: "/uploads/doctors/d18.jpeg",
+    image: "/uploads/doctors/d15.jpeg",
     specialization: "Pediatrician",
     experience_years: 10,
     hospital: { hospital_id: "H005", hospital_name: "Manipal Hospital", city: "Bangalore", state: "Karnataka" },
@@ -366,7 +366,7 @@ const doctors =
   {
     doctor_id: "D19",
     doctor_name: "Dr. Arshad Ali",
-    image: "/uploads/doctors/d19.jpeg",
+    image: "/uploads/doctors/d16.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 13,
     hospital: { hospital_id: "H005", hospital_name: "Manipal Hospital", city: "Bangalore", state: "Karnataka" },
@@ -386,7 +386,7 @@ const doctors =
   {
     doctor_id: "D20",
     doctor_name: "Dr. Swati Iyer",
-    image: "/uploads/doctors/d20.jpeg",
+    image: "/uploads/doctors/d23.jpeg",
     specialization: "Oncologist",
     experience_years: 12,
     hospital: { hospital_id: "H005", hospital_name: "Manipal Hospital", city: "Bangalore", state: "Karnataka" },
@@ -408,7 +408,7 @@ const doctors =
   {
     doctor_id: "D21",
     doctor_name: "Dr. Deepak Nair",
-    image: "/uploads/doctors/d21.jpeg",
+    image: "/uploads/doctors/d17.jpeg",
     specialization: "Psychiatrist",
     experience_years: 11,
     hospital: { hospital_id: "H006", hospital_name: "Aster CMI", city: "Bangalore", state: "Karnataka" },
@@ -428,7 +428,7 @@ const doctors =
   {
     doctor_id: "D22",
     doctor_name: "Dr. Lakshmi Prasad",
-    image: "/uploads/doctors/d22.jpeg",
+    image: "/uploads/doctors/d25.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 14,
     hospital: { hospital_id: "H006", hospital_name: "Aster CMI", city: "Bangalore", state: "Karnataka" },
@@ -448,7 +448,7 @@ const doctors =
   {
     doctor_id: "D23",
     doctor_name: "Dr. Vishal Saxena",
-    image: "/uploads/doctors/d23.jpeg",
+    image: "/uploads/doctors/d18.jpeg",
     specialization: "Endocrinologist",
     experience_years: 9,
     hospital: { hospital_id: "H006", hospital_name: "Aster CMI", city: "Bangalore", state: "Karnataka" },
@@ -468,7 +468,7 @@ const doctors =
   {
     doctor_id: "D24",
     doctor_name: "Dr. Prerna Singh",
-    image: "/uploads/doctors/d24.jpeg",
+    image: "/uploads/doctors/d27.jpeg",
     specialization: "ENT Specialist",
     experience_years: 15,
     hospital: { hospital_id: "H006", hospital_name: "Aster CMI", city: "Bangalore", state: "Karnataka" },
@@ -490,7 +490,7 @@ const doctors =
   {
     doctor_id: "D25",
     doctor_name: "Dr. Manish Hegde",
-    image: "/uploads/doctors/d25.jpeg",
+    image: "/uploads/doctors/d20.jpeg",
     specialization: "Cardiologist",
     experience_years: 19,
     hospital: { hospital_id: "H007", hospital_name: "Apollo Health City", city: "Hyderabad", state: "Telangana" },
@@ -510,7 +510,7 @@ const doctors =
   {
     doctor_id: "D26",
     doctor_name: "Dr. Amrita Rao",
-    image: "/uploads/doctors/d26.jpeg",
+    image: "/uploads/doctors/d28.jpeg",
     specialization: "Dermatologist",
     experience_years: 12,
     hospital: { hospital_id: "H007", hospital_name: "Apollo Health City", city: "Hyderabad", state: "Telangana" },
@@ -530,7 +530,7 @@ const doctors =
   {
     doctor_id: "D27",
     doctor_name: "Dr. Srinivas Reddy",
-    image: "/uploads/doctors/d27.jpeg",
+    image: "/uploads/doctors/d21.jpeg",
     specialization: "Neurologist",
     experience_years: 16,
     hospital: { hospital_id: "H007", hospital_name: "Apollo Health City", city: "Hyderabad", state: "Telangana" },
@@ -550,7 +550,7 @@ const doctors =
   {
     doctor_id: "D28",
     doctor_name: "Dr. Harsha Vardhan",
-    image: "/uploads/doctors/d28.jpeg",
+    image: "/uploads/doctors/d30.jpeg",
     specialization: "Orthopedic",
     experience_years: 13,
     hospital: { hospital_id: "H007", hospital_name: "Apollo Health City", city: "Hyderabad", state: "Telangana" },
@@ -572,7 +572,7 @@ const doctors =
   {
     doctor_id: "D29",
     doctor_name: "Dr. Lakshmi Konduru",
-    image: "/uploads/doctors/d29.jpeg",
+    image: "/uploads/doctors/d32.jpeg",
     specialization: "Gynecologist",
     experience_years: 18,
     hospital: { hospital_id: "H008", hospital_name: "KIMS Hospital", city: "Hyderabad", state: "Telangana" },
@@ -592,7 +592,7 @@ const doctors =
   {
     doctor_id: "D30",
     doctor_name: "Dr. Vikram Goud",
-    image: "/uploads/doctors/d30.jpeg",
+    image: "/uploads/doctors/d24.jpeg",
     specialization: "Pediatrician",
     experience_years: 11,
     hospital: { hospital_id: "H008", hospital_name: "KIMS Hospital", city: "Hyderabad", state: "Telangana" },
@@ -612,7 +612,7 @@ const doctors =
   {
     doctor_id: "D31",
     doctor_name: "Dr. Madhav Kumar",
-    image: "/uploads/doctors/d31.jpeg",
+    image: "/uploads/doctors/d26.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 15,
     hospital: { hospital_id: "H008", hospital_name: "KIMS Hospital", city: "Hyderabad", state: "Telangana" },
@@ -632,7 +632,7 @@ const doctors =
   {
     doctor_id: "D32",
     doctor_name: "Dr. Pallavi Jha",
-    image: "/uploads/doctors/d32.jpeg",
+    image: "/uploads/doctors/d37.jpeg",
     specialization: "Oncologist",
     experience_years: 10,
     hospital: { hospital_id: "H008", hospital_name: "KIMS Hospital", city: "Hyderabad", state: "Telangana" },
@@ -653,7 +653,7 @@ const doctors =
   {
     doctor_id: "D33",
     doctor_name: "Dr. Arvind Swamy",
-    image: "/uploads/doctors/d33.jpeg",
+    image: "/uploads/doctors/d29.jpeg",
     specialization: "Psychiatrist",
     experience_years: 14,
     hospital: { hospital_id: "H009", hospital_name: "Narayana Health City", city: "Bangalore", state: "Karnataka" },
@@ -673,7 +673,7 @@ const doctors =
   {
     doctor_id: "D34",
     doctor_name: "Dr. Rekha Nair",
-    image: "/uploads/doctors/d34.jpeg",
+    image: "/uploads/doctors/d40.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 12,
     hospital: { hospital_id: "H009", hospital_name: "Narayana Health City", city: "Bangalore", state: "Karnataka" },
@@ -693,7 +693,7 @@ const doctors =
   {
     doctor_id: "D35",
     doctor_name: "Dr. Sanjay Gupta",
-    image: "/uploads/doctors/d35.jpeg",
+    image: "/uploads/doctors/d31.jpeg",
     specialization: "Endocrinologist",
     experience_years: 16,
     hospital: { hospital_id: "H009", hospital_name: "Narayana Health City", city: "Bangalore", state: "Karnataka" },
@@ -713,7 +713,7 @@ const doctors =
   {
     doctor_id: "D36",
     doctor_name: "Dr. Kavita Balan",
-    image: "/uploads/doctors/d36.jpeg",
+    image: "/uploads/doctors/d42.jpeg",
     specialization: "ENT Specialist",
     experience_years: 10,
     hospital: { hospital_id: "H009", hospital_name: "Narayana Health City", city: "Bangalore", state: "Karnataka" },
@@ -735,7 +735,7 @@ const doctors =
   {
     doctor_id: "D37",
     doctor_name: "Dr. Rajesh Shah",
-    image: "/uploads/doctors/d37.jpeg",
+    image: "/uploads/doctors/d33.jpeg",
     specialization: "Cardiologist",
     experience_years: 22,
     hospital: { hospital_id: "H010", hospital_name: "Zydus Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -755,7 +755,7 @@ const doctors =
   {
     doctor_id: "D38",
     doctor_name: "Dr. Neha Parikh",
-    image: "/uploads/doctors/d38.jpeg",
+    image: "/uploads/doctors/d44.jpeg",
     specialization: "Dermatologist",
     experience_years: 11,
     hospital: { hospital_id: "H010", hospital_name: "Zydus Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -775,7 +775,7 @@ const doctors =
   {
     doctor_id: "D39",
     doctor_name: "Dr. Amish Patel",
-    image: "/uploads/doctors/d39.jpeg",
+    image: "/uploads/doctors/d34.jpeg",
     specialization: "Neurologist",
     experience_years: 15,
     hospital: { hospital_id: "H010", hospital_name: "Zydus Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -795,7 +795,7 @@ const doctors =
   {
     doctor_id: "D40",
     doctor_name: "Dr. Tejas Thakker",
-    image: "/uploads/doctors/d40.jpeg",
+    image: "/uploads/doctors/d35.jpeg",
     specialization: "Orthopedic",
     experience_years: 18,
     hospital: { hospital_id: "H010", hospital_name: "Zydus Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -817,7 +817,7 @@ const doctors =
   {
     doctor_id: "D41",
     doctor_name: "Dr. Maya Chatterjee",
-    image: "/uploads/doctors/d41.jpeg",
+    image: "/uploads/doctors/d48.jpeg",
     specialization: "Gynecologist",
     experience_years: 17,
     hospital: { hospital_id: "H011", hospital_name: "Apollo Gleneagles", city: "Kolkata", state: "West Bengal" },
@@ -837,7 +837,7 @@ const doctors =
   {
     doctor_id: "D42",
     doctor_name: "Dr. Sumit Das",
-    image: "/uploads/doctors/d42.jpeg",
+    image: "/uploads/doctors/d36.jpeg",
     specialization: "Pediatrician",
     experience_years: 9,
     hospital: { hospital_id: "H011", hospital_name: "Apollo Gleneagles", city: "Kolkata", state: "West Bengal" },
@@ -857,7 +857,7 @@ const doctors =
   {
     doctor_id: "D43",
     doctor_name: "Dr. Anirban Roy",
-    image: "/uploads/doctors/d43.jpeg",
+    image: "/uploads/doctors/d38.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 13,
     hospital: { hospital_id: "H011", hospital_name: "Apollo Gleneagles", city: "Kolkata", state: "West Bengal" },
@@ -877,7 +877,7 @@ const doctors =
   {
     doctor_id: "D44",
     doctor_name: "Dr. Srijit Mukherjee",
-    image: "/uploads/doctors/d44.jpeg",
+    image: "/uploads/doctors/d39.jpeg",
     specialization: "Oncologist",
     experience_years: 11,
     hospital: { hospital_id: "H011", hospital_name: "Apollo Gleneagles", city: "Kolkata", state: "West Bengal" },
@@ -898,8 +898,8 @@ const doctors =
   // --- Hospital H012 (Set C Specializations) ---
   {
     doctor_id: "D45",
-    doctor_name: "Dr. Partha Sarathi",
-    image: "/uploads/doctors/d45.jpeg",
+    doctor_name: "Dr. Parth Sarathi",
+    image: "/uploads/doctors/d41.jpeg",
     specialization: "Psychiatrist",
     experience_years: 19,
     hospital: { hospital_id: "H012", hospital_name: "Medica Superspecialty", city: "Kolkata", state: "West Bengal" },
@@ -919,7 +919,7 @@ const doctors =
   {
     doctor_id: "D46",
     doctor_name: "Dr. Ishita Ganguly",
-    image: "/uploads/doctors/d46.jpeg",
+    image: "/uploads/doctors/d49.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 13,
     hospital: { hospital_id: "H012", hospital_name: "Medica Superspecialty", city: "Kolkata", state: "West Bengal" },
@@ -939,7 +939,7 @@ const doctors =
   {
     doctor_id: "D47",
     doctor_name: "Dr. Subhash Ghosh",
-    image: "/uploads/doctors/d47.jpeg",
+    image: "/uploads/doctors/d43.jpeg",
     specialization: "Endocrinologist",
     experience_years: 12,
     hospital: { hospital_id: "H012", hospital_name: "Medica Superspecialty", city: "Kolkata", state: "West Bengal" },
@@ -959,7 +959,7 @@ const doctors =
   {
     doctor_id: "D48",
     doctor_name: "Dr. Tanmoy Bose",
-    image: "/uploads/doctors/d48.jpeg",
+    image: "/uploads/doctors/d45.jpeg",
     specialization: "ENT Specialist",
     experience_years: 14,
     hospital: { hospital_id: "H012", hospital_name: "Medica Superspecialty", city: "Kolkata", state: "West Bengal" },
@@ -981,7 +981,7 @@ const doctors =
   {
     doctor_id: "D49",
     doctor_name: "Dr. Hardik Vyas",
-    image: "/uploads/doctors/d49.jpeg",
+    image: "/uploads/doctors/d46.jpeg",
     specialization: "Cardiologist",
     experience_years: 16,
     hospital: { hospital_id: "H013", hospital_name: "Shalby Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -1001,7 +1001,7 @@ const doctors =
   {
     doctor_id: "D50",
     doctor_name: "Dr. Jigna Mistry",
-    image: "/uploads/doctors/d50.jpeg",
+    image: "/uploads/doctors/d47.jpeg",
     specialization: "Dermatologist",
     experience_years: 10,
     hospital: { hospital_id: "H013", hospital_name: "Shalby Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -1062,7 +1062,7 @@ const doctors =
   {
     doctor_id: "D53",
     doctor_name: "Dr. Revathy Mani",
-    image: "/uploads/doctors/d53.jpeg",
+    image: "/uploads/doctors/d63.jpeg",
     specialization: "Gynecologist",
     experience_years: 16,
     hospital: { hospital_id: "H014", hospital_name: "MIOT International", city: "Chennai", state: "Tamil Nadu" },
@@ -1082,7 +1082,7 @@ const doctors =
   {
     doctor_id: "D54",
     doctor_name: "Dr. S. Ramaswamy",
-    image: "/uploads/doctors/d54.jpeg",
+    image: "/uploads/doctors/d53.jpeg",
     specialization: "Pediatrician",
     experience_years: 12,
     hospital: { hospital_id: "H014", hospital_name: "MIOT International", city: "Chennai", state: "Tamil Nadu" },
@@ -1102,7 +1102,7 @@ const doctors =
   {
     doctor_id: "D55",
     doctor_name: "Dr. Venkatesh Babu",
-    image: "/uploads/doctors/d55.jpeg",
+    image: "/uploads/doctors/d54.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 15,
     hospital: { hospital_id: "H014", hospital_name: "MIOT International", city: "Chennai", state: "Tamil Nadu" },
@@ -1122,7 +1122,7 @@ const doctors =
   {
     doctor_id: "D56",
     doctor_name: "Dr. Geetha Iyer",
-    image: "/uploads/doctors/d56.jpeg",
+    image: "/uploads/doctors/d64.jpeg",
     specialization: "Oncologist",
     experience_years: 14,
     hospital: { hospital_id: "H014", hospital_name: "MIOT International", city: "Chennai", state: "Tamil Nadu" },
@@ -1144,7 +1144,7 @@ const doctors =
   {
     doctor_id: "D57",
     doctor_name: "Dr. Ananya Rao",
-    image: "/uploads/doctors/d57.jpeg",
+    image: "/uploads/doctors/d65.jpeg",
     specialization: "Psychiatrist",
     experience_years: 10,
     hospital: { hospital_id: "H015", hospital_name: "Jehangir Hospital", city: "Pune", state: "Maharashtra" },
@@ -1164,7 +1164,7 @@ const doctors =
   {
     doctor_id: "D58",
     doctor_name: "Dr. Milind Joshi",
-    image: "/uploads/doctors/d58.jpeg",
+    image: "/uploads/doctors/d57.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 20,
     hospital: { hospital_id: "H015", hospital_name: "Jehangir Hospital", city: "Pune", state: "Maharashtra" },
@@ -1184,7 +1184,7 @@ const doctors =
   {
     doctor_id: "D59",
     doctor_name: "Dr. Shweta Deshpande",
-    image: "/uploads/doctors/d59.jpeg",
+    image: "/uploads/doctors/d64.jpeg",
     specialization: "Endocrinologist",
     experience_years: 12,
     hospital: { hospital_id: "H015", hospital_name: "Jehangir Hospital", city: "Pune", state: "Maharashtra" },
@@ -1204,7 +1204,7 @@ const doctors =
   {
     doctor_id: "D60",
     doctor_name: "Dr. Sameer Kulkarni",
-    image: "/uploads/doctors/d60.jpeg",
+    image: "/uploads/doctors/d58.jpeg",
     specialization: "ENT Specialist",
     experience_years: 15,
     hospital: { hospital_id: "H015", hospital_name: "Jehangir Hospital", city: "Pune", state: "Maharashtra" },
@@ -1226,7 +1226,7 @@ const doctors =
   {
     doctor_id: "D61",
     doctor_name: "Dr. Farhan Contractor",
-    image: "/uploads/doctors/d61.jpeg",
+    image: "/uploads/doctors/d59.jpeg",
     specialization: "Cardiologist",
     experience_years: 18,
     hospital: { hospital_id: "H016", hospital_name: "Ruby Hall Clinic", city: "Pune", state: "Maharashtra" },
@@ -1246,7 +1246,7 @@ const doctors =
   {
     doctor_id: "D62",
     doctor_name: "Dr. Tanuja More",
-    image: "/uploads/doctors/d62.jpeg",
+    image: "/uploads/doctors/d65.jpeg",
     specialization: "Dermatologist",
     experience_years: 11,
     hospital: { hospital_id: "H016", hospital_name: "Ruby Hall Clinic", city: "Pune", state: "Maharashtra" },
@@ -1266,7 +1266,7 @@ const doctors =
   {
     doctor_id: "D63",
     doctor_name: "Dr. Rahul Shinde",
-    image: "/uploads/doctors/d63.jpeg",
+    image: "/uploads/doctors/d60.jpeg",
     specialization: "Neurologist",
     experience_years: 14,
     hospital: { hospital_id: "H016", hospital_name: "Ruby Hall Clinic", city: "Pune", state: "Maharashtra" },
@@ -1286,7 +1286,7 @@ const doctors =
   {
     doctor_id: "D64",
     doctor_name: "Dr. Hemant Patil",
-    image: "/uploads/doctors/d64.jpeg",
+    image: "/uploads/doctors/d61.jpeg",
     specialization: "Orthopedic",
     experience_years: 16,
     hospital: { hospital_id: "H016", hospital_name: "Ruby Hall Clinic", city: "Pune", state: "Maharashtra" },
@@ -1308,7 +1308,7 @@ const doctors =
   {
     doctor_id: "D65",
     doctor_name: "Dr. Smita Prabhu",
-    image: "/uploads/doctors/d65.jpeg",
+    image: "/uploads/doctors/d66.jpeg",
     specialization: "Gynecologist",
     experience_years: 22,
     hospital: { hospital_id: "H017", hospital_name: "Nanavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -1328,7 +1328,7 @@ const doctors =
   {
     doctor_id: "D66",
     doctor_name: "Dr. Abhay Walia",
-    image: "/uploads/doctors/d66.jpeg",
+    image: "/uploads/doctors/d69.jpeg",
     specialization: "Pediatrician",
     experience_years: 13,
     hospital: { hospital_id: "H017", hospital_name: "Nanavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -1348,7 +1348,7 @@ const doctors =
   {
     doctor_id: "D67",
     doctor_name: "Dr. Rajeshwar Singh",
-    image: "/uploads/doctors/d67.jpeg",
+    image: "/uploads/doctors/d70.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 17,
     hospital: { hospital_id: "H017", hospital_name: "Nanavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -1368,7 +1368,7 @@ const doctors =
   {
     doctor_id: "D68",
     doctor_name: "Dr. Neha Ghalawat",
-    image: "/uploads/doctors/d68.jpeg",
+    image: "/uploads/doctors/d66.jpeg",
     specialization: "Oncologist",
     experience_years: 11,
     hospital: { hospital_id: "H017", hospital_name: "Nanavati Hospital", city: "Mumbai", state: "Maharashtra" },
@@ -1390,7 +1390,7 @@ const doctors =
   {
     doctor_id: "D69",
     doctor_name: "Dr. Zirak Marker",
-    image: "/uploads/doctors/d69.jpeg",
+    image: "/uploads/doctors/d71.jpeg",
     specialization: "Psychiatrist",
     experience_years: 16,
     hospital: { hospital_id: "H018", hospital_name: "Sir H. N. Reliance", city: "Mumbai", state: "Maharashtra" },
@@ -1410,7 +1410,7 @@ const doctors =
   {
     doctor_id: "D70",
     doctor_name: "Dr. Himanshu Mehta",
-    image: "/uploads/doctors/d70.jpeg",
+    image: "/uploads/doctors/d76.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 25,
     hospital: { hospital_id: "H018", hospital_name: "Sir H. N. Reliance", city: "Mumbai", state: "Maharashtra" },
@@ -1430,7 +1430,7 @@ const doctors =
   {
     doctor_id: "D71",
     doctor_name: "Dr. Tushar Bandgar",
-    image: "/uploads/doctors/d71.jpeg",
+    image: "/uploads/doctors/d79.jpeg",
     specialization: "Endocrinologist",
     experience_years: 18,
     hospital: { hospital_id: "H018", hospital_name: "Sir H. N. Reliance", city: "Mumbai", state: "Maharashtra" },
@@ -1450,7 +1450,7 @@ const doctors =
   {
     doctor_id: "D72",
     doctor_name: "Dr. Renuka Bradoo",
-    image: "/uploads/doctors/d72.jpeg",
+    image: "/uploads/doctors/d67.jpeg",
     specialization: "ENT Specialist",
     experience_years: 22,
     hospital: { hospital_id: "H018", hospital_name: "Sir H. N. Reliance", city: "Mumbai", state: "Maharashtra" },
@@ -1471,7 +1471,7 @@ const doctors =
   {
     doctor_id: "D73",
     doctor_name: "Dr. Sandeep Singh",
-    image: "/uploads/doctors/d73.jpeg",
+    image: "/uploads/doctors/d80.jpeg",
     specialization: "Cardiologist",
     experience_years: 14,
     hospital: { hospital_id: "H019", hospital_name: "Continental Hospital", city: "Hyderabad", state: "Telangana" },
@@ -1491,7 +1491,7 @@ const doctors =
   {
     doctor_id: "D74",
     doctor_name: "Dr. Swathi Reddy",
-    image: "/uploads/doctors/d74.jpeg",
+    image: "/uploads/doctors/d68.jpeg",
     specialization: "Dermatologist",
     experience_years: 9,
     hospital: { hospital_id: "H019", hospital_name: "Continental Hospital", city: "Hyderabad", state: "Telangana" },
@@ -1511,7 +1511,7 @@ const doctors =
   {
     doctor_id: "D75",
     doctor_name: "Dr. Anand Kumar",
-    image: "/uploads/doctors/d75.jpeg",
+    image: "/uploads/doctors/d84.jpeg",
     specialization: "Neurologist",
     experience_years: 16,
     hospital: { hospital_id: "H019", hospital_name: "Continental Hospital", city: "Hyderabad", state: "Telangana" },
@@ -1531,7 +1531,7 @@ const doctors =
   {
     doctor_id: "D76",
     doctor_name: "Dr. Ramesh Babu",
-    image: "/uploads/doctors/d76.jpeg",
+    image: "/uploads/doctors/d89.jpeg",
     specialization: "Orthopedic",
     experience_years: 18,
     hospital: { hospital_id: "H019", hospital_name: "Continental Hospital", city: "Hyderabad", state: "Telangana" },
@@ -1553,7 +1553,7 @@ const doctors =
   {
     doctor_id: "D77",
     doctor_name: "Dr. Meena Agarwal",
-    image: "/uploads/doctors/d77.jpeg",
+    image: "/uploads/doctors/d93.jpeg",
     specialization: "Gynecologist",
     experience_years: 15,
     hospital: { hospital_id: "H020", hospital_name: "Medanta - The Medicity", city: "Gurgaon", state: "Haryana" },
@@ -1573,7 +1573,7 @@ const doctors =
   {
     doctor_id: "D78",
     doctor_name: "Dr. Puneet Khanna",
-    image: "/uploads/doctors/d78.jpeg",
+    image: "/uploads/doctors/d95.jpeg",
     specialization: "Pediatrician",
     experience_years: 11,
     hospital: { hospital_id: "H020", hospital_name: "Medanta - The Medicity", city: "Gurgaon", state: "Haryana" },
@@ -1593,7 +1593,7 @@ const doctors =
   {
     doctor_id: "D79",
     doctor_name: "Dr. Rajesh Upadhyay",
-    image: "/uploads/doctors/d79.jpeg",
+    image: "/uploads/doctors/d96.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 25,
     hospital: { hospital_id: "H020", hospital_name: "Medanta - The Medicity", city: "Gurgaon", state: "Haryana" },
@@ -1613,7 +1613,7 @@ const doctors =
   {
     doctor_id: "D80",
     doctor_name: "Dr. Ashok Vaid",
-    image: "/uploads/doctors/d80.jpeg",
+    image: "/uploads/doctors/d101.jpeg",
     specialization: "Oncologist",
     experience_years: 30,
     hospital: { hospital_id: "H020", hospital_name: "Medanta - The Medicity", city: "Gurgaon", state: "Haryana" },
@@ -1635,7 +1635,7 @@ const doctors =
   {
     doctor_id: "D81",
     doctor_name: "Dr. Sameer Malhotra",
-    image: "/uploads/doctors/d81.jpeg",
+    image: "/uploads/doctors/d102.jpeg",
     specialization: "Psychiatrist",
     experience_years: 20,
     hospital: { hospital_id: "H021", hospital_name: "Fortis Memorial Research Institute", city: "Gurgaon", state: "Haryana" },
@@ -1655,7 +1655,7 @@ const doctors =
   {
     doctor_id: "D82",
     doctor_name: "Dr. Anita Sethi",
-    image: "/uploads/doctors/d82.jpeg",
+    image: "/uploads/doctors/d72.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 22,
     hospital: { hospital_id: "H021", hospital_name: "Fortis Memorial Research Institute", city: "Gurgaon", state: "Haryana" },
@@ -1675,7 +1675,7 @@ const doctors =
   {
     doctor_id: "D83",
     doctor_name: "Dr. Ambrish Mithal",
-    image: "/uploads/doctors/d83.jpeg",
+    image: "/uploads/doctors/d103.jpeg",
     specialization: "Endocrinologist",
     experience_years: 32,
     hospital: { hospital_id: "H021", hospital_name: "Fortis Memorial Research Institute", city: "Gurgaon", state: "Haryana" },
@@ -1695,7 +1695,7 @@ const doctors =
   {
     doctor_id: "D84",
     doctor_name: "Dr. Atul Mittal",
-    image: "/uploads/doctors/d84.jpeg",
+    image: "/uploads/doctors/d106.jpeg",
     specialization: "ENT Specialist",
     experience_years: 18,
     hospital: { hospital_id: "H021", hospital_name: "Fortis Memorial Research Institute", city: "Gurgaon", state: "Haryana" },
@@ -1717,7 +1717,7 @@ const doctors =
   {
     doctor_id: "D85",
     doctor_name: "Dr. Sanjeev Gera",
-    image: "/uploads/doctors/d85.jpeg",
+    image: "/uploads/doctors/d109.jpeg",
     specialization: "Cardiologist",
     experience_years: 24,
     hospital: { hospital_id: "H022", hospital_name: "Fortis Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1737,7 +1737,7 @@ const doctors =
   {
     doctor_id: "D86",
     doctor_name: "Dr. Niti Gaur",
-    image: "/uploads/doctors/d86.jpeg",
+    image: "/uploads/doctors/d73.jpeg",
     specialization: "Dermatologist",
     experience_years: 12,
     hospital: { hospital_id: "H022", hospital_name: "Fortis Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1757,7 +1757,7 @@ const doctors =
   {
     doctor_id: "D87",
     doctor_name: "Dr. Atul Prasad",
-    image: "/uploads/doctors/d87.jpeg",
+    image: "/uploads/doctors/d111.jpeg",
     specialization: "Neurologist",
     experience_years: 26,
     hospital: { hospital_id: "H022", hospital_name: "Fortis Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1777,7 +1777,7 @@ const doctors =
   {
     doctor_id: "D88",
     doctor_name: "Dr. Dhananjay Gupta",
-    image: "/uploads/doctors/d88.jpeg",
+    image: "/uploads/doctors/d112.jpeg",
     specialization: "Orthopedic",
     experience_years: 20,
     hospital: { hospital_id: "H022", hospital_name: "Fortis Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1799,7 +1799,7 @@ const doctors =
   {
     doctor_id: "D89",
     doctor_name: "Dr. Shweta Goswami",
-    image: "/uploads/doctors/d89.jpeg",
+    image: "/uploads/doctors/d74.jpeg",
     specialization: "Gynecologist",
     experience_years: 14,
     hospital: { hospital_id: "H023", hospital_name: "Jaypee Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1819,7 +1819,7 @@ const doctors =
   {
     doctor_id: "D90",
     doctor_name: "Dr. Ashu Sawhney",
-    image: "/uploads/doctors/d90.jpeg",
+    image: "/uploads/doctors/d113.jpeg",
     specialization: "Pediatrician",
     experience_years: 15,
     hospital: { hospital_id: "H023", hospital_name: "Jaypee Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1839,7 +1839,7 @@ const doctors =
   {
     doctor_id: "D91",
     doctor_name: "Dr. Rajesh Kapoor",
-    image: "/uploads/doctors/d91.jpeg",
+    image: "/uploads/doctors/d115.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 18,
     hospital: { hospital_id: "H023", hospital_name: "Jaypee Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1859,7 +1859,7 @@ const doctors =
   {
     doctor_id: "D92",
     doctor_name: "Dr. Malay Nandy",
-    image: "/uploads/doctors/d92.jpeg",
+    image: "/uploads/doctors/d116.jpeg",
     specialization: "Oncologist",
     experience_years: 22,
     hospital: { hospital_id: "H023", hospital_name: "Jaypee Hospital", city: "Noida", state: "Uttar Pradesh" },
@@ -1880,7 +1880,7 @@ const doctors =
   {
     doctor_id: "D93",
     doctor_name: "Dr. Renjith R. Pillai",
-    image: "/uploads/doctors/d93.jpeg",
+    image: "/uploads/doctors/d117.jpeg",
     specialization: "Psychiatrist",
     experience_years: 15,
     hospital: { hospital_id: "H024", hospital_name: "PGIMER", city: "Chandigarh", state: "Chandigarh" },
@@ -1900,7 +1900,7 @@ const doctors =
   {
     doctor_id: "D94",
     doctor_name: "Dr. Nirbhai Singh",
-    image: "/uploads/doctors/d94.jpeg",
+    image: "/uploads/doctors/d118.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 18,
     hospital: { hospital_id: "H024", hospital_name: "PGIMER", city: "Chandigarh", state: "Chandigarh" },
@@ -1920,7 +1920,7 @@ const doctors =
   {
     doctor_id: "D95",
     doctor_name: "Dr. Rama Walia",
-    image: "/uploads/doctors/d95.jpeg",
+    image: "/uploads/doctors/d75.jpeg",
     specialization: "Endocrinologist",
     experience_years: 14,
     hospital: { hospital_id: "H024", hospital_name: "PGIMER", city: "Chandigarh", state: "Chandigarh" },
@@ -1940,7 +1940,7 @@ const doctors =
   {
     doctor_id: "D96",
     doctor_name: "Dr. Sanjay Munjal",
-    image: "/uploads/doctors/d96.jpeg",
+    image: "/uploads/doctors/d118.jpeg",
     specialization: "ENT Specialist",
     experience_years: 22,
     hospital: { hospital_id: "H024", hospital_name: "PGIMER", city: "Chandigarh", state: "Chandigarh" },
@@ -1962,7 +1962,7 @@ const doctors =
   {
     doctor_id: "D97",
     doctor_name: "Dr. Nakul Sinha",
-    image: "/uploads/doctors/d97.jpeg",
+    image: "/uploads/doctors/d119.jpeg",
     specialization: "Cardiologist",
     experience_years: 35,
     hospital: { hospital_id: "H025", hospital_name: "Medanta Hospital", city: "Lucknow", state: "Uttar Pradesh" },
@@ -1982,7 +1982,7 @@ const doctors =
   {
     doctor_id: "D98",
     doctor_name: "Dr. Neha Agarwal",
-    image: "/uploads/doctors/d98.jpeg",
+    image: "/uploads/doctors/d77.jpeg",
     specialization: "Dermatologist",
     experience_years: 12,
     hospital: { hospital_id: "H025", hospital_name: "Medanta Hospital", city: "Lucknow", state: "Uttar Pradesh" },
@@ -2002,7 +2002,7 @@ const doctors =
   {
     doctor_id: "D99",
     doctor_name: "Dr. Shantanu Bharti",
-    image: "/uploads/doctors/d99.jpeg",
+    image: "/uploads/doctors/d96.jpeg",
     specialization: "Neurologist",
     experience_years: 16,
     hospital: { hospital_id: "H025", hospital_name: "Medanta Hospital", city: "Lucknow", state: "Uttar Pradesh" },
@@ -2022,7 +2022,7 @@ const doctors =
   {
     doctor_id: "D100",
     doctor_name: "Dr. Dharmendra Singh",
-    image: "/uploads/doctors/d100.jpeg",
+    image: "/uploads/doctors/d89.jpeg",
     specialization: "Orthopedic",
     experience_years: 20,
     hospital: { hospital_id: "H025", hospital_name: "Medanta Hospital", city: "Lucknow", state: "Uttar Pradesh" },
@@ -2044,7 +2044,7 @@ const doctors =
   {
     doctor_id: "D101",
     doctor_name: "Dr. Pooja Chitlangia",
-    image: "/uploads/doctors/d101.jpeg",
+    image: "/uploads/doctors/d108.jpeg",
     specialization: "Gynecologist",
     experience_years: 13,
     hospital: { hospital_id: "H026", hospital_name: "Jeevan Rekha Hospital", city: "Jaipur", state: "Rajasthan" },
@@ -2084,7 +2084,7 @@ const doctors =
   {
     doctor_id: "D103",
     doctor_name: "Dr. Saket Agarwal",
-    image: "/uploads/doctors/d103.jpeg",
+    image: "/uploads/doctors/d95.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 15,
     hospital: { hospital_id: "H026", hospital_name: "Jeevan Rekha Hospital", city: "Jaipur", state: "Rajasthan" },
@@ -2104,7 +2104,7 @@ const doctors =
   {
     doctor_id: "D104",
     doctor_name: "Dr. Ankur Shrimal",
-    image: "/uploads/doctors/d104.jpeg",
+    image: "/uploads/doctors/d111.jpeg",
     specialization: "Oncologist",
     experience_years: 14,
     hospital: { hospital_id: "H026", hospital_name: "Jeevan Rekha Hospital", city: "Jaipur", state: "Rajasthan" },
@@ -2126,7 +2126,7 @@ const doctors =
   {
     doctor_id: "D105",
     doctor_name: "Dr. Aditi Agarwal",
-    image: "/uploads/doctors/d105.jpeg",
+    image: "/uploads/doctors/d88.jpeg",
     specialization: "Psychiatrist",
     experience_years: 11,
     hospital: { hospital_id: "H027", hospital_name: "Fortis ESCORTS", city: "Jaipur", state: "Rajasthan" },
@@ -2146,7 +2146,7 @@ const doctors =
   {
     doctor_id: "D106",
     doctor_name: "Dr. Sudipto Pakrasi",
-    image: "/uploads/doctors/d106.jpeg",
+    image: "/uploads/doctors/d117.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 28,
     hospital: { hospital_id: "H027", hospital_name: "Fortis ESCORTS", city: "Jaipur", state: "Rajasthan" },
@@ -2186,7 +2186,7 @@ const doctors =
   {
     doctor_id: "D108",
     doctor_name: "Dr. Jyoti Garg",
-    image: "/uploads/doctors/d108.jpeg",
+    image: "/uploads/doctors/d107.jpeg",
     specialization: "ENT Specialist",
     experience_years: 15,
     hospital: { hospital_id: "H027", hospital_name: "Fortis ESCORTS", city: "Jaipur", state: "Rajasthan" },
@@ -2208,7 +2208,7 @@ const doctors =
   {
     doctor_id: "D109",
     doctor_name: "Dr. Prakash Chandwani",
-    image: "/uploads/doctors/d109.jpeg",
+    image: "/uploads/doctors/d89.jpeg",
     specialization: "Cardiologist",
     experience_years: 22,
     hospital: { hospital_id: "H028", hospital_name: "CKS Hospital", city: "Jaipur", state: "Rajasthan" },
@@ -2289,7 +2289,7 @@ const doctors =
   {
     doctor_id: "D113",
     doctor_name: "Dr. Kirty Nahar",
-    image: "/uploads/doctors/d113.jpeg",
+    image: "/uploads/doctors/d52.jpeg",
     specialization: "Gynecologist",
     experience_years: 24,
     hospital: { hospital_id: "H029", hospital_name: "Apollo Hospitals", city: "Ahmedabad", state: "Gujarat" },
@@ -2309,7 +2309,7 @@ const doctors =
   {
     doctor_id: "D114",
     doctor_name: "Dr. Jyotinder Kaur",
-    image: "/uploads/doctors/d114.jpeg",
+    image: "/uploads/doctors/d58.jpeg",
     specialization: "Pediatrician",
     experience_years: 20,
     hospital: { hospital_id: "H029", hospital_name: "Apollo Hospitals", city: "Ahmedabad", state: "Gujarat" },
@@ -2329,7 +2329,7 @@ const doctors =
   {
     doctor_id: "D115",
     doctor_name: "Dr. Shravan Kumar Bohra",
-    image: "/uploads/doctors/d115.jpeg",
+    image: "/uploads/doctors/d59.jpeg",
     specialization: "Gastroenterologist",
     experience_years: 28,
     hospital: { hospital_id: "H029", hospital_name: "Apollo Hospitals", city: "Ahmedabad", state: "Gujarat" },
@@ -2349,7 +2349,7 @@ const doctors =
   {
     doctor_id: "D116",
     doctor_name: "Dr. Nitin Singhal",
-    image: "/uploads/doctors/d116.jpeg",
+    image: "/uploads/doctors/d60.jpeg",
     specialization: "Oncologist",
     experience_years: 18,
     hospital: { hospital_id: "H029", hospital_name: "Apollo Hospitals", city: "Ahmedabad", state: "Gujarat" },
@@ -2371,7 +2371,7 @@ const doctors =
   {
     doctor_id: "D117",
     doctor_name: "Dr. Jinesh Shah",
-    image: "/uploads/doctors/d117.jpeg",
+    image: "/uploads/doctors/d51.jpeg",
     specialization: "Psychiatrist",
     experience_years: 20,
     hospital: { hospital_id: "H030", hospital_name: "Sterling Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -2391,7 +2391,7 @@ const doctors =
   {
     doctor_id: "D118",
     doctor_name: "Dr. Somesh Desai",
-    image: "/uploads/doctors/d118.jpeg",
+    image: "/uploads/doctors/d43.jpeg",
     specialization: "Ophthalmologist",
     experience_years: 26,
     hospital: { hospital_id: "H030", hospital_name: "Sterling Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -2411,7 +2411,7 @@ const doctors =
   {
     doctor_id: "D119",
     doctor_name: "Dr. Rucha J Mehta",
-    image: "/uploads/doctors/d119.jpeg",
+    image: "/uploads/doctors/d120.jpeg",
     specialization: "Endocrinologist",
     experience_years: 15,
     hospital: { hospital_id: "H030", hospital_name: "Sterling Hospital", city: "Ahmedabad", state: "Gujarat" },
@@ -2431,7 +2431,7 @@ const doctors =
   {
     doctor_id: "D120",
     doctor_name: "Dr. Vinita Bhagia",
-    image: "/uploads/doctors/d120.jpeg",
+    image: "/uploads/doctors/d94.jpeg",
     specialization: "ENT Specialist",
     experience_years: 39,
     hospital: { hospital_id: "H030", hospital_name: "Sterling Hospital", city: "Ahmedabad", state: "Gujarat" },
