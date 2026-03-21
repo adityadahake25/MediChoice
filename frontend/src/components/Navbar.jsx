@@ -46,7 +46,7 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link to="/treatments">Treatments</Link>
+          <Link to="/treatment-options">Treatments</Link>
         </li>
 
         <li>

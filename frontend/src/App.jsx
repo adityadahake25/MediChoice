@@ -25,7 +25,9 @@ import Crowdfunding from "./pages/Crowdfunding/Crowdfunding.jsx";
 import Fundraiser from "./pages/Fundraiser/Fundraiser.jsx";
 
 import AllTreatments from "./pages/AllTreatments/AllTreatments.jsx";
-import TreatmentInfo from "./pages/TreatmentInfo/TreatmentInfo.jsx"; // ✅ USE THIS
+import TreatmentInfo from "./pages/TreatmentInfo/TreatmentInfo.jsx";
+import TreatmentsPage from "./pages/InfoTreat/TreatmentsPage.jsx";
+import TreatmentDetails from "./pages/InfoTreat/TreatmentDetails.jsx";
 
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Login from "./components/Login/Login.jsx";
@@ -70,6 +72,10 @@ function Layout() {
 
         {/* ================= DOMAIN PAGE ================= */}
         <Route path="/domain" element={<AllTreatments />} />
+
+        {/* ================= TREATMENT PAGE ================= */}
+        <Route path="/treatment-options" element={<TreatmentsPage />} />
+        <Route path="/treatment-options/:slug" element={<TreatmentDetails />} />
 
         {/* ================= TREATMENT DETAILS ================= */}
         <Route path="/treatments/:slug" element={<TreatmentInfo />} />

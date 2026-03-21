@@ -1,15 +1,18 @@
 import "./Treatments.css";
 import { Clock, IndianRupee, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Cardiology from "../assets/Cardiology.jpeg";
 import Dermatology from "../assets/Dermatology.jpeg";
 import Neurology from "../assets/Neurology.jpeg";
 import Orthopedic from "../assets/Orthopedic.jpeg";
 
+/* ================= DATA ================= */
+
 const treatments = [
   {
     title: "Cardiology",
+    slug: "cardiologist",
     description:
       "Comprehensive heart care including diagnosis, angioplasty, bypass surgery and preventive cardiology.",
     duration: "1–3 hours",
@@ -19,6 +22,7 @@ const treatments = [
   },
   {
     title: "Dermatology",
+    slug: "dermatologist",
     description:
       "Advanced skin, hair and nail treatments including acne care, laser therapy and cosmetic procedures.",
     duration: "30 min – 2 hrs",
@@ -28,6 +32,7 @@ const treatments = [
   },
   {
     title: "Neurology",
+    slug: "neurologist",
     description:
       "Expert diagnosis and treatment for brain, spine and nervous system disorders using modern imaging.",
     duration: "1–5 hours",
@@ -37,6 +42,7 @@ const treatments = [
   },
   {
     title: "Orthopedic",
+    slug: "orthopedic",
     description:
       "Complete bone and joint care including fractures, joint replacement and sports injury treatment.",
     duration: "2–4 hours",
@@ -46,7 +52,11 @@ const treatments = [
   },
 ];
 
+/* ================= COMPONENT ================= */
+
 const Treatments = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="treatments-section" id="treatments-section">
       {/* Header */}
@@ -60,14 +70,21 @@ const Treatments = () => {
       </div>
 
       {/* Cards */}
-      <div className="treatments-grid">
+      <div className="treatments-grid-div">
         {treatments.map((item, index) => (
-          <div className="treatment-card" key={index}>
+          <div
+            className="treatment-card-div"
+            key={index}
+            onClick={() => navigate(`/treatments/${item.slug}`)}
+            style={{ cursor: "pointer" }}
+          >
+            {/* IMAGE */}
             <div className="treatment-image">
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
 
+            {/* CONTENT */}
             <div className="treatment-content">
               <p className="description">{item.description}</p>
 
@@ -76,13 +93,21 @@ const Treatments = () => {
                   <Clock size={14} /> {item.duration}
                 </span>
                 <span>
-                  <IndianRupee size={14} /> From {item.price}
+                  <IndianRupee size={14} /> From ₹{item.price}
                 </span>
               </div>
 
               <div className="card-footer">
                 <span className="procedures">{item.procedures}</span>
-                <button className="learn-more">
+
+                {/* BUTTON (prevents double click trigger) */}
+                <button
+                  className="learn-more"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/treatments/${item.slug}`);
+                  }}
+                >
                   Learn More <ArrowRight size={14} />
                 </button>
               </div>
@@ -91,8 +116,8 @@ const Treatments = () => {
         ))}
       </div>
 
-      {/* 🔽 Explore More Treatments */}
-      <Link to="/treatments" className="explore-more">
+      {/* Explore More */}
+      <Link to="/domain" className="explore-more">
         <span>Explore more treatment options</span>
         <ArrowRight size={18} />
       </Link>

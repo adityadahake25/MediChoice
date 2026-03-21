@@ -45,7 +45,7 @@ const TreatmentsPage = () => {
 
             <button
               className="view-btn"
-              onClick={() => navigate(`/treatments/${treatment.slug}`)}
+              onClick={() => navigate(`/treatment-options/${treatment.slug}`)}
             >
               View Details →
             </button>
