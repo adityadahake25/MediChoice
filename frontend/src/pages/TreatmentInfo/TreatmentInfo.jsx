@@ -31,7 +31,7 @@ import ENT from "../../assets/ENT Specialist.png";
 
 const treatmentsData = {
   cardiologist: {
-    title: "Cardiologist",
+    title: "Cardiology",
     image: Cardiology,
     about:
       "Heart specialists diagnose chest pain, BP problems and blocked arteries.",
@@ -50,7 +50,7 @@ const treatmentsData = {
   },
 
   dermatologist: {
-    title: "Dermatologist",
+    title: "Dermatology",
     image: Dermatology,
     about: "Skin specialist for acne, pigmentation and laser procedures.",
     procedures: ["Acne Treatment", "Laser Therapy", "Chemical Peel"],
@@ -62,7 +62,7 @@ const treatmentsData = {
   },
 
   neurologist: {
-    title: "Neurologist",
+    title: "Neurology",
     image: Neurology,
     about: "Brain and nerve specialist for migraine, seizures and stroke.",
     procedures: ["EEG", "MRI Brain", "Stroke Care"],
@@ -86,7 +86,7 @@ const treatmentsData = {
   },
 
   gynecologist: {
-    title: "Gynecologist",
+    title: "Gynecology",
     image: Gynecologist,
     about: "Women's health specialist for pregnancy and PCOS care.",
     procedures: ["Pregnancy Scan", "PCOS Treatment", "Normal Delivery"],
@@ -110,7 +110,7 @@ const treatmentsData = {
   },
 
   gastroenterologist: {
-    title: "Gastroenterologist",
+    title: "Gastroenterology",
     image: Gastroenterologist,
     about: "Digestive system specialist for acidity, ulcers and liver issues.",
     procedures: ["Endoscopy", "Colonoscopy", "Liver Test"],
@@ -122,7 +122,7 @@ const treatmentsData = {
   },
 
   oncologist: {
-    title: "Oncologist",
+    title: "Oncology",
     image: Oncologist,
     about: "Cancer specialist for diagnosis and chemotherapy.",
     procedures: ["Biopsy", "Chemotherapy", "Radiation Therapy"],
@@ -146,7 +146,7 @@ const treatmentsData = {
   },
 
   ophthalmologist: {
-    title: "Ophthalmologist",
+    title: "Ophthalmology",
     image: Ophthalmologist,
     about: "Eye specialist for vision and LASIK surgery.",
     procedures: ["Eye Test", "LASIK", "Cataract Surgery"],
@@ -158,7 +158,7 @@ const treatmentsData = {
   },
 
   endocrinologist: {
-    title: "Endocrinologist",
+    title: "Endocrinology",
     image: Endocrinologist,
     about: "Hormone specialist for thyroid and diabetes.",
     procedures: ["Thyroid Test", "Diabetes Management"],

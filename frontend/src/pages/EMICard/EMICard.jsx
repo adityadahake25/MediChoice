@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './EMICard.css';
+import React, { useState } from "react";
+import "./EMICard.css";
 
 const EMICard = () => {
   // Initialized with 12,000 Rupees
@@ -11,12 +11,12 @@ const EMICard = () => {
   const emiValue =
     (amount * monthlyRate * Math.pow(1 + monthlyRate, tenure)) /
     (Math.pow(1 + monthlyRate, tenure) - 1);
-  
+
   const emi = Math.round(emiValue);
 
   // Helper to format in Indian Currency Style (₹)
   const formatRupees = (num) => {
-    return new Intl.NumberFormat('en-IN', {
+    return new Intl.NumberFormat("en-IN", {
       maximumFractionDigits: 0,
     }).format(num);
   };
@@ -31,18 +31,24 @@ const EMICard = () => {
       </div>
 
       <div className="emi-inputs">
-        <div className="input-group">
-          {/* Label updated to Rupees */}
-          <label>Total Amount (₹)</label>
+        <div className="input-group-div">
+          <label htmlFor="amount">Total Amount (₹)</label>
           <input
+            id="amount"
             type="number"
             value={amount}
             onChange={(e) => setAmount(Number(e.target.value))}
+            placeholder="Enter amount"
           />
         </div>
-        <div className="input-group">
-          <label>Tenure</label>
-          <select value={tenure} onChange={(e) => setTenure(Number(e.target.value))}>
+
+        <div className="input-group-div">
+          <label htmlFor="tenure">Tenure</label>
+          <select
+            id="tenure"
+            value={tenure}
+            onChange={(e) => setTenure(Number(e.target.value))}
+          >
             <option value={6}>6 months</option>
             <option value={12}>12 months</option>
             <option value={24}>24 months</option>

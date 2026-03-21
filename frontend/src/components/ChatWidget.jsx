@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import ReactMarkdown from "react-markdown"; // Added for clean formatting
+import ReactMarkdown from "react-markdown";
 import "./ChatWidget.css";
 
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "bot", content: "Hello! I am your medical assistant. How can I help you find a doctor or hospital today?" }
+    {
+      role: "bot",
+      content:
+        "Hello! I am your medical assistant. How can I help you find a doctor or hospital today?",
+    },
   ]);
   const [input, setInput] = useState("");
-  
+
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -33,14 +37,17 @@ const ChatWidget = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: currentInput }),
       });
-      
+
       const data = await response.json();
       setMessages((prev) => [...prev, { role: "bot", content: data.reply }]);
     } catch (err) {
       console.error("Chatbot connection error:", err);
       setMessages((prev) => [
-        ...prev, 
-        { role: "bot", content: "I'm having trouble connecting. Is the server running?" }
+        ...prev,
+        {
+          role: "bot",
+          content: "I'm having trouble connecting. Is the server running?",
+        },
       ]);
     }
   };
@@ -56,13 +63,12 @@ const ChatWidget = () => {
 
           <div className="chat-messages">
             {messages.map((msg, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className={`message ${msg.role}`}
-                // whiteSpace: "pre-wrap" is kept for user messages 
-                style={{ whiteSpace: "pre-wrap" }}
+                /* REMOVED whiteSpace: "pre-wrap" here to fix giant gaps */
               >
-                {/* ReactMarkdown renders **text** as <strong> and * as <li> */}
+                {/* ReactMarkdown handles the bolding and lists automatically */}
                 <ReactMarkdown>{msg.content}</ReactMarkdown>
               </div>
             ))}
@@ -70,13 +76,15 @@ const ChatWidget = () => {
           </div>
 
           <div className="chat-input-area">
-            <input 
-              value={input} 
-              onChange={(e) => setInput(e.target.value)} 
-              onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-              placeholder="Ask about doctors in Pune..." 
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && handleSend()}
+              placeholder="Ask about doctors in Pune..."
             />
-            <button onClick={handleSend} className="send-btn">Send</button>
+            <button onClick={handleSend} className="send-btn">
+              Send
+            </button>
           </div>
         </div>
       )}

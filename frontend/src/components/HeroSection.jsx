@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/hero.css";
 import bgImage from "../assets/bg3.jpeg";
 
@@ -15,6 +16,7 @@ const suggestions = [
 
 export default function HeroSection() {
   const heroRef = useRef(null);
+  const navigate = useNavigate(); // ✅ added
   const [query, setQuery] = useState("");
   const [filtered, setFiltered] = useState([]);
 
@@ -22,7 +24,7 @@ export default function HeroSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && entry.target.classList.add("show"),
-      { threshold: 0.35 }
+      { threshold: 0.35 },
     );
 
     heroRef.current && observer.observe(heroRef.current);
@@ -34,22 +36,31 @@ export default function HeroSection() {
     setFiltered(
       query
         ? suggestions.filter((item) =>
-            item.toLowerCase().includes(query.toLowerCase())
+            item.toLowerCase().includes(query.toLowerCase()),
           )
-        : []
+        : [],
     );
   }, [query]);
 
+  /* HANDLE SEARCH */
+  const handleSearch = () => {
+    if (query.trim() !== "") {
+      navigate(`/hospitals?search=${encodeURIComponent(query)}`);
+    } else {
+      navigate("/hospitals");
+    }
+  };
+
   return (
     <section
-      id="home"             // 🔥 IMPORTANT
+      id="home"
       ref={heroRef}
       className="hero scroll-hidden"
       style={{
-       backgroundImage: `linear-gradient(
-        rgba(2, 6, 23, 0.4),
-        rgba(2, 6, 23, 0.4)
-      ), url(${bgImage})`
+        backgroundImage: `linear-gradient(
+          rgba(2, 6, 23, 0.4),
+          rgba(2, 6, 23, 0.4)
+        ), url(${bgImage})`,
       }}
     >
       <div className="hero-content floating">
@@ -70,13 +81,19 @@ export default function HeroSection() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search disease, treatment, hospital..."
             />
-            <button>Search</button>
+            <button onClick={handleSearch}>Search</button>
           </div>
 
           {filtered.length > 0 && (
             <ul className="suggestions">
               {filtered.map((item, i) => (
-                <li key={i} onClick={() => setQuery(item)}>
+                <li
+                  key={i}
+                  onClick={() => {
+                    setQuery(item);
+                    navigate(`/hospitals?search=${encodeURIComponent(item)}`);
+                  }}
+                >
                   {item}
                 </li>
               ))}

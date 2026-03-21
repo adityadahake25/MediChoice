@@ -52,7 +52,9 @@ const Estimator = () => {
   ];
 
   // ------------------ STATE ------------------
-  const [selectedTreatment, setSelectedTreatment] = useState(treatments[0].name);
+  const [selectedTreatment, setSelectedTreatment] = useState(
+    treatments[0].name,
+  );
   const [selectedCity, setSelectedCity] = useState("Delhi");
   const [insuranceType, setInsuranceType] = useState(0.7);
 
@@ -108,7 +110,7 @@ const Estimator = () => {
         {/* ---------------- INPUT SECTION ---------------- */}
         <div className="input-card">
           <div className="input-grid">
-            <div className="input-group">
+            <div className="input-group-box">
               <label>
                 <Activity size={14} /> Treatments / Surgeries
               </label>
@@ -125,7 +127,7 @@ const Estimator = () => {
               </select>
             </div>
 
-            <div className="input-group">
+            <div className="input-group-box">
               <label>
                 <MapPin size={14} /> City
               </label>
@@ -143,7 +145,7 @@ const Estimator = () => {
               </select>
             </div>
 
-            <div className="input-group">
+            <div className="input-group-box">
               <label>
                 <Shield size={14} /> Insurance Type
               </label>

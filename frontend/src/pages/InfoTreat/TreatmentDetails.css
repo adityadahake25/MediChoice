@@ -1,0 +1,166 @@
+.details-wrapper {
+  background: #f8fafc;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+/* HERO */
+.details-hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.details-hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.details-hero p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* LAYOUT */
+.details-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.details-main {
+  flex: 3;
+}
+
+.details-sidebar {
+  flex: 1;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.card p,
+.card li {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* DOCTOR GRID */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.doctor-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+}
+
+.doctor-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.spec {
+  color: #2563eb;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.doctor-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #64748b;
+}
+
+.hospital {
+  font-size: 13px;
+  color: #475569;
+}
+
+.patients {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #475569;
+}
+
+.book-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #1d4ed8;
+}
+
+/* SIDEBAR */
+.summary-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 100px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #15803d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .details-container {
+    flex-direction: column;
+  }
+}

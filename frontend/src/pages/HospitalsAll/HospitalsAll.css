@@ -115,6 +115,10 @@
 
 .results-section {
   flex: 1;
+
+  /* 🔥 IMPORTANT FIX (DO NOT REMOVE) */
+  display: flex;
+  flex-direction: column;
 }
 
 .page-title {
@@ -153,6 +157,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
+
+  /* 🔥 IMPORTANT FIX */
+  align-items: stretch;
 }
 
 /* ================= CARD ================= */

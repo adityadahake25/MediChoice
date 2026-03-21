@@ -16,25 +16,6 @@ export default function Navbar() {
     setUserInfo(storedUser);
   }, [location]);
 
-  /* ================= SMOOTH SCROLL ================= */
-  useEffect(() => {
-    if (location.hash) {
-      const section = document.querySelector(location.hash);
-      if (section) {
-        setTimeout(() => {
-          section.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
-    }
-  }, [location]);
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   /* ================= LOGOUT ================= */
   const handleLogout = () => {
     localStorage.removeItem("userInfo");
@@ -53,27 +34,7 @@ export default function Navbar() {
       {/* ================= MENU ================= */}
       <ul className="menu">
         <li>
-          <Link to="/" onClick={() => scrollToSection("home")}>
-            Home
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            to="/#how-it-works"
-            onClick={() => scrollToSection("how-it-works")}
-          >
-            How It Works
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            to="/#features-section"
-            onClick={() => scrollToSection("features-section")}
-          >
-            Features
-          </Link>
+          <Link to="/">Home</Link>
         </li>
 
         <li>
@@ -81,36 +42,23 @@ export default function Navbar() {
         </li>
 
         <li>
-          <Link
-            to="/#treatments-section"
-            onClick={() => scrollToSection("treatments-section")}
-          >
-            Treatments
-          </Link>
-        </li>
-
-        {/* 🔥 NEW CROWDFUNDING OPTION */}
-        <li>
-          <Link to="/crowdfunding">Crowdfunding</Link>
+          <Link to="/domain">Domain</Link>
         </li>
 
         <li>
-          <Link
-            to="/#testimonials-section"
-            onClick={() => scrollToSection("testimonials-section")}
-          >
-            Testimonials
-          </Link>
+          <Link to="/treatments">Treatments</Link>
         </li>
 
         <li>
-          <Link to="/doctor-dashboard">Doctor Dashboard</Link>
+          <Link to="/estimate">AI Estimator</Link>
         </li>
 
         <li>
-          <Link to="/#footer" onClick={() => scrollToSection("footer")}>
-            About
-          </Link>
+          <Link to="/fundraiser">Fundraiser</Link>
+        </li>
+
+        <li>
+          <Link to="/EMI">EMI Predictor</Link>
         </li>
       </ul>
 

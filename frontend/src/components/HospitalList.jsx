@@ -1,13 +1,36 @@
+import { useEffect, useState } from "react";
 import HospitalCard from "./HospitalCard";
-import { hospitals } from "../data/hospitals";
 import "./HospitalList.css";
-import { Link } from "react-router-dom";
 
 const HospitalList = () => {
-  // Sort hospitals by rating (highest first)
-  const sortedHospitals = [...hospitals].sort(
-    (a, b) => b.avg_rating - a.avg_rating,
-  );
+  const [hospitals, setHospitals] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchTopHospitals = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/hospitals/top");
+
+      if (!res.ok) {
+        throw new Error("Failed to fetch hospitals");
+      }
+
+      const data = await res.json();
+      setHospitals(data);
+    } catch (error) {
+      console.error(error);
+      setHospitals([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchTopHospitals();
+  }, []);
+
+  if (loading) {
+    return <p style={{ textAlign: "center" }}>Loading top hospitals...</p>;
+  }
 
   return (
     <section className="hospital-section">
@@ -17,9 +40,13 @@ const HospitalList = () => {
       </div>
 
       <div className="hospital-grid">
-        {sortedHospitals.map((hospital) => (
-          <HospitalCard hospital={hospital} />
-        ))}
+        {hospitals.length > 0 ? (
+          hospitals.map((hospital) => (
+            <HospitalCard key={hospital._id} hospital={hospital} />
+          ))
+        ) : (
+          <p>No hospitals found</p>
+        )}
       </div>
     </section>
   );

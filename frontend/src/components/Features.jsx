@@ -2,10 +2,10 @@ import "./Features.css";
 import {
   ShieldCheck,
   Clock,
-  Users,
-  Star,
+  BrainCircuit,
+  BarChart3,
   Smartphone,
-  FileText,
+  HandHeart,
 } from "lucide-react";
 
 const featuresData = [
@@ -20,14 +20,14 @@ const featuresData = [
     desc: "Get round-the-clock support for appointments and medical queries.",
   },
   {
-    icon: Users,
-    title: "Family Profiles",
-    desc: "Manage health records and appointments for your entire family.",
+    icon: BrainCircuit,
+    title: "AI Cost Estimator",
+    desc: "Get smart, data-driven cost predictions for treatments across hospitals before booking.",
   },
   {
-    icon: Star,
-    title: "Genuine Reviews",
-    desc: "Read honest patient reviews to choose the best provider.",
+    icon: BarChart3,
+    title: "Hospital Comparison",
+    desc: "Compare hospitals by cost, success rate, and ratings to choose the best option.",
   },
   {
     icon: Smartphone,
@@ -35,9 +35,9 @@ const featuresData = [
     desc: "Book appointments instantly with real-time availability.",
   },
   {
-    icon: FileText,
-    title: "Digital Records",
-    desc: "Access prescriptions and reports securely anytime.",
+    icon: HandHeart,
+    title: "Medical Fundraiser",
+    desc: "Request financial support for treatments or donate to help patients in need through a secure platform.",
   },
 ];
 

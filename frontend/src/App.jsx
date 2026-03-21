@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import HowItWorks from "./components/HowItWorks";
@@ -8,35 +10,26 @@ import Treatments from "./components/Treatments";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import ScrollToHash from "./utils/ScrollToHash";
+import ChatWidget from "./components/ChatWidget";
 
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+/* ================= PAGES ================= */
 
 import HospitalsAll from "./pages/HospitalsAll/HospitalsAll.jsx";
 import ShowHospital from "./pages/ShowHospital/ShowHospital.jsx";
 import ShowDoctor from "./pages/ShowDoctor/ShowDoctor";
 import Comparison from "./pages/Comparison/Comparison";
 
-// AI Estimator
 import Estimator from "./pages/Estimator/Estimator.jsx";
-
-// EMI Calculator
 import EMICard from "./pages/EMICard/EMICard.jsx";
-
-// Treatments
-import AllTreatments from "./pages/AllTreatments/AllTreatments.jsx";
-import TreatmentInfo from "./pages/TreatmentInfo/TreatmentInfo.jsx";
-
-// Crowdfunding
 import Crowdfunding from "./pages/Crowdfunding/Crowdfunding.jsx";
+import Fundraiser from "./pages/Fundraiser/Fundraiser.jsx";
 
-// 🔥 ADD THIS IMPORT
-import CampaignList from "./pages/Comparison/Comparison.jsx";
+import AllTreatments from "./pages/AllTreatments/AllTreatments.jsx";
+import TreatmentInfo from "./pages/TreatmentInfo/TreatmentInfo.jsx"; // ✅ USE THIS
 
-// Auth
 import SignUp from "./components/SignUp/SignUp.jsx";
 import Login from "./components/Login/Login.jsx";
 
-// Dashboards
 import PatientDashboard from "./pages/Dashboards/PatientDashboard";
 import Dashboard from "./pages/DoctorDashboard/Dashboard";
 import Schedule from "./pages/SidebarExtras/Schedule";
@@ -44,13 +37,10 @@ import Patients from "./pages/SidebarExtras/Patients";
 import Messages from "./pages/SidebarExtras/Messages";
 import Medicines from "./pages/SidebarExtras/Medicines";
 
-// Booking
 import BookAppointment from "./pages/BookAppointment/BookAppointment.jsx";
 
-// Chatbot
-import ChatWidget from "./components/ChatWidget";
+/* ================= LAYOUT ================= */
 
-/* ================= Layout Wrapper ================= */
 function Layout() {
   const location = useLocation();
 
@@ -78,15 +68,16 @@ function Layout() {
           }
         />
 
-        {/* ================= TREATMENTS ================= */}
-        <Route path="/treatments" element={<AllTreatments />} />
-        <Route path="/alltreatments" element={<AllTreatments />} />
+        {/* ================= DOMAIN PAGE ================= */}
+        <Route path="/domain" element={<AllTreatments />} />
+
+        {/* ================= TREATMENT DETAILS ================= */}
         <Route path="/treatments/:slug" element={<TreatmentInfo />} />
 
         {/* ================= AI ESTIMATOR ================= */}
         <Route path="/estimate" element={<Estimator />} />
 
-        {/* ================= EMI CALCULATOR ================= */}
+        {/* ================= EMI ================= */}
         <Route
           path="/emi"
           element={
@@ -105,15 +96,14 @@ function Layout() {
 
         {/* ================= CROWDFUNDING ================= */}
         <Route path="/crowdfunding" element={<Crowdfunding />} />
-
-        {/* 🔥 PUBLIC CAMPAIGN LIST PAGE */}
-        <Route path="/campaigns" element={<CampaignList />} />
+        <Route path="/fundraiser" element={<Fundraiser />} />
+        <Route path="/campaigns" element={<Comparison />} />
 
         {/* ================= AUTH ================= */}
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
 
-        {/* ================= HOSPITALS & DOCTORS ================= */}
+        {/* ================= HOSPITALS ================= */}
         <Route path="/hospitals" element={<HospitalsAll />} />
         <Route path="/hospitals/:id" element={<ShowHospital />} />
         <Route path="/doctors/:id" element={<ShowDoctor />} />
@@ -127,7 +117,7 @@ function Layout() {
         <Route path="/doctor/messages" element={<Messages />} />
         <Route path="/doctor/medicines" element={<Medicines />} />
 
-        {/* ================= BOOK APPOINTMENT ================= */}
+        {/* ================= BOOKING ================= */}
         <Route path="/book/:doctorId" element={<BookAppointment />} />
       </Routes>
 
@@ -137,7 +127,6 @@ function Layout() {
   );
 }
 
-/* ================= APP ================= */
 function App() {
   return (
     <BrowserRouter>

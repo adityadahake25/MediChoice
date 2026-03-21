@@ -2,13 +2,12 @@ import "./AllTreatments.css";
 import { Clock, IndianRupee, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-/* ================= CORRECT IMPORTS ================= */
+/* ================= IMAGES ================= */
 
 import Cardiology from "../../assets/cardiology.jpeg";
 import Dermatology from "../../assets/dermatology.jpeg";
 import Neurology from "../../assets/neurology.jpeg";
 import Orthopedic from "../../assets/orthopedic.jpeg";
-
 import Gynecologist from "../../assets/Gynecologist.jpeg";
 import Pediatrician from "../../assets/pediatrics.jpeg";
 import Gastroenterologist from "../../assets/Gastroenterologist.png";
@@ -126,25 +125,30 @@ export default function AllTreatments() {
     <section className="alltreatments-section">
       <div className="alltreatments-header">
         <span className="tag">ALL SPECIALITIES</span>
-        <h2>Find Doctors By Speciality</h2>
+        <h2>Find Doctors By Domains</h2>
         <p>Select a department and consult the best doctors near you</p>
       </div>
 
       <div className="alltreatments-grid">
-        {treatments.map((item, index) => (
-          <div className="alltreatment-card" key={index}>
+        {treatments.map((item) => (
+          <div className="alltreatment-card" key={item.slug}>
+            {/* IMAGE */}
             <div className="alltreatment-image">
-              <img src={item.image} alt={item.title} />
+              <img src={item.image} alt={item.title} loading="lazy" />
               <h3>{item.title}</h3>
             </div>
 
+            {/* CONTENT */}
             <div className="alltreatment-content">
               <div className="info">
                 <span>
-                  <Clock size={14} /> {item.duration}
+                  <Clock size={14} />
+                  {item.duration}
                 </span>
+
                 <span>
-                  <IndianRupee size={14} /> From ₹{item.price}
+                  <IndianRupee size={14} />
+                  From ₹{item.price}
                 </span>
               </div>
 
@@ -155,7 +159,8 @@ export default function AllTreatments() {
                   to={`/treatments/${item.slug}`}
                   className="learn-more-btn"
                 >
-                  Learn More <ArrowRight size={14} />
+                  Learn More
+                  <ArrowRight size={14} />
                 </Link>
               </div>
             </div>

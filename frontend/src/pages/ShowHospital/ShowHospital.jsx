@@ -226,9 +226,9 @@ const ShowHospital = () => {
           {/* DOCTORS */}
           <div className="doctor-header">
             <h3 className="section-title">Top Doctors</h3>
-            <Link to={`/doctors?hospital=${id}`}>
+            {/* <Link to={`/doctors?hospital=${id}`}>
               <button className="all-doctors-btn">View All Doctors</button>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="doctor-row">

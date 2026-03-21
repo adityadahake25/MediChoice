@@ -61,7 +61,7 @@
   gap: 25px;
 }
 
-.input-group label {
+.input-group-box label {
   display: flex;
   align-items: center;
   gap: 8px;
