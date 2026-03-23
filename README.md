@@ -32,4 +32,4 @@ MeddiChoice simplifies healthcare discovery by providing users with an intuitive
 **Database**
 - MongoDB   
 
------
+---
