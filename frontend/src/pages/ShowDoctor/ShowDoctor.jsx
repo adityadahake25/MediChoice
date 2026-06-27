@@ -28,6 +28,11 @@ const ShowDoctor = () => {
       try {
         const res = await fetch(`http://localhost:5000/api/doctors/${id}`);
         const data = await res.json();
+
+        console.log("Doctor Data:", data);
+        console.log("_id:", data._id);
+        console.log("doctor_id:", data.doctor_id);
+
         setDoctor(data);
       } catch (error) {
         console.error(error);

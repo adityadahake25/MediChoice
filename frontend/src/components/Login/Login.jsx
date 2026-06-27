@@ -1,9 +1,13 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Get the page from which the user came
+  const from = location.state?.from || "/";
 
   const [formData, setFormData] = useState({
     email: "",
@@ -20,25 +24,35 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
-    console.log("Login Response:", data);
+      const data = await res.json();
+      console.log("Login Response:", data);
 
-    if (res.ok) {
-      localStorage.setItem("userInfo", JSON.stringify(data));
+      if (res.ok) {
+        // Save user information
+        localStorage.setItem("userInfo", JSON.stringify(data));
 
-      if (data.role === "doctor") {
-        navigate("/doctor-dashboard");
+        // Doctor always goes to dashboard
+        if (data.role === "doctor") {
+          navigate("/doctor-dashboard", { replace: true });
+        } else {
+          // Normal user returns to previous page
+          navigate(from, { replace: true });
+        }
       } else {
-        navigate("/");
+        alert(data.message || "Invalid email or password.");
       }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong. Please try again.");
     }
   };
 

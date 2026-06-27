@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { User, Phone, Mail, Calendar, Clock, FileText } from "lucide-react";
 import "./BookAppointment.css";
 
 const BookAppointment = () => {
   const { doctorId } = useParams();
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [formData, setFormData] = useState({
     patientName: "",
@@ -32,6 +35,13 @@ const BookAppointment = () => {
 
     if (!userInfo) {
       alert("Please login first");
+
+      navigate("/login", {
+        state: {
+          from: location.pathname,
+        },
+      });
+
       return;
     }
 
