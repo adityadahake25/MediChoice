@@ -1,23 +1,35 @@
-<<<<<<< HEAD
-# MediChoice 🏥
+# 🏥 MeddiChoice
 
-MediChoice is a healthcare platform connecting patients and doctors.
+> A modern healthcare platform to explore doctors, treatments, and hospitals — all in one place.
 
-## Features
-- Patient & Doctor Login
-- Dashboards
-- Appointment management
+MeddiChoice simplifies healthcare discovery by providing users with an intuitive interface to find doctors by specialization, understand treatments, and explore hospitals with ease.
 
-Frontend built with React + Vite.
-=======
-# MediChoice 🏥
+---
 
-MediChoice is a healthcare platform connecting patients and doctors.
+## 🚀 Features
 
-## Features
-- Patient & Doctor Login
-- Dashboards
-- Appointment management
+- 🔍 Find doctors by medical domains (Cardiology, Dermatology, etc.)
+- 🏥 Explore hospitals and available services  
+- 💊 Detailed treatment information  
+- 💰 Transparent cost insights  
+- ⏱️ Treatment duration & overview  
+- 📱 Fully responsive design  
+- ⚡ Smooth and fast navigation  
 
-Frontend built with React + Vite.
->>>>>>> aeac783fe9eeb402e83969a59966ab25bd7e040a
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js  
+- React Router  
+- Custom CSS  
+- Lucide Icons  
+
+**Backend **
+- Node.js / Express  
+
+**Database**
+- MongoDB   
+
+---
