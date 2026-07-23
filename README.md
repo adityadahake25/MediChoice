@@ -213,3 +213,369 @@ Unlike traditional healthcare platforms that focus on a single service, MediChoi
 This enables users to make faster, smarter, and more informed healthcare decisions.
 
 ---
+
+# 🏗 System Architecture
+
+```text
+                          ┌──────────────────────────────┐
+                          │          User                │
+                          └──────────────┬───────────────┘
+                                         │
+                                         ▼
+                    ┌──────────────────────────────────────┐
+                    │        React Frontend (Vite)         │
+                    │                                      │
+                    │ • Home                              │
+                    │ • Hospital Comparison               │
+                    │ • Doctor Search                     │
+                    │ • AI Chatbot                        │
+                    │ • Cost Estimator                    │
+                    │ • EMI Calculator                    │
+                    │ • Crowdfunding                      │
+                    └──────────────┬───────────────────────┘
+                                   │ REST API
+                                   ▼
+                    ┌──────────────────────────────────────┐
+                    │       Express.js Backend             │
+                    │                                      │
+                    │ • Authentication                    │
+                    │ • Hospital APIs                     │
+                    │ • Doctor APIs                       │
+                    │ • Comparison Logic                  │
+                    │ • Crowdfunding APIs                 │
+                    └──────────────┬───────────────────────┘
+                                   │
+                    ┌──────────────┴──────────────┐
+                    ▼                             ▼
+          ┌──────────────────┐          ┌──────────────────┐
+          │    MongoDB        │          │ AI Chatbot       │
+          │                   │          │ Service          │
+          └──────────────────┘          └──────────────────┘
+```
+
+---
+
+# 🔄 Application Workflow
+
+```text
+User
+
+   │
+
+   ▼
+
+Open MediChoice
+
+   │
+
+   ▼
+
+Search Hospital / Doctor
+
+   │
+
+   ▼
+
+View Details
+
+   │
+
+   ├──────────────► Compare Hospitals
+
+   │
+
+   ├──────────────► Estimate Treatment Cost
+
+   │
+
+   ├──────────────► Calculate EMI
+
+   │
+
+   ├──────────────► Chat with AI Assistant
+
+   │
+
+   └──────────────► Create Crowdfunding Campaign
+
+   │
+
+   ▼
+
+Make Better Healthcare Decision
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+MediChoice
+│
+├── backend
+│   ├── config
+│   ├── init
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── uploads
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
+│
+├── chatbot-service
+│   ├── dData.js
+│   ├── hData.js
+│   ├── server.js
+│   └── package.json
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   │
+│   ├── assets
+│   │
+│   ├── components
+│   │   ├── ChatWidget
+│   │   ├── DoctorSidebar
+│   │   ├── Footer
+│   │   ├── HeroSection
+│   │   ├── HospitalCard
+│   │   ├── Loader
+│   │   ├── Login
+│   │   ├── Map
+│   │   ├── Navbar
+│   │   ├── SearchBar
+│   │   ├── SignUp
+│   │   ├── Testimonials
+│   │   ├── Translate
+│   │   └── ...
+│   │
+│   ├── pages
+│   │   ├── Home
+│   │   ├── Comparison
+│   │   ├── ShowHospital
+│   │   ├── ShowDoctor
+│   │   ├── Crowdfunding
+│   │   ├── EMI
+│   │   ├── Estimator
+│   │   └── ...
+│   │
+│   ├── styles
+│   ├── utils
+│   ├── data
+│   └── App.jsx
+│
+├── README.md
+└── package.json
+```
+
+---
+
+# 📦 Core Modules
+
+| Module | Description |
+|---------|-------------|
+| 🏥 Hospital Module | Displays hospital information and comparison |
+| 👨‍⚕ Doctor Module | Browse doctor profiles and details |
+| 🤖 AI Assistant | AI-powered healthcare chatbot |
+| 💰 Cost Estimator | Estimate treatment expenses |
+| 💳 EMI Calculator | Calculate monthly payment plans |
+| ❤️ Crowdfunding | Create and explore fundraising campaigns |
+| 🌍 Translation | Multi-language support |
+| 🔐 Authentication | Secure login and registration |
+
+---
+
+# ⚙ Installation Guide
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/MediChoice.git
+
+cd MediChoice
+```
+
+---
+
+## 2️⃣ Install Backend
+
+```bash
+cd backend
+
+npm install
+```
+
+---
+
+## 3️⃣ Install Frontend
+
+```bash
+cd ../frontend
+
+npm install
+```
+
+---
+
+## 4️⃣ Install Chatbot Service
+
+```bash
+cd ../chatbot-service
+
+npm install
+```
+
+---
+
+## 5️⃣ Configure Environment Variables
+
+Create a `.env` file in the backend directory.
+
+```env
+PORT=5000
+
+MONGO_URI=your_mongodb_connection
+
+JWT_SECRET=your_secret_key
+```
+
+Create a `.env` file inside the frontend directory.
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+*(Add any additional environment variables if your project requires them.)*
+
+---
+
+# ▶ Running the Project
+
+### Start Backend
+
+```bash
+cd backend
+
+npm start
+```
+
+---
+
+### Start Frontend
+
+```bash
+cd frontend
+
+npm run dev
+```
+
+---
+
+### Start AI Chatbot
+
+```bash
+cd chatbot-service
+
+npm start
+```
+
+---
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📡 API Overview
+
+| Module | Purpose |
+|---------|---------|
+| Authentication API | User Login & Registration |
+| Hospital API | Hospital Information |
+| Doctor API | Doctor Details |
+| Comparison API | Compare Hospitals |
+| Chatbot API | AI Chat Responses |
+| Crowdfunding API | Campaign Management |
+
+---
+
+# 🤖 AI Chatbot Workflow
+
+```text
+User Query
+
+      │
+
+      ▼
+
+React Chat Widget
+
+      │
+
+      ▼
+
+Chatbot Server
+
+      │
+
+      ▼
+
+Healthcare Dataset
+
+      │
+
+      ▼
+
+Generate Response
+
+      │
+
+      ▼
+
+Display Answer
+```
+
+---
+
+# 🔒 Authentication Flow
+
+```text
+User
+
+ │
+
+ ▼
+
+Register/Login
+
+ │
+
+ ▼
+
+Backend Validation
+
+ │
+
+ ▼
+
+MongoDB
+
+ │
+
+ ▼
+
+Authentication Success
+
+ │
+
+ ▼
+
+Access Protected Pages
+```
+
+---
