@@ -1,5 +1,5 @@
 import React from "react";
-import "../DoctorDashboard/Dashboard.css";
+import "../DoctorDashboard/dashboard.css";
 
 const Messages = () => {
   return (
