@@ -2,10 +2,10 @@ import "./Treatments.css";
 import { Clock, IndianRupee, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-import Cardiology from "../assets/Cardiology.jpeg";
-import Dermatology from "../assets/Dermatology.jpeg";
-import Neurology from "../assets/Neurology.jpeg";
-import Orthopedic from "../assets/Orthopedic.jpeg";
+import Cardiology from "../assets/cardiology.jpeg";
+import Dermatology from "../assets/dermatology.jpeg";
+import Neurology from "../assets/neurology.jpeg";
+import Orthopedic from "../assets/orthopedic.jpeg";
 
 /* ================= DATA ================= */
 
