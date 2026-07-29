@@ -36,7 +36,9 @@ const ShowHospital = () => {
 
   const fetchHospital = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/hospitals/${id}`);
+      const res = await fetch(
+        `https://medichoice-backend.onrender.com/api/hospitals/${id}`,
+      );
       const data = await res.json();
       setHospital(data);
     } catch (error) {
@@ -47,7 +49,7 @@ const ShowHospital = () => {
   const fetchDoctors = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/doctors/hospital/${id}`,
+        `https://medichoice-backend.onrender.com/api/doctors/hospital/${id}`,
       );
       const data = await res.json();
       setDoctors(data);
@@ -73,7 +75,7 @@ const ShowHospital = () => {
     }
 
     const res = await fetch(
-      `http://localhost:5000/api/hospitals/${id}/review`,
+      `https://medichoice-backend.onrender.com/api/hospitals/${id}/review`,
       {
         method: "POST",
         headers: {
@@ -117,7 +119,7 @@ const ShowHospital = () => {
       <div className="hero-card">
         <div className="hero-image">
           <img
-            src={`http://localhost:5000${hospital.image}`}
+            src={`https://medichoice-backend.onrender.com${hospital.image}`}
             alt={hospital.hospital_name}
           />
         </div>
@@ -240,7 +242,7 @@ const ShowHospital = () => {
               >
                 <div className="doctor-card">
                   <img
-                    src={`http://localhost:5000${doctor.image}`}
+                    src={`https://medichoice-backend.onrender.com${doctor.image}`}
                     alt={doctor.doctor_name}
                   />
                   <h4>{doctor.doctor_name}</h4>

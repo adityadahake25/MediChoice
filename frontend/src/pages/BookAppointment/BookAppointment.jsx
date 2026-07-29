@@ -47,7 +47,7 @@ const BookAppointment = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/appointments/book",
+        "https://medichoice-backend.onrender.com/api/appointments/book",
         {
           doctorId,
           ...formData,

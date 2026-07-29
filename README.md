@@ -51,31 +51,31 @@ The goal of MediChoice is to make healthcare decisions more transparent, accessi
 
 # ✨ Key Features
 
-| Feature | Description |
-|----------|-------------|
-| 🏥 **Hospital Comparison** | Compare hospitals based on ratings, treatment costs, facilities, and location. |
-| 👨‍⚕ **Doctor Discovery** | Browse doctor profiles, specializations, experience, and associated hospitals. |
-| 🤖 **AI Healthcare Chatbot** | Get AI-assisted guidance for healthcare-related queries and platform navigation. |
-| 💰 **Treatment Cost Estimator** | Estimate medical treatment expenses before visiting hospitals. |
-| 💳 **EMI Calculator** | Calculate monthly installment plans for healthcare expenses. |
-| ❤️ **Medical Crowdfunding** | Create and explore fundraising campaigns for medical treatments. |
-| 🌍 **Multi-language Support** | Translate healthcare information into multiple languages. |
-| 🔐 **Authentication** | Secure user registration and login system. |
-| 📍 **Hospital Location Support** | View hospital locations for easier accessibility. |
-| 📱 **Responsive Design** | Optimized for desktop, tablet, and mobile devices. |
+| Feature                          | Description                                                                      |
+| -------------------------------- | -------------------------------------------------------------------------------- |
+| 🏥 **Hospital Comparison**       | Compare hospitals based on ratings, treatment costs, facilities, and location.   |
+| 👨‍⚕ **Doctor Discovery**          | Browse doctor profiles, specializations, experience, and associated hospitals.   |
+| 🤖 **AI Healthcare Chatbot**     | Get AI-assisted guidance for healthcare-related queries and platform navigation. |
+| 💰 **Treatment Cost Estimator**  | Estimate medical treatment expenses before visiting hospitals.                   |
+| 💳 **EMI Calculator**            | Calculate monthly installment plans for healthcare expenses.                     |
+| ❤️ **Medical Crowdfunding**      | Create and explore fundraising campaigns for medical treatments.                 |
+| 🌍 **Multi-language Support**    | Translate healthcare information into multiple languages.                        |
+| 🔐 **Authentication**            | Secure user registration and login system.                                       |
+| 📍 **Hospital Location Support** | View hospital locations for easier accessibility.                                |
+| 📱 **Responsive Design**         | Optimized for desktop, tablet, and mobile devices.                               |
 
 ---
 
 # 🛠 Tech Stack
 
-| Category | Technologies |
-|-----------|--------------|
-| **Frontend** | React.js, Vite, React Router, CSS |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB, Mongoose |
-| **Authentication** | JWT Authentication |
-| **AI Integration** | AI Chatbot Service |
-| **Development Tools** | Git, GitHub, npm |
+| Category              | Technologies                      |
+| --------------------- | --------------------------------- |
+| **Frontend**          | React.js, Vite, React Router, CSS |
+| **Backend**           | Node.js, Express.js               |
+| **Database**          | MongoDB, Mongoose                 |
+| **Authentication**    | JWT Authentication                |
+| **AI Integration**    | AI Chatbot Service                |
+| **Development Tools** | Git, GitHub, npm                  |
 
 ---
 
@@ -236,7 +236,7 @@ JWT_SECRET=your_secret_key
 Create another `.env` file inside the **frontend** folder.
 
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=https://medichoice-backend.onrender.com
 ```
 
 > **Note:** Add any additional API keys or environment variables required by your project.
@@ -256,7 +256,7 @@ npm start
 Backend Server
 
 ```
-http://localhost:5000
+https://medichoice-backend.onrender.com
 ```
 
 ---
@@ -381,20 +381,20 @@ The following features are planned for future releases:
 
 # 📌 Current Project Status
 
-| Module | Status |
-|----------|--------|
+| Module              | Status       |
+| ------------------- | ------------ |
 | Hospital Comparison | ✅ Completed |
-| Doctor Search | ✅ Completed |
-| AI Chatbot | ✅ Completed |
-| Authentication | ✅ Completed |
-| Cost Estimator | ✅ Completed |
-| EMI Calculator | ✅ Completed |
-| Crowdfunding | ✅ Completed |
-| Translation | ✅ Completed |
-| Responsive UI | ✅ Completed |
+| Doctor Search       | ✅ Completed |
+| AI Chatbot          | ✅ Completed |
+| Authentication      | ✅ Completed |
+| Cost Estimator      | ✅ Completed |
+| EMI Calculator      | ✅ Completed |
+| Crowdfunding        | ✅ Completed |
+| Translation         | ✅ Completed |
+| Responsive UI       | ✅ Completed |
 | Appointment Booking | 🟡 Prototype |
-| Patient Dashboard | 🚧 Planned |
-| Doctor Dashboard | 🚧 Planned |
+| Patient Dashboard   | 🚧 Planned   |
+| Doctor Dashboard    | 🚧 Planned   |
 
 ---
 
@@ -419,27 +419,27 @@ The following improvements are planned for future versions of MediChoice:
 
 The application can be deployed using the following platforms:
 
-| Service | Platform |
-|----------|----------|
-| Frontend | Vercel |
-| Backend | Render / Railway |
-| Database | MongoDB Atlas |
+| Service    | Platform         |
+| ---------- | ---------------- |
+| Frontend   | Vercel           |
+| Backend    | Render / Railway |
+| Database   | MongoDB Atlas    |
 | AI Chatbot | Render / Railway |
 
 ---
 
 # 📊 Project Statistics
 
-| Category | Details |
-|-----------|----------|
-| Architecture | MERN Stack |
-| Frontend | React + Vite |
-| Backend | Node.js + Express |
-| Database | MongoDB |
-| Authentication | JWT |
-| AI Integration | Healthcare Chatbot |
-| Responsive Design | ✅ Yes |
-| Open Source | ✅ Yes |
+| Category          | Details            |
+| ----------------- | ------------------ |
+| Architecture      | MERN Stack         |
+| Frontend          | React + Vite       |
+| Backend           | Node.js + Express  |
+| Database          | MongoDB            |
+| Authentication    | JWT                |
+| AI Integration    | Healthcare Chatbot |
+| Responsive Design | ✅ Yes             |
+| Open Source       | ✅ Yes             |
 
 ---
 

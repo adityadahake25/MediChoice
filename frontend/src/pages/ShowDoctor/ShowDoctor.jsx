@@ -26,7 +26,9 @@ const ShowDoctor = () => {
   useEffect(() => {
     const fetchDoctor = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/doctors/${id}`);
+        const res = await fetch(
+          `https://medichoice-backend.onrender.com/api/doctors/${id}`,
+        );
         const data = await res.json();
 
         console.log("Doctor Data:", data);
@@ -49,7 +51,7 @@ const ShowDoctor = () => {
       <div className="doctor-hero">
         <div className="doctor-image">
           <img
-            src={`http://localhost:5000${doctor.image}`}
+            src={`https://medichoice-backend.onrender.com${doctor.image}`}
             alt={doctor.doctor_name}
           />
         </div>

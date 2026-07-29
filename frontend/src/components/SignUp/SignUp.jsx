@@ -105,10 +105,13 @@ export default function SignUp() {
       formPayload.append("idProof", files.idProof);
     }
 
-    const res = await fetch("http://localhost:5000/api/auth/signup", {
-      method: "POST",
-      body: formPayload,
-    });
+    const res = await fetch(
+      "https://medichoice-backend.onrender.com/api/auth/signup",
+      {
+        method: "POST",
+        body: formPayload,
+      },
+    );
 
     const data = await res.json();
 

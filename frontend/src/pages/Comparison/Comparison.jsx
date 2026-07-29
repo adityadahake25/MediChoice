@@ -39,7 +39,7 @@ export default function Comparison() {
   const fetchHospitals = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/comparison?ids=${selectedIds.join(",")}`,
+        `https://medichoice-backend.onrender.com/api/comparison?ids=${selectedIds.join(",")}`,
       );
       setHospitals(res.data);
     } catch (error) {

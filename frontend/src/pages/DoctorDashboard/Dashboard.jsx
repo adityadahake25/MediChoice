@@ -60,7 +60,7 @@ const Dashboard = () => {
     const fetchDoctorProfile = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/doctors/user/${userId}`,
+          `https://medichoice-backend.onrender.com/api/doctors/user/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/appointments/doctor/${doctor._id}`,
+          `https://medichoice-backend.onrender.com/api/appointments/doctor/${doctor._id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -109,7 +109,7 @@ const Dashboard = () => {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/appointments/${id}`,
+        `https://medichoice-backend.onrender.com/api/appointments/${id}`,
         { status },
         {
           headers: {

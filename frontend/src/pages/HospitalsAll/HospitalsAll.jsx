@@ -30,7 +30,9 @@ const HospitalsAll = () => {
   useEffect(() => {
     const fetchHospitals = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/hospitals");
+        const response = await fetch(
+          "https://medichoice-backend.onrender.com/api/hospitals",
+        );
         const data = await response.json();
 
         console.log("Total hospitals from backend:", data.length); // Debug check
@@ -206,7 +208,7 @@ const HospitalsAll = () => {
                   </button>
 
                   <img
-                    src={`http://localhost:5000${hospital.image}`}
+                    src={`https://medichoice-backend.onrender.com${hospital.image}`}
                     alt={hospital.hospital_name}
                   />
 

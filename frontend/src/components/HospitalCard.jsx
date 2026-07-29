@@ -17,7 +17,7 @@ const HospitalCard = ({ hospital }) => {
         <img
           src={
             hospital?.image
-              ? `http://localhost:5000${hospital.image}` // ✅ FIXED
+              ? `https://medichoice-backend.onrender.com${hospital.image}` // ✅ FIXED
               : defaultHospital
           }
           alt={hospital?.hospital_name}

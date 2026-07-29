@@ -8,7 +8,9 @@ const HospitalList = () => {
 
   const fetchTopHospitals = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/hospitals/top");
+      const res = await fetch(
+        "https://medichoice-backend.onrender.com/api/hospitals/top",
+      );
 
       if (!res.ok) {
         throw new Error("Failed to fetch hospitals");
