@@ -41,11 +41,11 @@
 }
 
 /* INFO */
-.doctor-info {
+.doctor-info-box {
   flex: 1;
 }
 
-.doctor-info h1 {
+.doctor-info-box h1 {
   margin-bottom: 6px;
 }
 

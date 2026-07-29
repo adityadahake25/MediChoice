@@ -54,7 +54,7 @@ const ShowDoctor = () => {
           />
         </div>
 
-        <div className="doctor-info">
+        <div className="doctor-info-box">
           <h1>{doctor.doctor_name}</h1>
           <p className="specialization">{doctor.specialization}</p>
 
