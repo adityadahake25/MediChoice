@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./translate.css";
+import "./Translate.css";
 
 export default function Translate() {
   const [isReady, setIsReady] = useState(false);
