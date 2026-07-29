@@ -24,6 +24,13 @@ const ShowDoctor = () => {
   const [activeTab, setActiveTab] = useState("About");
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // or "auto"
+    });
+  }, []);
+
+  useEffect(() => {
     const fetchDoctor = async () => {
       try {
         const res = await fetch(
@@ -95,7 +102,10 @@ const ShowDoctor = () => {
 
           <p className="timing">{doctor.availability?.timings}</p>
 
-          <button onClick={() => navigate(`/book/${doctor._id}`)}>
+          <button
+            className="book-btn"
+            onClick={() => navigate(`/book/${doctor._id}`)}
+          >
             Book Appointment
           </button>
         </div>
