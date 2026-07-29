@@ -21,7 +21,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-import "./dashboard.css";
+import "./Dashboard.css";
 
 const data = [
   { day: "Mon", patients: 30 },
