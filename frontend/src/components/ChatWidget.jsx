@@ -32,11 +32,14 @@ const ChatWidget = () => {
     setInput("");
 
     try {
-      const response = await fetch("http://localhost:3000/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: currentInput }),
-      });
+      const response = await fetch(
+        "https://medichoice-chatbot.onrender.com/chat",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: currentInput }),
+        },
+      );
 
       const data = await response.json();
       setMessages((prev) => [...prev, { role: "bot", content: data.reply }]);
