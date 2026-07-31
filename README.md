@@ -141,57 +141,72 @@ MediChoice
 
 ---
 
-# 📸 Application Screenshots
+# 📸 Application Preview
 
-> Replace the image paths below with your project screenshots.
+The screenshots below showcase the core features and user experience of **MediChoice**.
+
+---
 
 ## 🏠 Home Page
 
+The landing page provides quick access to hospital comparison, doctor discovery, AI-powered healthcare tools, and treatment cost estimation.
+
 <p align="center">
-<img src="./screenshots/home.png" width="100%" alt="Home Page"/>
+  <img src="./screenshots/home.png" alt="Home Page" width="100%">
 </p>
 
 ---
 
-## 🏥 Hospital Comparison
+## 🏥 Top Hospitals
+
+Browse and filter hospitals based on city, ratings, facilities, and available treatments to find the most suitable healthcare provider.
 
 <p align="center">
-<img src="./screenshots/comparison.png" width="100%" alt="Hospital Comparison"/>
+  <img src="./screenshots/top-hospitals.png" alt="Top Hospitals" width="100%">
 </p>
 
 ---
 
-## 👨‍⚕️ Doctor Details
+## 🏥 Hospital Details
+
+View comprehensive hospital information including facilities, services, ratings, capacity, available doctors, and infrastructure.
 
 <p align="center">
-<img src="./screenshots/doctor.png" width="100%" alt="Doctor Details"/>
+  <img src="./screenshots/hospital.png" alt="Hospital Details" width="100%">
 </p>
 
 ---
 
-## 🤖 AI Healthcare Assistant
+## 👨‍⚕️ Doctor Discovery
+
+Explore doctors across multiple medical specialties and discover experts based on treatment domain and specialization.
 
 <p align="center">
-<img src="./screenshots/chatbot.png" width="100%" alt="AI Chatbot"/>
+  <img src="./screenshots/domain.png" alt="Doctor Discovery" width="100%">
+</p>
+
+---
+
+## ⚖️ Hospital Comparison
+
+Compare hospitals side-by-side using ratings, success rate, doctor availability, infrastructure, and overall performance to make informed healthcare decisions.
+
+<p align="center">
+  <img src="./screenshots/comparison.png" alt="Hospital Comparison" width="100%">
 </p>
 
 ---
 
 ## 💰 Treatment Cost Estimator
 
+Estimate treatment expenses based on city, procedure, and insurance coverage to better plan healthcare costs.
+
 <p align="center">
-<img src="./screenshots/estimator.png" width="100%" alt="Treatment Cost Estimator"/>
+  <img src="./screenshots/estimator.png" alt="Treatment Cost Estimator" width="100%">
 </p>
 
 ---
 
-## ❤️ Medical Crowdfunding
-
-<p align="center">
-<img src="./screenshots/crowdfunding.png" width="100%" alt="Medical Crowdfunding"/>
-</p>
-
----
 | **Version Control** | Git & GitHub |
 
 ---
