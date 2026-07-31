@@ -428,18 +428,15 @@ This project strengthened my understanding of:
 
 ## Aditya Dahake
 
-**B.Tech – Electronics & Telecommunication Engineering**
-
-Passionate Full Stack Developer focused on building scalable web applications and solving real-world problems through modern technologies.
+Full Stack Developer passionate about building scalable web applications and solving real-world problems using modern technologies and AI.
 
 ---
 
 ## 📬 Connect With Me
 
-- **GitHub:** https://github.com/YOUR_GITHUB_USERNAME
-- **LinkedIn:** https://linkedin.com/in/YOUR_LINKEDIN
-- **Portfolio:** https://YOUR_PORTFOLIO
-- **Email:** YOUR_EMAIL
+- **GitHub:** https://github.com/adityadahake25
+- **LinkedIn:** https://www.linkedin.com/in/aditya-dahake-12186b310/
+- **Email:** adityadahake52@gmail.com
 
 ---
 
