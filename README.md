@@ -4,135 +4,109 @@
 
 ### AI-Powered Healthcare Decision Support Platform
 
-Helping users compare hospitals, discover doctors, estimate treatment costs, and make informed healthcare decisions through AI.
-
-<br>
+A production-ready **MERN Stack** application that helps users compare hospitals, discover doctors, estimate treatment costs, and receive AI-powered healthcare assistance through an intelligent chatbot.
 
 <p align="center">
-
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
-
-</p>
-
-<p align="center">
-
-🚀 MERN Stack • 🤖 AI Powered • 🏥 Healthcare • 💰 Cost Estimation • ❤️ Crowdfunding
-
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb" />
+  <img src="https://img.shields.io/badge/Groq-AI-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/Render-Backend-46E3B7?style=for-the-badge" />
 </p>
 
 </div>
 
 ---
 
-# 📸 Project Preview
+# 🌐 Live Demo
 
-> **Replace the image below with a screenshot of your homepage.**
-
-<p align="center">
-<img src="./screenshots/home.png" alt="MediChoice Home" width="100%">
-</p>
+| Service | URL |
+|---------|-----|
+| 🚀 **Live Application** | https://medi-choice.vercel.app/ |
+| ⚙️ **Backend API** | https://medichoice-backend.onrender.com |
+| 🤖 **AI Chatbot Service** | https://medichoice-chatbot.onrender.com |
 
 ---
 
 # 📖 Overview
 
-Healthcare decisions often require patients to compare hospitals, evaluate treatment costs, find experienced doctors, and understand available financial support. Since this information is usually spread across multiple platforms, the process becomes time-consuming and confusing.
+Healthcare decisions often require users to search across multiple platforms to compare hospitals, evaluate doctors, estimate treatment costs, and explore financial assistance. This fragmented experience makes choosing the right healthcare provider both time-consuming and confusing.
 
-**MediChoice** is a full-stack MERN application that brings these healthcare services together in a single platform. It enables users to compare hospitals, search doctors, estimate treatment costs, calculate medical EMIs, interact with an AI-powered healthcare chatbot, and explore medical crowdfunding options.
+**MediChoice** solves this problem by bringing these essential healthcare services into a single platform. Users can compare hospitals, discover specialists, estimate medical expenses, calculate EMIs, explore crowdfunding options, and interact with an AI-powered healthcare assistant for quick guidance.
 
-The goal of MediChoice is to make healthcare decisions more transparent, accessible, and financially manageable through technology.
+The application follows a **production-style architecture** with independently deployed frontend, backend, AI chatbot service, and cloud database, demonstrating modern full-stack development practices.
 
 ---
 
 # ✨ Key Features
 
-| Feature                          | Description                                                                      |
-| -------------------------------- | -------------------------------------------------------------------------------- |
-| 🏥 **Hospital Comparison**       | Compare hospitals based on ratings, treatment costs, facilities, and location.   |
-| 👨‍⚕ **Doctor Discovery**          | Browse doctor profiles, specializations, experience, and associated hospitals.   |
-| 🤖 **AI Healthcare Chatbot**     | Get AI-assisted guidance for healthcare-related queries and platform navigation. |
-| 💰 **Treatment Cost Estimator**  | Estimate medical treatment expenses before visiting hospitals.                   |
-| 💳 **EMI Calculator**            | Calculate monthly installment plans for healthcare expenses.                     |
-| ❤️ **Medical Crowdfunding**      | Create and explore fundraising campaigns for medical treatments.                 |
-| 🌍 **Multi-language Support**    | Translate healthcare information into multiple languages.                        |
-| 🔐 **Authentication**            | Secure user registration and login system.                                       |
-| 📍 **Hospital Location Support** | View hospital locations for easier accessibility.                                |
-| 📱 **Responsive Design**         | Optimized for desktop, tablet, and mobile devices.                               |
+### 🏥 Healthcare Services
+
+- Compare hospitals based on ratings, facilities, location, and treatment costs.
+- Discover doctors by specialization, experience, and hospital.
+- Estimate treatment expenses before hospital visits.
+- View detailed hospital and doctor information.
+
+### 🤖 AI-Powered Assistant
+
+- Intelligent healthcare chatbot powered by **Groq AI**.
+- Provides guidance for hospitals, doctors, and healthcare-related queries.
+- Fast and conversational user experience.
+
+### 💰 Financial Assistance
+
+- Medical EMI Calculator.
+- Medical Crowdfunding support.
+- Treatment cost estimation.
+
+### 🌍 User Experience
+
+- Secure JWT Authentication.
+- Responsive UI for desktop, tablet, and mobile.
+- Multi-language translation support.
+- Clean and intuitive interface.
 
 ---
 
 # 🛠 Tech Stack
 
-| Category              | Technologies                      |
-| --------------------- | --------------------------------- |
-| **Frontend**          | React.js, Vite, React Router, CSS |
-| **Backend**           | Node.js, Express.js               |
-| **Database**          | MongoDB, Mongoose                 |
-| **Authentication**    | JWT Authentication                |
-| **AI Integration**    | AI Chatbot Service                |
-| **Development Tools** | Git, GitHub, npm                  |
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | React.js, Vite, React Router, CSS |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB Atlas, Mongoose |
+| **Authentication** | JWT |
+| **AI** | Groq API |
+| **Deployment** | Vercel, Render |
 
 ---
 
-# 🏗 System Architecture
+# 🏗️ System Architecture
 
 ```text
-                           ┌──────────────────────┐
-                           │        User          │
-                           └──────────┬───────────┘
-                                      │
-                                      ▼
-                  ┌───────────────────────────────────┐
-                  │       React Frontend (Vite)       │
-                  │                                   │
-                  │  • Hospital Comparison            │
-                  │  • Doctor Discovery               │
-                  │  • AI Chatbot                     │
-                  │  • Cost Estimator                 │
-                  │  • EMI Calculator                 │
-                  │  • Crowdfunding                   │
-                  └───────────────┬───────────────────┘
-                                  │
-                             REST APIs
-                                  │
-                                  ▼
-                  ┌───────────────────────────────────┐
-                  │      Node.js + Express Backend    │
-                  │                                   │
-                  │  • Authentication                 │
-                  │  • Hospital APIs                  │
-                  │  • Doctor APIs                    │
-                  │  • Comparison Logic               │
-                  │  • Crowdfunding APIs              │
-                  └───────────────┬───────────────────┘
-                                  │
-                  ┌───────────────┴───────────────┐
-                  ▼                               ▼
-         ┌──────────────────┐          ┌──────────────────┐
-         │     MongoDB      │          │   AI Chatbot     │
-         │    Database      │          │     Service      │
-         └──────────────────┘          └──────────────────┘
+                           User
+                             │
+                             ▼
+                React Frontend (Vercel)
+                        │
+          ┌─────────────┴─────────────┐
+          │                           │
+          ▼                           ▼
+   Backend API (Render)      AI Chatbot (Render)
+          │
+          ▼
+      MongoDB Atlas
 ```
 
----
+### Architecture Overview
 
-# 🌟 Highlights
-
-- ✅ Full-Stack MERN Application
-- ✅ AI-Powered Healthcare Assistant
-- ✅ Hospital & Doctor Search
-- ✅ Intelligent Hospital Comparison
-- ✅ Medical Cost Estimation
-- ✅ EMI Calculator
-- ✅ Medical Crowdfunding
-- ✅ Multi-language Support
-- ✅ Responsive User Interface
-- ✅ Modular & Scalable Architecture
+- **Frontend:** Built with React and Vite, providing a responsive and interactive user interface.
+- **Backend:** RESTful APIs developed using Node.js and Express.js for authentication, hospital, doctor, and treatment-related services.
+- **Database:** MongoDB Atlas stores hospital, doctor, user, appointment, and crowdfunding data.
+- **AI Service:** A dedicated chatbot service powered by the Groq API provides intelligent healthcare assistance.
+- **Deployment:** Frontend hosted on Vercel, Backend and AI Chatbot deployed on Render.
 
 ---
 
@@ -141,79 +115,133 @@ The goal of MediChoice is to make healthcare decisions more transparent, accessi
 ```text
 MediChoice
 │
-├── frontend
-│   ├── public
-│   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── styles
-│   │   ├── utils
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   └── package.json
+├── frontend/              # React + Vite Client
 │
-├── backend
-│   ├── config
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   ├── uploads
-│   ├── app.js
-│   ├── server.js
-│   └── package.json
+├── backend/               # Express REST API
 │
-├── chatbot-service
-│   ├── server.js
-│   ├── package.json
-│   └── chatbot-data
+├── chatbot-service/       # AI Chatbot Service
 │
-├── screenshots
-│
-├── README.md
-│
-└── package.json
+└── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Core Functionalities
 
-### 1️⃣ Clone the Repository
+| Module | Description |
+|---------|-------------|
+| 🏥 Hospital Comparison | Compare hospitals using ratings, facilities, treatment costs, and location. |
+| 👨‍⚕️ Doctor Discovery | Search doctors based on specialization, experience, and associated hospitals. |
+| 🤖 AI Chatbot | AI-powered healthcare assistant using Groq API for user guidance. |
+| 💰 Cost Estimator | Estimate treatment expenses for various medical procedures. |
+| 💳 EMI Calculator | Calculate monthly installments for healthcare expenses. |
+| ❤️ Crowdfunding | Create and explore fundraising campaigns for medical treatments. |
+| 🌍 Translation | Translate healthcare-related information into multiple languages. |
+| 🔐 Authentication | Secure user registration and login using JWT authentication. |
+
+---
+
+# 📸 Application Screenshots
+
+> Replace the image paths below with your project screenshots.
+
+## 🏠 Home Page
+
+<p align="center">
+<img src="./screenshots/home.png" width="100%" alt="Home Page"/>
+</p>
+
+---
+
+## 🏥 Hospital Comparison
+
+<p align="center">
+<img src="./screenshots/comparison.png" width="100%" alt="Hospital Comparison"/>
+</p>
+
+---
+
+## 👨‍⚕️ Doctor Details
+
+<p align="center">
+<img src="./screenshots/doctor.png" width="100%" alt="Doctor Details"/>
+</p>
+
+---
+
+## 🤖 AI Healthcare Assistant
+
+<p align="center">
+<img src="./screenshots/chatbot.png" width="100%" alt="AI Chatbot"/>
+</p>
+
+---
+
+## 💰 Treatment Cost Estimator
+
+<p align="center">
+<img src="./screenshots/estimator.png" width="100%" alt="Treatment Cost Estimator"/>
+</p>
+
+---
+
+## ❤️ Medical Crowdfunding
+
+<p align="center">
+<img src="./screenshots/crowdfunding.png" width="100%" alt="Medical Crowdfunding"/>
+</p>
+
+---
+| **Version Control** | Git & GitHub |
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+Make sure you have the following installed before running the project locally:
+
+- Node.js (v18 or later)
+- npm
+- MongoDB Atlas account (or local MongoDB)
+- Git
+- Groq API Key
+
+---
+
+# 📥 Installation
+
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/MediChoice.git
+git clone https://github.com/YOUR_GITHUB_USERNAME/MediChoice.git
 
 cd MediChoice
 ```
 
 ---
 
-### 2️⃣ Install Backend Dependencies
+## 2. Install Dependencies
+
+### Frontend
 
 ```bash
-cd backend
-
+cd frontend
 npm install
 ```
 
----
-
-### 3️⃣ Install Frontend Dependencies
+### Backend
 
 ```bash
-cd ../frontend
-
+cd ../backend
 npm install
 ```
 
----
-
-### 4️⃣ Install Chatbot Service Dependencies
+### AI Chatbot Service
 
 ```bash
 cd ../chatbot-service
-
 npm install
 ```
 
@@ -221,42 +249,71 @@ npm install
 
 # 🔑 Environment Variables
 
-Create a `.env` file inside the **backend** folder.
+## Backend (.env)
 
 ```env
 PORT=5000
 
-MONGO_URI=your_mongodb_connection_string
+MONGO_URL=your_mongodb_connection_string
 
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_jwt_secret
 ```
 
 ---
 
-Create another `.env` file inside the **frontend** folder.
+## Frontend (.env)
 
 ```env
-VITE_API_URL=https://medichoice-backend.onrender.com
+VITE_BACKEND_URL=http://localhost:5000
+VITE_CHATBOT_URL=http://localhost:3000
 ```
 
-> **Note:** Add any additional API keys or environment variables required by your project.
+> **Production Values**
+
+```env
+VITE_BACKEND_URL=https://medichoice-backend.onrender.com
+
+VITE_CHATBOT_URL=https://medichoice-chatbot.onrender.com
+```
 
 ---
 
-# ▶️ Running the Project
+## AI Chatbot (.env)
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+---
+
+# ▶️ Running the Application
 
 ### Start Backend
 
 ```bash
 cd backend
-
 npm start
 ```
 
-Backend Server
+Runs on:
 
 ```
-https://medichoice-backend.onrender.com
+http://localhost:5000
+```
+
+---
+
+### Start AI Chatbot
+
+```bash
+cd chatbot-service
+npm start
+```
+
+Runs on:
+
+```
+http://localhost:3000
 ```
 
 ---
@@ -265,11 +322,10 @@ https://medichoice-backend.onrender.com
 
 ```bash
 cd frontend
-
 npm run dev
 ```
 
-Frontend
+Runs on:
 
 ```
 http://localhost:5173
@@ -277,206 +333,79 @@ http://localhost:5173
 
 ---
 
-### Start AI Chatbot Service
+# 🌐 Deployment
 
-```bash
-cd chatbot-service
-
-npm start
-```
-
----
-
-# 🌐 Application Flow
-
-```text
-User
-   │
-   ▼
-React Frontend
-   │
-   ▼
-REST API
-   │
-   ▼
-Express Backend
-   │
-   ├────────► MongoDB
-   │
-   └────────► AI Chatbot Service
-```
+| Service | Platform | URL |
+|----------|----------|-----|
+| 🚀 Frontend | Vercel | https://medi-choice.vercel.app/ |
+| ⚙️ Backend API | Render | https://medichoice-backend.onrender.com |
+| 🤖 AI Chatbot | Render | https://medichoice-chatbot.onrender.com |
+| 🗄️ Database | MongoDB Atlas | Cloud Hosted |
 
 ---
 
-# 📷 Project Screenshots
+# 💡 Technical Highlights
 
-> Replace the placeholder images below with screenshots of your project.
-
----
-
-## 🏠 Home Page
-
-<p align="center">
-<img src="./screenshots/home.png" width="100%" alt="Home Page">
-</p>
-
----
-
-## 🏥 Hospital Comparison
-
-<p align="center">
-<img src="./screenshots/comparison.png" width="100%" alt="Hospital Comparison">
-</p>
+- Production-ready MERN architecture
+- Separate AI chatbot microservice
+- RESTful API design
+- JWT-based Authentication
+- MongoDB Atlas cloud database
+- AI integration using Groq API
+- Responsive UI across devices
+- Independent deployment of frontend, backend, and chatbot
+- Environment-based configuration
+- Modular and scalable project structure
 
 ---
 
-## 👨‍⚕ Doctor Details
-
-<p align="center">
-<img src="./screenshots/doctor.png" width="100%" alt="Doctor Details">
-</p>
-
----
-
-## 🤖 AI Chatbot
-
-<p align="center">
-<img src="./screenshots/chatbot.png" width="100%" alt="AI Chatbot">
-</p>
-
----
-
-## 💰 Cost Estimator
-
-<p align="center">
-<img src="./screenshots/estimator.png" width="100%" alt="Cost Estimator">
-</p>
-
----
-
-## ❤️ Medical Crowdfunding
-
-<p align="center">
-<img src="./screenshots/crowdfunding.png" width="100%" alt="Medical Crowdfunding">
-</p>
-
----
-
-# 🚀 Future Scope
+# 🚀 Future Enhancements
 
 The following features are planned for future releases:
 
-- 📅 Complete Appointment Booking & Management
-- 👨‍⚕ Doctor Dashboard
+- 📅 Appointment Booking & Management
 - 👤 Patient Dashboard
-- 📄 AI Medical Report Analysis
-- 🧠 Disease Prediction using AI
+- 👨‍⚕️ Doctor Dashboard
 - 📹 Video Consultation
 - 💳 Online Payment Integration
-- 🔔 Real-time Appointment Notifications
-- 📱 Mobile Application
+- 📄 AI Medical Report Analysis
+- 🧠 Disease Prediction using AI
 - 🏥 Live Hospital Bed Availability
+- 📱 Mobile Application
+- 🔔 Real-time Notifications
 
 ---
 
-# 📌 Current Project Status
+# 🧩 Technical Challenges Solved
 
-| Module              | Status       |
-| ------------------- | ------------ |
-| Hospital Comparison | ✅ Completed |
-| Doctor Search       | ✅ Completed |
-| AI Chatbot          | ✅ Completed |
-| Authentication      | ✅ Completed |
-| Cost Estimator      | ✅ Completed |
-| EMI Calculator      | ✅ Completed |
-| Crowdfunding        | ✅ Completed |
-| Translation         | ✅ Completed |
-| Responsive UI       | ✅ Completed |
-| Appointment Booking | 🟡 Prototype |
-| Patient Dashboard   | 🚧 Planned   |
-| Doctor Dashboard    | 🚧 Planned   |
+While building MediChoice, the following engineering challenges were addressed:
+
+- Designed and developed a full-stack MERN application.
+- Built a separate AI chatbot service using the Groq API.
+- Integrated JWT-based user authentication.
+- Connected MongoDB Atlas for cloud-hosted data storage.
+- Deployed the frontend, backend, and chatbot as independent services.
+- Configured secure communication between deployed services.
+- Managed environment variables for local and production environments.
+- Resolved deployment issues caused by Linux filename case sensitivity.
+- Built a responsive interface for desktop, tablet, and mobile devices.
 
 ---
 
-# 🗺️ Roadmap
+# 📚 What I Learned
 
-The following improvements are planned for future versions of MediChoice:
+This project strengthened my understanding of:
 
-- [ ] Complete Appointment Booking System
-- [ ] Patient Dashboard
-- [ ] Doctor Dashboard
-- [ ] AI-based Medical Report Analysis
-- [ ] Disease Prediction using Symptoms
-- [ ] Video Consultation
-- [ ] Online Payment Gateway
-- [ ] Health Insurance Comparison
-- [ ] Mobile Application
-- [ ] Real-time Notifications
-
----
-
-# 🚀 Deployment
-
-The application can be deployed using the following platforms:
-
-| Service    | Platform         |
-| ---------- | ---------------- |
-| Frontend   | Vercel           |
-| Backend    | Render / Railway |
-| Database   | MongoDB Atlas    |
-| AI Chatbot | Render / Railway |
-
----
-
-# 📊 Project Statistics
-
-| Category          | Details            |
-| ----------------- | ------------------ |
-| Architecture      | MERN Stack         |
-| Frontend          | React + Vite       |
-| Backend           | Node.js + Express  |
-| Database          | MongoDB            |
-| Authentication    | JWT                |
-| AI Integration    | Healthcare Chatbot |
-| Responsive Design | ✅ Yes             |
-| Open Source       | ✅ Yes             |
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome.
-
-If you'd like to improve MediChoice:
-
-1. Fork the repository
-2. Create a new feature branch
-
-```bash
-git checkout -b feature/feature-name
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add feature"
-```
-
-4. Push to GitHub
-
-```bash
-git push origin feature/feature-name
-```
-
-5. Open a Pull Request
-
----
-
-# 📝 License
-
-This project is licensed under the **MIT License**.
-
-You are free to use, modify, and distribute this project under the terms of the MIT License.
+- Full-Stack MERN Development
+- REST API Design
+- JWT Authentication
+- MongoDB Atlas
+- AI Integration using Groq
+- Production Deployment with Vercel & Render
+- Environment Variable Management
+- Git & GitHub Workflow
+- Debugging Production Issues
+- Building Scalable Web Applications
 
 ---
 
@@ -486,35 +415,22 @@ You are free to use, modify, and distribute this project under the terms of the 
 
 **B.Tech – Electronics & Telecommunication Engineering**
 
-Passionate Full Stack Developer focused on building modern, scalable, and AI-powered web applications.
-
-### 📬 Connect with Me
-
-<p align="left">
-
-<a href="https://github.com/your-github">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
-</a>
-
-<a href="https://linkedin.com/in/your-linkedin">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin">
-</a>
-
-<a href="https://yourportfolio.com">
-<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel">
-</a>
-
-<a href="mailto:your@email.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
-</a>
-
-</p>
+Passionate Full Stack Developer focused on building scalable web applications and solving real-world problems through modern technologies.
 
 ---
 
-# ⭐ Show Your Support
+## 📬 Connect With Me
 
-If you found this project useful or interesting, consider giving it a ⭐ on GitHub.
+- **GitHub:** https://github.com/YOUR_GITHUB_USERNAME
+- **LinkedIn:** https://linkedin.com/in/YOUR_LINKEDIN
+- **Portfolio:** https://YOUR_PORTFOLIO
+- **Email:** YOUR_EMAIL
+
+---
+
+# ⭐ If You Like This Project
+
+If you found this project useful or interesting, consider giving it a **⭐ Star** on GitHub.
 
 It helps others discover the project and motivates future improvements.
 
@@ -522,10 +438,8 @@ It helps others discover the project and motivates future improvements.
 
 <div align="center">
 
-## ❤️ Built with MERN Stack & AI
+### ❤️ Built with MERN Stack, AI & Passion
 
-### Making Healthcare Decisions Smarter
-
-⭐ **Thank you for visiting this repository!**
+**Thank you for visiting this repository!**
 
 </div>
